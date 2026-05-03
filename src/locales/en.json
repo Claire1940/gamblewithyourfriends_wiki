@@ -296,144 +296,402 @@
       ]
     },
     "lucidBlocksQualiaAndBaseBuilding": {
-      "title": "Gamble With Your Friends Release Date",
-      "displayType": "cards",
-      "intro": "Use this quick metadata panel when you need launch timing and publisher details for homepage context or article intros.",
-      "cards": [
+      "title": "Gamble With Your Friends Release Date And Steam Metadata",
+      "displayType": "table",
+      "intro": "Gamble With Your Friends is a released Steam PC game from TENSTACK. Use this metadata table to check launch details, app ID, platform, and release status.",
+      "items": [
         {
-          "name": "Steam Release Date",
-          "description": "Released on May 1, 2026, with launch pricing and immediate online co-op availability."
+          "label": "Release Date",
+          "value": "May 1, 2026",
+          "detail": "Steam lists the public release date as May 1, 2026."
         },
         {
-          "name": "Developers",
-          "description": "SkyBrave, blazitt, Gevizz, and Kiwick are listed as core developers on the Steam storefront."
+          "label": "Steam Release Time",
+          "value": "May 1, 2026, 18:01:55 UTC",
+          "detail": "SteamDB records this release timestamp for App ID 3892270."
         },
         {
-          "name": "Publisher",
-          "description": "TENSTACK publishes and maintains the official storefront, community updates, and support channels."
+          "label": "Steam App ID",
+          "value": "3892270",
+          "detail": "Use this ID for Steam store links, SteamDB lookups, achievements, and widgets."
         },
         {
-          "name": "Steam App ID",
-          "description": "App ID 3892270 is the canonical identifier for store links, patch references, and chart tracking."
+          "label": "Current Release Status",
+          "value": "Released",
+          "detail": "SteamDB currently marks the game as released."
+        },
+        {
+          "label": "Developer",
+          "value": "SkyBrave, blazitt, Gevizz, Kiwick",
+          "detail": "These developers are listed on the official Steam page."
+        },
+        {
+          "label": "Publisher",
+          "value": "TENSTACK",
+          "detail": "TENSTACK is listed as the publisher and franchise owner."
+        },
+        {
+          "label": "Platform",
+          "value": "PC / Windows on Steam",
+          "detail": "SteamDB lists Windows as the supported operating system."
+        },
+        {
+          "label": "Steam Genres",
+          "value": "Adventure, Indie, Simulation",
+          "detail": "Steam categorizes the game under Adventure, Indie, and Simulation."
+        },
+        {
+          "label": "Core Game Type",
+          "value": "Online 1-6 player co-op casino crawler",
+          "detail": "Players share one bank account and one debt while climbing a four-floor casino tower."
+        },
+        {
+          "label": "Achievement Count",
+          "value": "55 Steam Achievements",
+          "detail": "Steam Store and Steam Community both list 55 achievements."
+        },
+        {
+          "label": "Playtime And Endings",
+          "value": "Around 2-3 hours with 3 endings",
+          "detail": "Steam describes the game as a digestible co-op experience with three endings."
         }
-      ],
-      "highlights": [
-        "Release: May 1, 2026",
-        "Publisher: TENSTACK",
-        "App ID: 3892270",
-        "Platform: Windows PC via Steam"
       ]
     },
     "lucidBlocksWorldRegions": {
       "title": "Gamble With Your Friends Quota Strategy",
-      "displayType": "regionCards",
-      "intro": "Quota success comes from pacing, not constant maximum bets. Treat each day as a sequence of controlled bankroll checkpoints.",
-      "regions": [
+      "displayType": "steps",
+      "intro": "Every casino day lasts 5 minutes and every player spends from one shared bank. Clear quota first, then choose how much risk your team can afford.",
+      "steps": [
         {
-          "name": "Opening Setup Window",
-          "type": "0:00-1:00",
-          "description": "Open on low-volatility tables and gather quick confidence wins while confirming your team callout rhythm."
+          "title": "Set the shared-bank rule first",
+          "body": "One bank account and one debt means every large bet affects the whole team. Decide in lobby who can call big wagers and who tracks timer pressure.",
+          "action": "Use one caller for large bets, one timer watcher, and one item carrier.",
+          "avoid": "Do not let every player free-bet at the same time."
         },
         {
-          "name": "Midday Scaling",
-          "type": "1:00-3:30",
-          "description": "Increase stake size gradually once bankroll trend is positive and every large bet is pre-announced."
+          "title": "Treat the 5-minute day like a sprint",
+          "body": "The day timer is short, so table-hopping without a reason burns the most valuable resource. Choose a starting table before the run begins.",
+          "action": "Pick the opening table in advance and move only with team agreement.",
+          "avoid": "Do not spend the first minute debating where to play."
         },
         {
-          "name": "Quota Lock Decision",
-          "type": "3:30-4:30",
-          "description": "If quota is near complete, transition into preservation instead of chasing extra risk with no strategic upside."
+          "title": "Secure quota before chasing highlights",
+          "body": "The safest pattern is to clear quota, then decide whether to push achievements, higher floors, or bigger multipliers.",
+          "action": "Pause once you are above quota and align on the next risk.",
+          "avoid": "Do not chase personal comeback plays with shared money."
         },
         {
-          "name": "Final-Minute Recovery",
-          "type": "4:30-5:00",
-          "description": "Use a single coordinated swing play only when quota is still out of reach and safer lines are exhausted."
+          "title": "Use simple games for early bankroll control",
+          "body": "Floor 1 games like Roulette, Blackjack, Duck Race, Slots, Street Craps, and Wheel of Fortune are strong training tables for team rhythm.",
+          "action": "Let one player lead complex rules while the team protects bankroll pace.",
+          "avoid": "Do not max bet games your team has not learned."
+        },
+        {
+          "title": "Spend Tickets on run-changing items",
+          "body": "Tickets are strongest when tied to a table plan. Decide who carries each item and exactly when it should be used.",
+          "action": "Before buying, confirm owner, target table, and trigger window.",
+          "avoid": "Do not buy random items without a game plan."
+        },
+        {
+          "title": "Push higher floors only with a cushion",
+          "body": "The casino has four themed floors, and later floors introduce bigger swings and harsher punishment for mistakes.",
+          "action": "Bring extra money, item support, and a clear objective before pushing Floor 3 or Floor 4.",
+          "avoid": "Do not improvise on late floors with the entire shared bank."
+        },
+        {
+          "title": "Stop after the team wins the day",
+          "body": "Stopping is part of winning. If quota is secure and timer is low, preserving the bank is usually stronger than forcing one more high-risk bet.",
+          "action": "Call the stop point before opening another table.",
+          "avoid": "Do not treat one lucky win as a reason to double risk again."
         }
       ]
     },
     "lucidBlocksCreaturesAndEnemies": {
       "title": "Gamble With Your Friends Floors Guide",
-      "displayType": "creatureCards",
-      "intro": "Each casino floor shifts table pressure and recovery options. Teams that adjust their risk profile by floor survive longer.",
-      "creatures": [
+      "displayType": "tierGrid",
+      "intro": "The casino tower has four themed floors with randomized table layouts. This floor map combines game pools, achievement targets, and practical team focus for each stage.",
+      "floors": [
         {
-          "name": "Floor 1: Stabilize the Bankroll",
-          "role": "Early Floor",
-          "description": "Focus on consistent tables and build a cushion before trying multiplier-heavy games."
+          "tier": "Floor 1",
+          "role": "Learning floor and early bankroll control",
+          "gamePool": [
+            "Roulette",
+            "Duck Race",
+            "Wheel of Fortune",
+            "Street Craps",
+            "Blackjack",
+            "Slot Machine"
+          ],
+          "achievementGoals": [
+            "All on Red: Bet a lot of money on Roulette.",
+            "YARLL!!!: Bet on YARL and win on Duck Race.",
+            "Spin The Wheel: Win 3 high-stake Wheel of Fortune games.",
+            "Lucky 7: Get 7 on your first Street Craps roll.",
+            "Risky Move: Win Blackjack with a hand below 10.",
+            "No Bust Run: Win 4 Blackjack games in a row.",
+            "Jackpot Hunter: Win with 10X on Slot Machine."
+          ],
+          "teamPlan": "Use Floor 1 to lock communication rhythm, learn tables, and establish stop-loss rules before larger bets."
         },
         {
-          "name": "Floor 2: Mix Control and Upside",
-          "role": "Transition Floor",
-          "description": "Use controlled volatility to stay ahead of quota while testing one higher-variance option at a time."
+          "tier": "Floor 2",
+          "role": "First specialist-game floor",
+          "gamePool": [
+            "Penguin Cross",
+            "Keno",
+            "Crash",
+            "HiLo",
+            "Plinko",
+            "Money Wheel"
+          ],
+          "achievementGoals": [
+            "Winner Winner Penguin Dinner: Win at least 3X twice in a row on Penguin Cross.",
+            "Spot On: Bet a lot of money on Keno.",
+            "Greed Test: Win at least 10X on Crash.",
+            "Roll the Odds: Profit a lot of money on HiLo.",
+            "Clean Fall: Win 24X on Plinko.",
+            "Spin Streak: Win 3 high-stake Money Wheel games in a row."
+          ],
+          "teamPlan": "Move here with item support and a fixed plan before touching high-variance tables like Crash, Plinko, or Money Wheel."
         },
         {
-          "name": "Floor 3: Protect Momentum",
-          "role": "Pressure Floor",
-          "description": "Bankroll swings increase here, so clear communication and smaller synchronized bets become more important."
+          "tier": "Floor 3",
+          "role": "High-risk achievement setup floor",
+          "gamePool": [
+            "Penguin Cross",
+            "Wheel of Fortune",
+            "Street Craps",
+            "Dragon Tower",
+            "1P Poker",
+            "Mine Sweeper",
+            "HiLo"
+          ],
+          "achievementGoals": [
+            "Traffic Monster: Win at least 4X on Penguin Cross.",
+            "Keep It Spinning: Spend a lot of money on Wheel of Fortune.",
+            "Natural Roller: Win Street Craps during point phase.",
+            "Step Into Fire: Lose 4 Dragon Tower games in a row.",
+            "Poker Face: Win 1P Poker without locking cards, with Two of a Kind or better.",
+            "Perfect Sweep: Win at least 20X on Mine Sweeper.",
+            "No Safe Rolls: Win 10X on HiLo."
+          ],
+          "teamPlan": "Pick one main objective per run and avoid jumping between unfamiliar high-pressure tables."
         },
         {
-          "name": "Floor 4: Commit to Team Discipline",
-          "role": "Late Floor",
-          "description": "Late-game recoveries are possible, but only when the group commits to one shared plan and avoids split decisions."
-        },
-        {
-          "name": "Layout Variance",
-          "role": "Run Factor",
-          "description": "Randomized floor layouts change table access, so keep flexible routes instead of fixed scripts."
-        },
-        {
-          "name": "Floor-Specific Objectives",
-          "role": "Achievement Path",
-          "description": "Achievement hunting should follow floor readiness; forcing niche objectives too early can ruin quota pacing."
-        },
-        {
-          "name": "Item Timing by Floor",
-          "role": "Economy Rule",
-          "description": "Spend item resources when the current floor risk justifies it, not immediately after purchase."
+          "tier": "Floor 4",
+          "role": "Late-run push and rare achievement floor",
+          "gamePool": [
+            "Roulette",
+            "Penguin Cross",
+            "Keno",
+            "Plinko",
+            "Blackjack",
+            "Crash",
+            "Dragon Tower",
+            "Duck Race",
+            "Mine Sweeper",
+            "Money Wheel"
+          ],
+          "achievementGoals": [
+            "Ball in Motion: Spend a lot of money on Roulette.",
+            "No Hesitation: Spend a lot of money on Penguin Cross.",
+            "Marked to Win: Profit a lot of money on Keno.",
+            "Straight Down: Lose 7 Plinko games in a row.",
+            "House Breaker: Win a lot of money on Blackjack.",
+            "Safe Exit: Win Crash 4 times in a row.",
+            "Flameproof: Win at least 3X three times in a row on Dragon Tower.",
+            "Unstoppable Quack: Win Duck Race 2 times in a row.",
+            "No Detonations: Win 5X three times in a row on Mine Sweeper.",
+            "High Risk Wedge: Lose Money Wheel 5 games in a row."
+          ],
+          "teamPlan": "Use Floor 4 for planned late-run pushes only after building bankroll cushion and securing item backup."
         }
       ]
     },
     "lucidBlocksMobilityGear": {
-      "title": "Gamble With Your Friends Games of Chance",
-      "displayType": "itemCards",
-      "intro": "The table roster rewards teams that match game volatility to quota pressure instead of chasing every high multiplier.",
+      "title": "Gamble With Your Friends Games Of Chance",
+      "displayType": "table",
+      "intro": "Steam highlights 17 chance games. This list focuses on the named games most tied to floor progression, achievements, and team strategy planning.",
       "items": [
         {
-          "name": "Roulette",
-          "type": "Stable Entry Table",
-          "description": "Good for controlled openers when the team needs predictable pacing and clear bet communication."
+          "game": "Roulette",
+          "floors": [
+            "Floor 1",
+            "Floor 4"
+          ],
+          "achievementTargets": [
+            "All on Red",
+            "Ball in Motion"
+          ],
+          "howToUse": "Use for simple coordinated pushes when the team agrees on entry size and stop point."
         },
         {
-          "name": "Blackjack",
-          "type": "Control Table",
-          "description": "Useful when your group wants tighter risk control and cleaner bankroll tracking."
+          "game": "Duck Race",
+          "floors": [
+            "Floor 1",
+            "Floor 4"
+          ],
+          "achievementTargets": [
+            "YARLL!!!",
+            "Unstoppable Quack"
+          ],
+          "howToUse": "Easy to read, but rapid repeat bets can drain shared funds without strict cap rules."
         },
         {
-          "name": "Slot Machine",
-          "type": "Variance Table",
-          "description": "Bring slots in as a planned spike play, not as a default table for every round."
+          "game": "Blackjack",
+          "floors": [
+            "Floor 1",
+            "Floor 4"
+          ],
+          "achievementTargets": [
+            "Risky Move",
+            "No Bust Run",
+            "House Breaker"
+          ],
+          "howToUse": "Best with one caller leading hit-or-stand decisions to avoid conflicting team calls."
         },
         {
-          "name": "Street Craps",
-          "type": "Momentum Table",
-          "description": "Works best when one caller coordinates stake size and stop conditions before each sequence."
+          "game": "Slot Machine",
+          "floors": [
+            "Floor 1"
+          ],
+          "achievementTargets": [
+            "Jackpot Hunter"
+          ],
+          "howToUse": "Use smaller stake windows or item support when chasing the 10X target."
         },
         {
-          "name": "Duck Race",
-          "type": "Swing Table",
-          "description": "Fast outcome changes can rescue or sink a day quickly, so use strict cap rules."
+          "game": "Street Craps",
+          "floors": [
+            "Floor 1",
+            "Floor 3"
+          ],
+          "achievementTargets": [
+            "Lucky 7",
+            "Natural Roller"
+          ],
+          "howToUse": "Assign one roller and one caller so the team keeps pace and avoids rushed mistakes."
         },
         {
-          "name": "Keno, Crash, HiLo, Plinko",
-          "type": "High Volatility Cluster",
-          "description": "Reserve these for late pressure or explicit strategy routes to avoid accidental team wipes."
+          "game": "Wheel of Fortune",
+          "floors": [
+            "Floor 1",
+            "Floor 3"
+          ],
+          "achievementTargets": [
+            "Spin The Wheel",
+            "Keep It Spinning"
+          ],
+          "howToUse": "Useful for recovery attempts and specific goals, but risky as a default quota route."
+        },
+        {
+          "game": "Penguin Cross",
+          "floors": [
+            "Floor 2",
+            "Floor 3",
+            "Floor 4"
+          ],
+          "achievementTargets": [
+            "Winner Winner Penguin Dinner",
+            "Traffic Monster",
+            "No Hesitation"
+          ],
+          "howToUse": "Learn it in Floor 2 before committing serious late-floor bankroll."
+        },
+        {
+          "game": "Keno",
+          "floors": [
+            "Floor 2",
+            "Floor 4"
+          ],
+          "achievementTargets": [
+            "Spot On",
+            "Marked to Win"
+          ],
+          "howToUse": "Treat as a planned objective, not a blind first-table decision."
+        },
+        {
+          "game": "Crash",
+          "floors": [
+            "Floor 2",
+            "Floor 4"
+          ],
+          "achievementTargets": [
+            "Greed Test",
+            "Safe Exit"
+          ],
+          "howToUse": "Define cash-out targets before each round because greed pressure is built into this game."
+        },
+        {
+          "game": "HiLo",
+          "floors": [
+            "Floor 2",
+            "Floor 3"
+          ],
+          "achievementTargets": [
+            "Roll the Odds",
+            "No Safe Rolls"
+          ],
+          "howToUse": "Strong for disciplined players who can stop on target instead of forcing one more call."
+        },
+        {
+          "game": "Plinko",
+          "floors": [
+            "Floor 2",
+            "Floor 4"
+          ],
+          "achievementTargets": [
+            "Clean Fall",
+            "Straight Down"
+          ],
+          "howToUse": "Fast and high-variance, so commit only money the team is prepared to risk."
+        },
+        {
+          "game": "Money Wheel",
+          "floors": [
+            "Floor 2",
+            "Floor 4"
+          ],
+          "achievementTargets": [
+            "Spin Streak",
+            "High Risk Wedge"
+          ],
+          "howToUse": "Needs a strict stop point and full team alignment before repeated attempts."
+        },
+        {
+          "game": "Dragon Tower",
+          "floors": [
+            "Floor 3",
+            "Floor 4"
+          ],
+          "achievementTargets": [
+            "Step Into Fire",
+            "Flameproof"
+          ],
+          "howToUse": "Treat as a specialist late-floor game rather than a casual quota option."
+        },
+        {
+          "game": "1P Poker",
+          "floors": [
+            "Floor 3"
+          ],
+          "achievementTargets": [
+            "Poker Face"
+          ],
+          "howToUse": "Review the no-lock condition before committing large bets on the Poker Face route."
+        },
+        {
+          "game": "Mine Sweeper",
+          "floors": [
+            "Floor 3",
+            "Floor 4"
+          ],
+          "achievementTargets": [
+            "Perfect Sweep",
+            "No Detonations"
+          ],
+          "howToUse": "Use for dedicated multiplier pushes once bankroll cushion and table understanding are ready."
         }
-      ],
-      "unlockMilestones": [
-        "Identify two safe opener tables",
-        "Define max stake thresholds",
-        "Call every recovery play",
-        "Avoid blind max bets on unfamiliar games"
       ]
     },
     "lucidBlocksFarmingAndGrowth": {

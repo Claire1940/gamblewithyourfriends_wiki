@@ -9,11 +9,9 @@ import {
   ChevronDown,
   ClipboardCheck,
   Clock,
-  Eye,
   ExternalLink,
   Gamepad2,
   Hammer,
-  Home,
   MessageCircle,
   Package,
   Settings,
@@ -154,6 +152,42 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
   // FAQ accordion states
   const [faqExpanded, setFaqExpanded] = useState<number | null>(null)
   const [deckExpanded, setDeckExpanded] = useState<number | null>(null)
+
+  const releaseInfoItems = Array.isArray(t.modules?.lucidBlocksQualiaAndBaseBuilding?.items)
+    ? t.modules.lucidBlocksQualiaAndBaseBuilding.items
+    : (t.modules?.lucidBlocksQualiaAndBaseBuilding?.cards || []).map((card: any) => ({
+        label: card?.name || '',
+        value: card?.name || '',
+        detail: card?.description || '',
+      }))
+
+  const quotaStrategySteps = Array.isArray(t.modules?.lucidBlocksWorldRegions?.steps)
+    ? t.modules.lucidBlocksWorldRegions.steps
+    : (t.modules?.lucidBlocksWorldRegions?.regions || []).map((region: any) => ({
+        title: region?.name || '',
+        body: region?.description || '',
+        action: `Use timing window: ${region?.type || 'Planned Window'}.`,
+        avoid: 'Avoid unplanned all-in bets outside your team call.',
+      }))
+
+  const floorGuideCards = Array.isArray(t.modules?.lucidBlocksCreaturesAndEnemies?.floors)
+    ? t.modules.lucidBlocksCreaturesAndEnemies.floors
+    : (t.modules?.lucidBlocksCreaturesAndEnemies?.creatures || []).map((creature: any) => ({
+        tier: creature?.name || '',
+        role: creature?.role || 'Floor Note',
+        gamePool: ['Check current floor table pool'],
+        achievementGoals: [creature?.description || 'Use this floor as a pacing checkpoint.'],
+        teamPlan: creature?.description || '',
+      }))
+
+  const gamesOfChanceItems = Array.isArray(t.modules?.lucidBlocksMobilityGear?.items)
+    ? t.modules.lucidBlocksMobilityGear.items.map((item: any) => ({
+        game: item?.game || item?.name || 'Game',
+        floors: Array.isArray(item?.floors) ? item.floors : item?.type ? [item.type] : ['Floor pool varies'],
+        achievementTargets: Array.isArray(item?.achievementTargets) ? item.achievementTargets : ['Check current achievement route'],
+        howToUse: item?.howToUse || item?.description || 'Use with team bankroll discipline and a stop point.',
+      }))
+    : []
 
   // Scroll reveal animation
   useEffect(() => {
@@ -499,23 +533,42 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksQualiaAndBaseBuilding']} locale={locale}>{t.modules.lucidBlocksQualiaAndBaseBuilding.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksQualiaAndBaseBuilding.intro}</p>
           </div>
-          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            {t.modules.lucidBlocksQualiaAndBaseBuilding.cards.map((card: any, index: number) => (
-              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <h3 className="font-bold text-lg mb-2 text-[hsl(var(--nav-theme-light))]">
-                  <LinkedTitle linkData={moduleLinkMap[`lucidBlocksQualiaAndBaseBuilding::cards::${index}`]} locale={locale}>
-                    {card.name}
+
+          <div className="scroll-reveal hidden md:block rounded-xl border border-border overflow-hidden">
+            <div className="grid grid-cols-[1fr_1fr_2fr] gap-0 bg-[hsl(var(--nav-theme)/0.14)] border-b border-border">
+              <div className="p-4 text-sm font-semibold">Field</div>
+              <div className="p-4 text-sm font-semibold">Value</div>
+              <div className="p-4 text-sm font-semibold">Detail</div>
+            </div>
+            {releaseInfoItems.map((item: any, index: number) => (
+              <div
+                key={index}
+                className="grid grid-cols-[1fr_1fr_2fr] gap-0 border-b border-border/70 last:border-b-0 bg-white/[0.02] hover:bg-[hsl(var(--nav-theme)/0.06)] transition-colors"
+              >
+                <div className="p-4 font-semibold text-[hsl(var(--nav-theme-light))]">
+                  <LinkedTitle linkData={moduleLinkMap[`lucidBlocksQualiaAndBaseBuilding::items::${index}`]} locale={locale}>
+                    {item.label}
                   </LinkedTitle>
-                </h3>
-                <p className="text-muted-foreground text-sm">{card.description}</p>
+                </div>
+                <div className="p-4 text-sm font-medium">{item.value}</div>
+                <div className="p-4 text-sm text-muted-foreground">{item.detail}</div>
               </div>
             ))}
           </div>
-          <div className="scroll-reveal grid grid-cols-2 md:grid-cols-4 gap-4">
-            {t.modules.lucidBlocksQualiaAndBaseBuilding.highlights.map((h: string, i: number) => (
-              <div key={i} className="p-4 bg-white/5 border border-border rounded-xl text-center hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <Home className="w-6 h-6 text-[hsl(var(--nav-theme-light))] mx-auto mb-2" />
-                <p className="text-sm">{h}</p>
+
+          <div className="scroll-reveal md:hidden space-y-4">
+            {releaseInfoItems.map((item: any, index: number) => (
+              <div key={index} className="p-5 bg-white/5 border border-border rounded-xl">
+                <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Field</p>
+                <p className="font-semibold text-[hsl(var(--nav-theme-light))] mb-3">
+                  <LinkedTitle linkData={moduleLinkMap[`lucidBlocksQualiaAndBaseBuilding::items::${index}`]} locale={locale}>
+                    {item.label}
+                  </LinkedTitle>
+                </p>
+                <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Value</p>
+                <p className="text-sm font-medium mb-3">{item.value}</p>
+                <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Detail</p>
+                <p className="text-sm text-muted-foreground">{item.detail}</p>
               </div>
             ))}
           </div>
@@ -529,19 +582,39 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksWorldRegions']} locale={locale}>{t.modules.lucidBlocksWorldRegions.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksWorldRegions.intro}</p>
           </div>
-          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4">
-            {t.modules.lucidBlocksWorldRegions.regions.map((region: any, index: number) => (
+          <div className="scroll-reveal space-y-4">
+            {quotaStrategySteps.map((step: any, index: number) => (
               <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <div className="flex items-center gap-3 mb-3">
-                  <Eye className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <h3 className="font-bold">
-                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksWorldRegions::regions::${index}`]} locale={locale}>
-                      {region.name}
-                    </LinkedTitle>
-                  </h3>
-                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{region.type}</span>
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0 w-10 h-10 rounded-full bg-[hsl(var(--nav-theme)/0.16)] border border-[hsl(var(--nav-theme)/0.35)] flex items-center justify-center font-bold text-[hsl(var(--nav-theme-light))]">
+                    {index + 1}
+                  </div>
+                  <div className="flex-1">
+                    <h3 className="font-bold text-lg mb-2">
+                      <LinkedTitle linkData={moduleLinkMap[`lucidBlocksWorldRegions::steps::${index}`]} locale={locale}>
+                        {step.title}
+                      </LinkedTitle>
+                    </h3>
+                    <p className="text-muted-foreground text-sm mb-4">{step.body}</p>
+
+                    <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                      <div className="p-3 rounded-lg bg-[hsl(var(--nav-theme)/0.08)] border border-[hsl(var(--nav-theme)/0.3)]">
+                        <div className="flex items-center gap-2 mb-1">
+                          <Check className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />
+                          <span className="text-sm font-semibold">Do This</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">{step.action}</p>
+                      </div>
+                      <div className="p-3 rounded-lg bg-[hsl(var(--nav-theme)/0.08)] border border-[hsl(var(--nav-theme)/0.3)]">
+                        <div className="flex items-center gap-2 mb-1">
+                          <AlertTriangle className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />
+                          <span className="text-sm font-semibold">Avoid This</span>
+                        </div>
+                        <p className="text-sm text-muted-foreground">{step.avoid}</p>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <p className="text-muted-foreground text-sm">{region.description}</p>
               </div>
             ))}
           </div>
@@ -555,18 +628,48 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksCreaturesAndEnemies']} locale={locale}>{t.modules.lucidBlocksCreaturesAndEnemies.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksCreaturesAndEnemies.intro}</p>
           </div>
-          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {t.modules.lucidBlocksCreaturesAndEnemies.creatures.map((c: any, index: number) => (
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4">
+            {floorGuideCards.map((floor: any, index: number) => (
               <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <div className="mb-3">
-                  <span className={`text-xs px-2 py-1 rounded-full border ${["Hostile Enemy","Major Threat","Elite Threat"].includes(c.role) ? "bg-[hsl(var(--nav-theme)/0.18)] border-[hsl(var(--nav-theme)/0.45)] text-[hsl(var(--nav-theme-light))]" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}>{c.role}</span>
+                <div className="flex items-center justify-between gap-3 mb-4">
+                  <h3 className="font-bold text-xl text-[hsl(var(--nav-theme-light))]">
+                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksCreaturesAndEnemies::floors::${index}`]} locale={locale}>
+                      {floor.tier}
+                    </LinkedTitle>
+                  </h3>
+                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{floor.role}</span>
                 </div>
-                <h3 className="font-bold mb-2">
-                  <LinkedTitle linkData={moduleLinkMap[`lucidBlocksCreaturesAndEnemies::creatures::${index}`]} locale={locale}>
-                    {c.name}
-                  </LinkedTitle>
-                </h3>
-                <p className="text-muted-foreground text-sm">{c.description}</p>
+
+                <div className="mb-4">
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground mb-2">Game Pool</p>
+                  <div className="flex flex-wrap gap-2">
+                    {floor.gamePool.map((game: string, gi: number) => (
+                      <span key={gi} className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.08)] border border-[hsl(var(--nav-theme)/0.25)]">
+                        {game}
+                      </span>
+                    ))}
+                  </div>
+                </div>
+
+                <div className="mb-4">
+                  <div className="flex items-center gap-2 mb-2">
+                    <ClipboardCheck className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />
+                    <p className="text-xs uppercase tracking-wide text-muted-foreground">Achievement Goals</p>
+                  </div>
+                  <ul className="space-y-2">
+                    {floor.achievementGoals.map((goal: string, ai: number) => (
+                      <li key={ai} className="text-sm text-muted-foreground flex items-start gap-2">
+                        <span className="mt-1 w-1.5 h-1.5 rounded-full bg-[hsl(var(--nav-theme-light))] flex-shrink-0" />
+                        <span>{goal}</span>
+                      </li>
+                    ))}
+                  </ul>
+                </div>
+
+                <div className="p-3 rounded-lg bg-[hsl(var(--nav-theme)/0.08)] border border-[hsl(var(--nav-theme)/0.3)]">
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Team Plan</p>
+                  <p className="text-sm text-muted-foreground">{floor.teamPlan}</p>
+                </div>
               </div>
             ))}
           </div>
@@ -580,27 +683,46 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksMobilityGear']} locale={locale}>{t.modules.lucidBlocksMobilityGear.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksMobilityGear.intro}</p>
           </div>
-          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 mb-8">
-            {t.modules.lucidBlocksMobilityGear.items.map((item: any, index: number) => (
-              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <div className="flex items-center gap-2 mb-3">
-                  <ArrowRight className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{item.type}</span>
-                </div>
-                <h3 className="font-bold mb-2">
+
+          <div className="scroll-reveal hidden md:block rounded-xl border border-border overflow-hidden">
+            <div className="grid grid-cols-[1fr_1fr_1.2fr_1.8fr] gap-0 bg-[hsl(var(--nav-theme)/0.14)] border-b border-border">
+              <div className="p-4 text-sm font-semibold">Game</div>
+              <div className="p-4 text-sm font-semibold">Floors</div>
+              <div className="p-4 text-sm font-semibold">Achievement Targets</div>
+              <div className="p-4 text-sm font-semibold">How To Use</div>
+            </div>
+            {gamesOfChanceItems.map((item: any, index: number) => (
+              <div
+                key={index}
+                className="grid grid-cols-[1fr_1fr_1.2fr_1.8fr] gap-0 border-b border-border/70 last:border-b-0 bg-white/[0.02] hover:bg-[hsl(var(--nav-theme)/0.06)] transition-colors"
+              >
+                <div className="p-4 font-semibold text-[hsl(var(--nav-theme-light))]">
                   <LinkedTitle linkData={moduleLinkMap[`lucidBlocksMobilityGear::items::${index}`]} locale={locale}>
-                    {item.name}
+                    {item.game}
                   </LinkedTitle>
-                </h3>
-                <p className="text-muted-foreground text-sm">{item.description}</p>
+                </div>
+                <div className="p-4 text-sm text-muted-foreground">{item.floors.join(', ')}</div>
+                <div className="p-4 text-sm text-muted-foreground">{item.achievementTargets.join(', ')}</div>
+                <div className="p-4 text-sm text-muted-foreground">{item.howToUse}</div>
               </div>
             ))}
           </div>
-          <div className="scroll-reveal flex flex-wrap gap-3 justify-center">
-            {t.modules.lucidBlocksMobilityGear.unlockMilestones.map((m: string, i: number) => (
-              <span key={i} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm">
-                <Check className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />{m}
-              </span>
+
+          <div className="scroll-reveal md:hidden space-y-4">
+            {gamesOfChanceItems.map((item: any, index: number) => (
+              <div key={index} className="p-5 bg-white/5 border border-border rounded-xl">
+                <h3 className="font-bold text-[hsl(var(--nav-theme-light))] mb-2">
+                  <LinkedTitle linkData={moduleLinkMap[`lucidBlocksMobilityGear::items::${index}`]} locale={locale}>
+                    {item.game}
+                  </LinkedTitle>
+                </h3>
+                <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Floors</p>
+                <p className="text-sm text-muted-foreground mb-3">{item.floors.join(', ')}</p>
+                <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Achievement Targets</p>
+                <p className="text-sm text-muted-foreground mb-3">{item.achievementTargets.join(', ')}</p>
+                <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">How To Use</p>
+                <p className="text-sm text-muted-foreground">{item.howToUse}</p>
+              </div>
             ))}
           </div>
         </div>
