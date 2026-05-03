@@ -1,28 +1,28 @@
 {
   "seo": {
     "home": {
-      "title": "Wiki de Lucid Blocks - Fabricación, biomas y logros",
-      "description": "La Wiki de Lucid Blocks cubre fabricación, biomas, criaturas, objetos, logros, finales y consejos de supervivencia para la aventura surrealista de sandbox de vóxeles en Steam.",
-      "keywords": "Lucid Blocks, Lucid Blocks wiki, fabricación, biomas, logros, supervivencia, Steam",
-      "ogTitle": "Wiki de Lucid Blocks - Fabricación, biomas y logros",
-      "ogDescription": "La Wiki de Lucid Blocks cubre fabricación, biomas, criaturas, objetos, logros, finales y consejos de supervivencia para la aventura surrealista de sandbox de vóxeles en Steam.",
-      "twitterTitle": "Wiki de Lucid Blocks - Fabricación, biomas y logros",
-      "twitterDescription": "La Wiki de Lucid Blocks cubre fabricación, biomas, criaturas, objetos, logros y consejos de supervivencia para el sandbox surrealista de vóxeles en Steam."
+      "title": "Gamble With Your Friends - Guía, Objetos y Logros",
+      "description": "Guía de Gamble With Your Friends que cubre partidas cooperativas de casino, probabilidades, objetos, pisos, finales, logros, requisitos del sistema y las últimas actualizaciones de Steam.",
+      "keywords": "Gamble With Your Friends, guía de Gamble With Your Friends, cooperativo, cuota, objetos, logros, finales, Steam",
+      "ogTitle": "Gamble With Your Friends - Guía, Objetos y Logros",
+      "ogDescription": "Guía de Gamble With Your Friends que cubre partidas cooperativas de casino, probabilidades, objetos, pisos, finales, logros, requisitos del sistema y las últimas actualizaciones de Steam.",
+      "twitterTitle": "Gamble With Your Friends - Guía, Objetos y Logros",
+      "twitterDescription": "Guía de Gamble With Your Friends que cubre partidas cooperativas, juegos de azar, objetos, pisos, finales y actualizaciones de Steam."
     }
   },
   "nav": {
-    "guide": "Guide",
-    "price": "Price",
+    "guide": "Guía",
+    "price": "Precio",
     "steam": "Steam",
-    "release": "Release",
-    "platforms": "Platforms",
-    "gameplay": "Gameplay",
+    "release": "Lanzamiento",
+    "platforms": "Plataformas",
+    "gameplay": "Jugabilidad",
     "mods": "Mods"
   },
   "common": {
     "home": "Inicio",
     "more": "Más",
-    "playNow": "Juega en Steam",
+    "playNow": "Jugar en Steam",
     "switchLanguage": "Cambiar idioma",
     "switchTheme": "Cambiar tema",
     "lightMode": "Modo claro",
@@ -35,721 +35,1302 @@
     "articlesComingSoon": "Artículos próximamente"
   },
   "hero": {
-    "badge": "__PROTECTED_c0b0161c__ Sandbox de supervivencia de vóxeles",
-    "title": "Lucid Blocks Wiki",
-    "description": "Explora biomas oníricos, fusiona objetos con Apotheosis, construye libremente y sobrevive a criaturas extrañas en este sandbox surrealista de mundo abierto en Steam.",
-    "getFreeCodesCTA": "Explorar guía de fabricación",
+    "badge": "Casino Crawler cooperativo de 1 a 6 jugadores",
+    "title": "Gamble With Your Friends",
+    "description": "Coordínate con tu equipo, protege un presupuesto compartido y supera cada día de casino antes de que expire el temporizador de la cuota.",
+    "getFreeCodesCTA": "Unirse a Discord",
     "playOnSteamCTA": "Jugar en Steam",
     "stats": {
       "stat1": {
-        "value": "1,325",
-        "label": "Jugadores en línea"
+        "value": "18,809",
+        "label": "Pico histórico"
       },
       "stat2": {
-        "value": "1,986",
-        "label": "Pico de CCU"
+        "value": "748+",
+        "label": "Reseñas en Steam"
       },
       "stat3": {
-        "value": "97%",
-        "label": "Reseñas positivas"
+        "value": "55",
+        "label": "Logros"
       },
       "stat4": {
-        "value": "12 de mar. de 2026",
-        "label": "Fecha de lanzamiento"
+        "value": "17",
+        "label": "Juegos de azar"
       }
     }
   },
   "gameFeature": {
-    "title": "Jugabilidad de Lucid Blocks",
-    "description": "Explora biomas surrealistas, fusiona objetos con Apotheosis y sobrevive a criaturas extrañas en este sandbox de vóxeles onírico en Steam."
+    "title": "Jugabilidad de Gamble With Your Friends",
+    "description": "Aprende el ciclo cooperativo de presupuesto compartido, la presión de la cuota, la progresión por pisos y estrategias prácticas para partidas de casino estables."
   },
   "tools": {
-    "title": "Lucid Blocks",
-    "titleHighlight": "Recursos",
-    "subtitle": "Todo lo que necesitas para explorar, fabricar y sobrevivir en Lucid Blocks",
+    "title": "Gamble With Your Friends",
+    "titleHighlight": "Módulos de la página de inicio",
+    "subtitle": "Usa este navegador de módulos para saltar directamente a cada tema principal de la página de inicio.",
     "cards": [
       {
-        "icon": "BookOpen",
-        "title": "Guía para principiantes",
-        "description": "Primeros pasos, exploración y progresión inicial"
-      },
-      {
-        "icon": "Sparkles",
-        "title": "Fabricación de Apotheosis",
-        "description": "Sistema de fusión libre y recetas iniciales"
-      },
-      {
-        "icon": "Hammer",
-        "title": "Herramientas y armas",
-        "description": "Pico de escarcha, Azrael, __PROTECTED_6a765cb2__ y más"
-      },
-      {
-        "icon": "Package",
-        "title": "Almacenamiento e inventario",
-        "description": "Cubos de suministros, gabinetes y almacenamiento de Qualia"
-      },
-      {
-        "icon": "Home",
-        "title": "Qualia y construcción de bases",
-        "description": "Qualia personal y configuración de la base"
-      },
-      {
-        "icon": "Eye",
-        "title": "Regiones del mundo",
-        "description": "Fog Meadow, Ciénaga de la Esencia y más"
-      },
-      {
-        "icon": "AlertTriangle",
-        "title": "Criaturas y enemigos",
-        "description": "Maniquíes, arañas y cómo sobrevivir"
-      },
-      {
-        "icon": "ArrowRight",
-        "title": "Equipo de movilidad",
-        "description": "__PROTECTED_6a765cb2__, Guante planeador, __PROTECTED_163b9bec__"
-      },
-      {
-        "icon": "TrendingUp",
-        "title": "Cultivo y crecimiento",
-        "description": "Progresión de semillas y recolección de materiales"
-      },
-      {
-        "icon": "Star",
-        "title": "Mejores desbloqueos iniciales",
-        "description": "Mejoras prioritarias para la primera hora"
-      },
-      {
-        "icon": "ClipboardCheck",
-        "title": "Seguimiento de logros",
-        "description": "Los 19 logros y condiciones de Steam"
-      },
-      {
-        "icon": "MessageCircle",
-        "title": "Preguntas frecuentes del modo un jugador",
-        "description": "Preguntas sobre plataformas, precio, cooperativo e idiomas"
+        "icon": "Download",
+        "title": "Descarga y precio de Gamble With Your Friends en Steam",
+        "description": "Opciones de compra en Steam, periodos de descuento, DLC, paquetes y seguimiento de precios."
       },
       {
         "icon": "Gamepad2",
-        "title": "Steam Deck y controles",
-        "description": "Configuración de Proton 9.0.4 y consejos para el control"
+        "title": "Resumen de la jugabilidad de Gamble With Your Friends",
+        "description": "Ciclo principal, presión de la deuda compartida, estructura del juego y resumen de características."
       },
       {
-        "icon": "Settings",
-        "title": "Ajustes y accesibilidad",
-        "description": "Ocultar manos, __PROTECTED_38625270__ y opciones de pantalla"
+        "icon": "BookOpen",
+        "title": "Guía para principiantes de Gamble With Your Friends",
+        "description": "Configuración de la primera partida, disciplina de apuestas y conceptos básicos de coordinación de equipo."
+      },
+      {
+        "icon": "Users",
+        "title": "Multijugador cooperativo de Gamble With Your Friends",
+        "description": "Configuración de salas solo para amigos, flujo de invitación y resolución de problemas grupales."
       },
       {
         "icon": "Clock",
-        "title": "Actualizaciones y notas del parche",
-        "description": "Correcciones recientes y notas de la hoja de ruta"
+        "title": "Fecha de lanzamiento de Gamble With Your Friends",
+        "description": "Cronograma de lanzamiento, información del desarrollador, detalles del editor y metadatos de la aplicación."
+      },
+      {
+        "icon": "TrendingUp",
+        "title": "Estrategia de cuota en Gamble With Your Friends",
+        "description": "Planificación de la cuota diaria, ritmo del presupuesto y lógica de recuperación al final del día."
+      },
+      {
+        "icon": "Eye",
+        "title": "Guía de pisos de Gamble With Your Friends",
+        "description": "Estructura piso por piso, perfil de riesgo y prioridades de progresión."
+      },
+      {
+        "icon": "Sparkles",
+        "title": "Juegos de azar en Gamble With Your Friends",
+        "description": "Lista de mesas principales con categorías de riesgo prácticas y notas de uso."
+      },
+      {
+        "icon": "Star",
+        "title": "Estrategia de las mejores mesas en Gamble With Your Friends",
+        "description": "Selección de mesas por niveles de riesgo, pistas de los pisos, sinergia de objetos y reglas de límite de pérdidas."
+      },
+      {
+        "icon": "Package",
+        "title": "Objetos y tickets en Gamble With Your Friends",
+        "description": "Costes de tickets, casos de uso, mejores momentos y errores a evitar para cada objeto."
+      },
+      {
+        "icon": "ClipboardCheck",
+        "title": "Guía de logros de Gamble With Your Friends",
+        "description": "Rutas de logros por piso, hitos, finales y recuento por categorías."
       },
       {
         "icon": "Shield",
-        "title": "Solución de cierres inesperados",
-        "description": "Verificación de __PROTECTED_38625270__, ruta de registros y reporte de errores"
+        "title": "Guía de finales de Gamble With Your Friends",
+        "description": "Los tres finales, temas de las rutas y preparación para los finales basada en listas de verificación."
+      },
+      {
+        "icon": "Settings",
+        "title": "Requisitos del sistema de Gamble With Your Friends",
+        "description": "Especificaciones mínimas y recomendadas con consejos prácticos de rendimiento."
+      },
+      {
+        "icon": "Keyboard",
+        "title": "Plataformas y móviles de Gamble With Your Friends",
+        "description": "Disponibilidad de plataformas, expectativas para móviles y límites de acceso."
+      },
+      {
+        "icon": "ExternalLink",
+        "title": "Número de jugadores y reseñas de Gamble With Your Friends",
+        "description": "Actividad de jugadores en vivo, sentimiento de las reseñas y comprobación de tendencias de interés."
+      },
+      {
+        "icon": "AlertTriangle",
+        "title": "Solución de problemas y actualizaciones de Gamble With Your Friends",
+        "description": "Correcciones comunes, flujo de comprobación de parches y proceso de reporte de errores."
       }
     ]
   },
   "modules": {
     "lucidBlocksBeginnerGuide": {
-      "title": "Guía para principiantes de Lucid Blocks",
+      "title": "Descarga y precio de Gamble With Your Friends en Steam",
       "displayType": "steps",
-      "intro": "Comienza aprendiendo cómo se conectan la exploración, la fusión y la progresión. Lucid Blocks premia la experimentación, por lo que el progreso temprano proviene de recolectar materiales inusuales, probar combinaciones y desbloquear tu Qualia personal.",
+      "intro": "Consulta el juego base, el DLC de la banda sonora y los descuentos actuales de Steam antes de comprar. Una revisión rápida de precios evita compras duplicadas en los paquetes.",
       "steps": [
         {
-          "title": "Explora antes de comprometerte",
-          "description": "Camina hacia el exterior, mina bloques comunes y conserva cualquier botín extraño que encuentres. El progreso inicial se trata menos de misiones fijas y más de descubrir en qué se pueden convertir los materiales."
+          "title": "Consulta la ficha del juego base",
+          "description": "Confirma primero el precio actual del juego base en la página oficial de Steam para que tu equipo comience con la misma base de compra."
         },
         {
-          "title": "Desbloquea tu Qualia personal pronto",
-          "description": "Tu Qualia personal es uno de los hitos iniciales más importantes. Te brinda un lugar confiable para reagruparte y construir a su alrededor."
+          "title": "Revisa el DLC de la banda sonora por separado",
+          "description": "La banda sonora se vende como un DLC independiente, así que decide si tu grupo la necesita antes de pagar para evitar complementos innecesarios."
         },
         {
-          "title": "Usa Osmio para progresar rápido al inicio",
-          "description": "El Osmio es uno de los materiales iniciales más útiles. Una ruta inicial popular es combinar Osmio con palos para fabricar un Pico de Escarcha para minar rápido."
+          "title": "Compara el valor del paquete antes de comprar",
+          "description": "Si quieres tanto el juego como la banda sonora, compara el precio del paquete frente a las compras individuales e incluye los descuentos de lanzamiento activos."
         },
         {
-          "title": "Registra las buenas fusiones",
-          "description": "Lleva un registro de las combinaciones exitosas en tu diario. Lucid Blocks tiene muchas rutas de fusión posibles, por lo que anotar los resultados útiles ahorra mucho tiempo."
+          "title": "Comprueba el contenido de los paquetes de varios juegos",
+          "description": "Algunos paquetes incluyen otros títulos de TENSTACK. Confirma si tu grupo solo quiere este juego o un paquete de catálogo más amplio."
+        },
+        {
+          "title": "Sigue el historial de precios para elegir el mejor momento",
+          "description": "Usa los datos de tendencias de SteamDB para ver los mínimos recientes y decidir si comprar ahora o esperar al próximo ciclo de ofertas."
         }
       ],
       "quickTips": [
-        "Apotheosis no requiere una lista de recetas fija.",
-        "La generación de mundo infinito significa que moverte hacia arriba o hacia lo profundo puede revelar materiales completamente diferentes.",
-        "Las herramientas de movimiento y el equipo de utilidad se convierten en una gran mejora de calidad de vida una vez que comienzas a desbloquearlos.",
-        "Perderse al principio es normal, pero las herramientas útiles, el almacenamiento y las opciones de movimiento crecen como bola de nieve rápidamente una vez que tus primeras buenas fusiones empiezan a funcionar."
+        "Los descuentos de lanzamiento de Steam pueden terminar pronto, así que verifica las fechas antes de aconsejar la compra.",
+        "Las páginas de los paquetes suelen actualizarse tras el lanzamiento; actualiza antes del pago final.",
+        "Para jugar en equipo, prioriza que todos tengan el juego base antes que los DLC opcionales.",
+        "Guarda en marcadores tanto la tienda de Steam como las páginas de SteamDB para seguir futuros periodos de descuento."
       ]
     },
     "lucidBlocksApotheosisCrafting": {
-      "title": "Artesanía de Apotheosis en Lucid Blocks",
+      "title": "Resumen de jugabilidad de Gamble With Your Friends",
       "displayType": "cards",
-      "intro": "Apotheosis es el sistema de fusión sin restricciones del juego. En lugar de memorizar un libro de recetas tradicional, combinas materiales, observas el resultado y construyes tu propio conocimiento de artesanía con el tiempo.",
+      "intro": "Gamble With Your Friends es un casino crawler cooperativo donde una cuenta compartida y una deuda común definen cada decisión de piso en piso.",
       "cards": [
         {
-          "name": "Fusión de forma libre",
-          "description": "Apotheosis te permite fusionar diferentes objetos sin necesidad de seguir una lista de recetas fija."
+          "name": "Cooperativo en línea de 1 a 6 jugadores",
+          "description": "Las partidas permiten jugar en solitario o con un grupo completo, pero el ciclo principal está diseñado para la comunicación del equipo bajo la presión de la cuota."
         },
         {
-          "name": "Múltiples resultados útiles",
-          "description": "Diferentes materiales suelen orientarse hacia ciertos resultados. Los descubrimientos de la comunidad muestran que insumos similares pueden derivar en herramientas prácticas, almacenamiento o mejoras de combate."
+          "name": "Economía de fondos compartidos",
+          "description": "Cada apuesta se extrae de una sola cuenta, por lo que los all-ins imprudentes perjudican a todo el equipo en lugar de a un solo jugador."
         },
         {
-          "name": "Artesanía basada en el diario",
-          "description": "La mejor manera de aprender Apotheosis es registrar tus combinaciones exitosas. Tu diario se convertirá rápidamente en tu propia referencia de artesanía."
+          "name": "Días de cuota de 5 minutos",
+          "description": "Cada día es corto y tenso: alcanza la cuota antes de que expire el tiempo, o la partida se quedará atrás de inmediato."
         },
         {
-          "name": "Fusiones iniciales probadas por la comunidad",
-          "description": "Ejemplos iniciales populares incluyen Osmio más Palo para un Pico de Escarcha, Palo más Apéndice de Tungsteno para Azrael, y Azrael más Magnetita para el Estoque de Zarcillo."
+          "name": "Progresión de pisos y finales",
+          "description": "La partida asciende por pisos temáticos y se ramifica en múltiples resultados basados en el control de riesgos y la ejecución del equipo."
         }
       ],
       "milestones": [
-        "Fusionar un objeto",
-        "Fusionar una alimaña",
-        "Fusionar un artefacto divino"
+        "1-6 jugadores en línea",
+        "Ciclo de deuda compartida",
+        "4 pisos de casino",
+        "3 finales"
       ]
     },
     "lucidBlocksToolsAndWeapons": {
-      "title": "Herramientas y armas de Lucid Blocks",
+      "title": "Guía para principiantes de Gamble With Your Friends",
       "displayType": "itemCards",
-      "intro": "Lucid Blocks mezcla equipo de utilidad oficial con armas iniciales descubiertas por la comunidad. La mejor configuración suele ser una mezcla de minería rápida, travesía segura y una opción de combate confiable.",
+      "intro": "Comienza con un plan de equipo sencillo y evita la volatilidad temprana. La mayoría de las primeras partidas fallidas se deben a apuestas descoordinadas, no a la mala suerte.",
       "items": [
         {
-          "name": "Pico de Escarcha",
-          "type": "Herramienta de minería",
-          "description": "Un pico inicial rápido y económico hecho de Osmio y Palo. Los jugadores lo usan para acelerar la recolección inicial de materiales."
+          "name": "Plan de sala antes de la cola",
+          "type": "Paso 1",
+          "description": "Asigna a un encargado de actualizar los fondos, uno para vigilar el cronómetro y un líder de objetos antes de comenzar el primer día."
         },
         {
-          "name": "Azrael",
-          "type": "Arma inicial",
-          "description": "Una ruta práctica para un arma inicial fabricada con un Palo y un Apéndice de Tungsteno."
+          "name": "Elige un objetivo de objeto",
+          "type": "Paso 2",
+          "description": "No desperdicies tickets en compras aleatorias. Elige una ruta de objetos que apoye tus dos primeros pisos."
         },
         {
-          "name": "Estoque de Zarcillo",
-          "type": "Arma mejorada",
-          "description": "Una continuación más fuerte creada al combinar Azrael con Magnetita. Es una de las rutas de combate inicial-media más útiles compartidas por los jugadores."
+          "name": "Empieza en mesas familiares",
+          "type": "Paso 3",
+          "description": "Usa mesas de apertura estables que tu grupo entienda para que todos puedan sincronizar el tamaño y el tiempo de las apuestas."
         },
         {
-          "name": "__PROTECTED_6a765cb2__",
-          "type": "Herramienta de movilidad",
-          "description": "Un objeto de travesía oficial que mejora enormemente el movimiento y la exploración vertical."
+          "name": "Usa calibración de apuestas pequeñas",
+          "type": "Paso 4",
+          "description": "Abre con apuestas pequeñas para probar el ritmo, luego auméntalas solo después de que el equipo acuerde el ritmo de fondos objetivo."
         },
         {
-          "name": "__PROTECTED_163b9bec__",
-          "type": "Herramienta de movilidad",
-          "description": "Un objeto de movimiento oficial que ayuda a cubrir terreno de forma más segura y eficiente."
+          "name": "Anuncia cada apuesta grande en voz alta",
+          "type": "Paso 5",
+          "description": "Las apuestas importantes siempre deben anunciarse primero para evitar all-ins simultáneos de diferentes jugadores."
         },
         {
-          "name": "Varita de Bola",
-          "type": "Arma de utilidad",
-          "description": "Un objeto de utilidad a distancia oficial que expande tus opciones de combate y acertijos."
+          "name": "Protege los fondos cuando la cuota esté lista",
+          "type": "Paso 6",
+          "description": "Una vez que la cuota esté al alcance, cambia al modo de preservación y evita mesas innecesarias de alta volatilidad."
         },
         {
-          "name": "Equipo de buceo",
-          "type": "Equipo de travesía",
-          "description": "Un objeto de utilidad oficial para llegar a áreas que de otro modo ralentizarían la exploración."
+          "name": "Usa jugadas arriesgadas solo bajo presión",
+          "type": "Paso 7",
+          "description": "Recurre a líneas de recuperación de alto riesgo solo cuando la presión del tiempo sea real y las opciones de respaldo se hayan agotado."
         },
         {
-          "name": "Explosivos",
-          "type": "Daño de utilidad",
-          "description": "Destacados oficialmente como parte del conjunto de herramientas principal y útiles para atravesar amenazas u obstáculos."
+          "name": "Analiza cada día rápidamente",
+          "type": "Paso 8",
+          "description": "Revisa qué elecciones de mesa funcionaron, luego ajusta el tiempo de los objetos y los límites de riesgo antes del siguiente piso."
         }
       ]
     },
     "lucidBlocksStorageAndInventory": {
-      "title": "Almacenamiento e inventario de Lucid Blocks",
+      "title": "Multijugador cooperativo de Gamble With Your Friends",
       "displayType": "solutionCards",
-      "intro": "La presión del inventario comienza temprano en Lucid Blocks, por lo que construir almacenamiento debería ser uno de tus primeros objetivos. Ya destacan varias soluciones probadas por jugadores reales.",
+      "intro": "El multijugador es prioritario para amigos: la calidad de la configuración de la sala importa tanto como las decisiones durante la partida. Usa configuraciones de anfitrión y privacidad consistentes para sesiones más fluidas.",
       "solutions": [
         {
-          "name": "Cubo de Almacenamiento",
-          "role": "Almacenamiento tipo cofre",
-          "description": "Los Cubos de Almacenamiento son una de las soluciones prácticas más tempranas y los jugadores los tratan como el contenedor principal tipo cofre del juego."
+          "name": "Sala solo para amigos o solo por invitación",
+          "role": "Privacidad de la sala",
+          "description": "Elige un modo de privacidad explícito antes de las invitaciones para que las uniones aleatorias no interrumpan la configuración de roles y la planificación de objetos."
         },
         {
-          "name": "Gabinete",
-          "role": "Almacenamiento de base simple",
-          "description": "Los gabinetes son otra opción de almacenamiento confirmada. Una receta inicial compartida usa 1 de Madera cortada y 1 de Cuerda."
+          "name": "Anfitrión con la conexión más fuerte",
+          "role": "Regla del anfitrión",
+          "description": "El anfitrión más estable debe crear la sala para reducir problemas de desincronización y reconexión durante las rondas de alta presión."
         },
         {
-          "name": "Qualia personal",
-          "role": "Centro de almacenamiento a largo plazo",
-          "description": "Una vez desbloqueada, tu Qualia personal se convierte en un lugar natural para organizar materiales, fabricar en paz y expandir la configuración de tu base."
+          "name": "Invitar a través de amigos de Steam",
+          "role": "Flujo de unión",
+          "description": "Usa la lista de amigos de Steam para unirse rápido, luego verifica que todos carguen antes de que comience el primer día de cuota."
         },
         {
-          "name": "Seguimiento en el diario",
-          "role": "Eficiencia de inventario",
-          "description": "Registrar combinaciones útiles en tu diario reduce el desperdicio de materiales y facilita mucho la gestión del inventario."
+          "name": "Establece reglas de voz y avisos",
+          "role": "Comunicaciones de equipo",
+          "description": "Define avisos cortos para el tamaño de la apuesta, puntos de control del tiempo y jugadas arriesgadas de emergencia para mantener las comunicaciones limpias."
+        },
+        {
+          "name": "Usa Discord para reunir al grupo",
+          "role": "Búsqueda de compañeros",
+          "description": "Los canales oficiales de la comunidad ayudan a completar grupos rápidamente cuando tu lista de amigos de Steam es corta."
+        },
+        {
+          "name": "Vuelve a crear la sala tras cambios de configuración",
+          "role": "Solución de problemas",
+          "description": "Si el estado de privacidad o de invitación se comporta de forma inconsistente, vuelve a crear la sala una vez para aplicar la configuración correctamente."
         }
       ],
       "managementTips": [
-        "Prioriza una opción de almacenamiento confiable antes de acumular botines raros.",
-        "Construye alrededor de tu Qualia personal una vez que esté disponible.",
-        "Mantén separados los materiales de artesanía, las herramientas de combate y el equipo de movimiento para que las mejoras sean más fáciles de planificar.",
-        "Usa tu diario como parte de la gestión del inventario, no solo para descubrir recetas."
+        "La falta de emparejamiento público significa que la calidad de los compañeros determina directamente la estabilidad de la partida.",
+        "Mantén la privacidad de la sala estricta cuando practiques rutas de estrategia de alto riesgo.",
+        "Un anfitrión estable en todas las sesiones mejora la consistencia de la reconexión.",
+        "Usa el mismo vocabulario de avisos en cada partida para reducir el caos bajo la presión del tiempo."
       ]
     },
     "lucidBlocksQualiaAndBaseBuilding": {
-      "title": "Qualia y construcción de bases en Lucid Blocks",
-      "displayType": "cards",
-      "intro": "La Qualia es uno de los hitos de progresión más importantes en Lucid Blocks. Te brinda un espacio personal para reagruparte, almacenar materiales y convertir gradualmente el progreso de exploración en una verdadera base de operaciones.",
-      "cards": [
+      "title": "Fecha de lanzamiento y metadatos de Steam de Gamble With Your Friends",
+      "displayType": "table",
+      "intro": "Gamble With Your Friends es un juego para PC en Steam lanzado por TENSTACK. Usa esta tabla de metadatos para consultar detalles de lanzamiento, ID de la aplicación, plataforma y estado de lanzamiento.",
+      "items": [
         {
-          "name": "Qualia personal",
-          "description": "Desbloquear una Qualia es un hito inicial que te da un lugar más confiable al cual regresar mientras exploras el mundo exterior."
+          "label": "Fecha de lanzamiento",
+          "value": "1 de mayo de 2026",
+          "detail": "Steam indica que la fecha de lanzamiento pública es el 1 de mayo de 2026."
         },
         {
-          "name": "Construcción centrada en el almacenamiento",
-          "description": "Muchos jugadores comienzan usando su Qualia como un centro de almacenamiento antes de convertirla en una base más grande con espacios organizados para artesanía y construcción."
+          "label": "Hora de lanzamiento en Steam",
+          "value": "1 de mayo de 2026, 18:01:55 UTC",
+          "detail": "SteamDB registra esta marca de tiempo de lanzamiento para el App ID 3892270."
         },
         {
-          "name": "Construcción creativa de hogares",
-          "description": "Lucid Blocks admite la construcción creativa, y los jugadores ya están usando los espacios de Qualia para crear casas y diseños personalizados."
+          "label": "Steam App ID",
+          "value": "3892270",
+          "detail": "Usa este ID para enlaces de la tienda de Steam, búsquedas en SteamDB, logros y widgets."
         },
         {
-          "name": "Centro de progresión",
-          "description": "Una base sólida te ayuda a separar el botín de exploración, los materiales de artesanía, las semillas, las herramientas y el equipo de movilidad para planificar mejor tus próximas mejoras."
+          "label": "Estado de lanzamiento actual",
+          "value": "Lanzado",
+          "detail": "SteamDB marca actualmente el juego como lanzado."
+        },
+        {
+          "label": "Desarrollador",
+          "value": "SkyBrave, blazitt, Gevizz, Kiwick",
+          "detail": "Estos desarrolladores figuran en la página oficial de Steam."
+        },
+        {
+          "label": "Distribuidor",
+          "value": "TENSTACK",
+          "detail": "TENSTACK figura como el distribuidor y propietario de la franquicia."
+        },
+        {
+          "label": "Plataforma",
+          "value": "PC / Windows en Steam",
+          "detail": "SteamDB indica que Windows es el sistema operativo compatible."
+        },
+        {
+          "label": "Géneros de Steam",
+          "value": "Aventura, Indie, Simulación",
+          "detail": "Steam categoriza el juego bajo Aventura, Indie y Simulación."
+        },
+        {
+          "label": "Tipo de juego principal",
+          "value": "Casino crawler cooperativo en línea de 1 a 6 jugadores",
+          "detail": "Los jugadores comparten una cuenta bancaria y una deuda mientras suben por una torre de casino de cuatro pisos."
+        },
+        {
+          "label": "Cantidad de logros",
+          "value": "55 logros de Steam",
+          "detail": "Tanto la tienda de Steam como la comunidad de Steam enumeran 55 logros."
+        },
+        {
+          "label": "Tiempo de juego y finales",
+          "value": "Alrededor de 2-3 horas con 3 finales",
+          "detail": "Steam describe el juego como una experiencia cooperativa digerible con tres finales."
         }
-      ],
-      "highlights": [
-        "Entrar en una qualia",
-        "Almacenar materiales de forma segura",
-        "Expandir de la utilidad a la decoración",
-        "Usar el espacio de la base para apoyar la artesanía y el cultivo"
       ]
     },
     "lucidBlocksWorldRegions": {
-      "title": "Regiones del mundo de Lucid Blocks",
-      "displayType": "regionCards",
-      "intro": "Lucid Blocks utiliza generación de mundo infinito, por lo que los jugadores siguen descubriendo nuevos entornos y estructuras. Algunos lugares con nombre ya aparecen en los logros y en las discusiones de la comunidad.",
-      "regions": [
+      "title": "Estrategia de cuota de Gamble With Your Friends",
+      "displayType": "steps",
+      "intro": "Cada día de casino dura 5 minutos y cada jugador gasta de un banco compartido. Supera la cuota primero, luego elige cuánto riesgo puede permitirse tu equipo.",
+      "steps": [
         {
-          "name": "Fog Meadow",
-          "type": "Área destacada por la comunidad",
-          "description": "Fog Meadow ya es conocida entre los jugadores como un área tensa asociada con amenazas ocultas y encuentros peligrosos."
+          "title": "Establece primero la regla del banco compartido",
+          "body": "Una sola cuenta bancaria y una sola deuda significan que cada apuesta grande afecta a todo el equipo. Decidid en el lobby quién puede realizar apuestas grandes y quién vigila la presión del tiempo.",
+          "action": "Usa a un encargado para apuestas grandes, uno para vigilar el cronómetro y otro para llevar objetos.",
+          "avoid": "No permitas que todos los jugadores apuesten libremente al mismo tiempo."
         },
         {
-          "name": "Línea ley de Tiamana",
-          "type": "Punto de referencia de descubrimiento",
-          "description": "La línea ley de tiamana es lo suficientemente importante como para tener su propio hito de logro, lo que la convierte en uno de los descubrimientos mundiales con nombre más claros hasta ahora."
+          "title": "Trata el día de 5 minutos como un sprint",
+          "body": "El tiempo del día es corto, por lo que saltar de mesa en mesa sin motivo consume el recurso más valioso. Elegid una mesa inicial antes de que comience la partida.",
+          "action": "Elegid la mesa de apertura con antelación y moveos solo con el acuerdo del equipo.",
+          "avoid": "No perdáis el primer minuto debatiendo dónde jugar."
         },
         {
-          "name": "Clonaqualia",
-          "type": "Espacio de construcción",
-          "description": "Los jugadores ya están usando Clonaqualia como un lugar para construir casas, almacenar materiales y experimentar con diseños más permanentes."
+          "title": "Asegura la cuota antes de buscar jugadas destacadas",
+          "body": "El patrón más seguro es superar la cuota y luego decidir si ir a por logros, pisos superiores o multiplicadores más grandes.",
+          "action": "Haced una pausa una vez superada la cuota y poneos de acuerdo sobre el siguiente riesgo.",
+          "avoid": "No busquéis remontadas personales con el dinero compartido."
         },
         {
-          "name": "Ciénaga de Esencia",
-          "type": "Área de recolección",
-          "description": "La Ciénaga de Esencia está siendo compartida por los jugadores como una ubicación útil para recolectar recursos, especialmente para luchar contra slimes y ganar experiencia."
+          "title": "Usa juegos sencillos para el control inicial del capital",
+          "body": "Los juegos del Piso 1 como la Ruleta, Blackjack, Carrera de patos, Tragaperras, Craps callejero y la Rueda de la fortuna son mesas de entrenamiento ideales para el ritmo del equipo.",
+          "action": "Deja que un jugador lidere las reglas complejas mientras el equipo protege el ritmo del capital.",
+          "avoid": "No hagáis apuestas máximas en juegos que vuestro equipo aún no domina."
+        },
+        {
+          "title": "Gasta Tickets en objetos que cambien la partida",
+          "body": "Los Tickets son más efectivos cuando se vinculan a un plan de mesa. Decidid quién lleva cada objeto y exactamente cuándo debe usarse.",
+          "action": "Antes de comprar, confirmad el dueño, la mesa objetivo y el momento de uso.",
+          "avoid": "No compréis objetos al azar sin un plan de juego."
+        },
+        {
+          "title": "Avanza a pisos superiores solo con un colchón",
+          "body": "El casino tiene cuatro pisos temáticos, y los pisos avanzados introducen oscilaciones mayores y castigos más severos por errores.",
+          "action": "Llevad dinero extra, apoyo de objetos y un objetivo claro antes de subir al Piso 3 o al Piso 4.",
+          "avoid": "No improviséis en los últimos pisos con todo el banco compartido."
+        },
+        {
+          "title": "Detente después de que el equipo gane el día",
+          "body": "Saber parar es parte de ganar. Si la cuota está asegurada y queda poco tiempo, preservar el banco suele ser mejor que forzar otra apuesta de alto riesgo.",
+          "action": "Estableced el punto de parada antes de abrir otra mesa.",
+          "avoid": "No tratéis una victoria afortunada como una razón para duplicar el riesgo de nuevo."
         }
       ]
     },
     "lucidBlocksCreaturesAndEnemies": {
-      "title": "Criaturas y enemigos de Lucid Blocks",
-      "displayType": "creatureCards",
-      "intro": "Lucid Blocks mezcla criaturas surreales con peligros reales. Las descripciones oficiales y las publicaciones de la comunidad apuntan a un mundo lleno de vida extraña, amenazas hostiles y algunos encuentros destacados que los jugadores recuerdan rápidamente.",
-      "creatures": [
+      "title": "Guía de pisos de Gamble With Your Friends",
+      "displayType": "tierGrid",
+      "intro": "La torre del casino tiene cuatro pisos temáticos con distribuciones de mesas aleatorias. Este mapa de pisos combina grupos de juegos, objetivos de logros y enfoque práctico para el equipo en cada etapa.",
+      "floors": [
         {
-          "name": "Maniquíes",
-          "role": "Enemigo hostil",
-          "description": "Los maniquíes son uno de los enemigos nombrados oficialmente en el mundo y parte del catálogo de amenazas surreales del juego."
+          "tier": "Piso 1",
+          "role": "Piso de aprendizaje y control inicial de capital",
+          "gamePool": [
+            "Ruleta",
+            "Carrera de patos",
+            "Rueda de la fortuna",
+            "Craps callejero",
+            "Blackjack",
+            "Máquina tragaperras"
+          ],
+          "achievementGoals": [
+            "Todo al rojo: Apuesta mucho dinero en la Ruleta.",
+            "¡¡¡YARLL!!!: Apuesta por YARL y gana en la Carrera de patos.",
+            "Gira la rueda: Gana 3 partidas de Rueda de la fortuna con apuestas altas.",
+            "7 de la suerte: Saca un 7 en tu primer lanzamiento de Craps callejero.",
+            "Movimiento arriesgado: Gana al Blackjack con una mano inferior a 10.",
+            "Racha sin pasarse: Gana 4 partidas de Blackjack seguidas.",
+            "Cazador de botes: Gana con un 10X en la Máquina tragaperras."
+          ],
+          "teamPlan": "Usa el Piso 1 para consolidar el ritmo de comunicación, aprender las mesas y establecer reglas de límite de pérdidas antes de realizar apuestas mayores."
         },
         {
-          "name": "Geles blandos",
-          "role": "Enemigo hostil",
-          "description": "Los geles blandos son otro tipo de enemigo nombrado oficialmente y ayudan a definir el extraño estilo biológico del juego."
+          "tier": "Piso 2",
+          "role": "Primer piso de juegos especializados",
+          "gamePool": [
+            "Cruce de pingüinos",
+            "Keno",
+            "Crash",
+            "HiLo",
+            "Plinko",
+            "Rueda del dinero"
+          ],
+          "achievementGoals": [
+            "Cena de pingüino para el ganador: Gana al menos 3X dos veces seguidas en Cruce de pingüinos.",
+            "En el clavo: Apuesta mucho dinero en el Keno.",
+            "Prueba de codicia: Gana al menos 10X en Crash.",
+            "Lanza las probabilidades: Obtén muchos beneficios en HiLo.",
+            "Caída limpia: Gana 24X en Plinko.",
+            "Racha de giros: Gana 3 partidas de Rueda del dinero con apuestas altas seguidas."
+          ],
+          "teamPlan": "Pasa aquí con apoyo de objetos y un plan fijo antes de tocar mesas de alta varianza como Crash, Plinko o la Rueda del dinero."
         },
         {
-          "name": "Seres de dimensiones superiores",
-          "role": "Enemigo hostil",
-          "description": "Estos seres se presentan como parte del catálogo de enemigos más abstractos e inquietantes del mundo."
+          "tier": "Piso 3",
+          "role": "Piso de preparación para logros de alto riesgo",
+          "gamePool": [
+            "Cruce de pingüinos",
+            "Rueda de la fortuna",
+            "Craps callejero",
+            "Torre del dragón",
+            "Poker 1P",
+            "Buscaminas",
+            "HiLo"
+          ],
+          "achievementGoals": [
+            "Monstruo del tráfico: Gana al menos 4X en Cruce de pingüinos.",
+            "Sigue girando: Gasta mucho dinero en la Rueda de la fortuna.",
+            "Lanzador natural: Gana al Craps callejero durante la fase de puntos.",
+            "Paso al fuego: Pierde 4 partidas de Torre del dragón seguidas.",
+            "Cara de póker: Gana al Poker 1P sin bloquear cartas, con una pareja o mejor.",
+            "Limpieza perfecta: Gana al menos 20X en Buscaminas.",
+            "Sin lanzamientos seguros: Gana 10X en HiLo."
+          ],
+          "teamPlan": "Elegid un objetivo principal por partida y evitad saltar entre mesas desconocidas de alta presión."
         },
         {
-          "name": "Arañas colosales",
-          "role": "Amenaza mayor",
-          "description": "Las arañas son uno de los enemigos más temidos de inmediato en las discusiones de la comunidad y son claramente un peligro memorable."
-        },
-        {
-          "name": "__PROTECTED_26ee183b__",
-          "role": "Criatura con nombre",
-          "description": "__PROTECTED_26ee183b__ es lo suficientemente notable como para tener su propio logro, lo que lo convierte en uno de los encuentros con criaturas nombradas más claros del juego."
-        },
-        {
-          "name": "Alimañas adorables",
-          "role": "Criatura interactuable",
-          "description": "Las alimañas no solo son parte de la progresión de fusión, también se les puede cambiar el nombre, dándoles un papel más personal que a los enemigos estándar."
-        },
-        {
-          "name": "Criatura blasfema",
-          "role": "Amenaza de élite",
-          "description": "La criatura blasfema está vinculada a un logro de combate dedicado, lo que la marca como un encuentro enemigo significativo."
+          "tier": "Piso 4",
+          "role": "Piso de empuje final y logros raros",
+          "gamePool": [
+            "Ruleta",
+            "Cruce de pingüinos",
+            "Keno",
+            "Plinko",
+            "Blackjack",
+            "Crash",
+            "Torre del dragón",
+            "Carrera de patos",
+            "Buscaminas",
+            "Rueda del dinero"
+          ],
+          "achievementGoals": [
+            "Bola en movimiento: Gasta mucho dinero en la Ruleta.",
+            "Sin vacilaciones: Gasta mucho dinero en Cruce de pingüinos.",
+            "Marcado para ganar: Obtén muchos beneficios en el Keno.",
+            "Directo hacia abajo: Pierde 7 partidas de Plinko seguidas.",
+            "Quiebra-casinos: Gana mucho dinero al Blackjack.",
+            "Salida segura: Gana al Crash 4 veces seguidas.",
+            "A prueba de fuego: Gana al menos 3X tres veces seguidas en la Torre del dragón.",
+            "Cua irrefrenable: Gana la Carrera de patos 2 veces seguidas.",
+            "Sin detonaciones: Gana 5X tres veces seguidas en Buscaminas.",
+            "Cuña de alto riesgo: Pierde 5 partidas seguidas en la Rueda del dinero."
+          ],
+          "teamPlan": "Usa el Piso 4 solo para empujes finales planificados después de haber acumulado un colchón de capital y asegurado el apoyo de objetos."
         }
       ]
     },
     "lucidBlocksMobilityGear": {
-      "title": "Equipo de movilidad de Lucid Blocks",
-      "displayType": "itemCards",
-      "intro": "Las mejoras de movimiento son uno de los mayores saltos en la calidad de vida en Lucid Blocks. Una vez que desbloqueas tus primeras herramientas de travesía, la exploración se vuelve más rápida, segura y mucho más gratificante.",
+      "title": "Gamble With Your Friends Juegos de Azar",
+      "displayType": "table",
+      "intro": "Steam destaca 17 juegos de azar. Esta lista se centra en los juegos más vinculados a la progresión de pisos, los logros y la planificación estratégica del equipo.",
       "items": [
         {
-          "name": "__PROTECTED_6a765cb2__",
-          "type": "Herramienta de travesía",
-          "description": "El gancho es uno de los hitos de movimiento más claros del juego y tiene su propio logro dedicado."
+          "game": "Ruleta",
+          "floors": [
+            "Piso 1",
+            "Piso 4"
+          ],
+          "achievementTargets": [
+            "Todo al rojo",
+            "Bola en movimiento"
+          ],
+          "howToUse": "Úsala para avances coordinados simples cuando el equipo esté de acuerdo con el tamaño de la entrada y el punto de detención."
         },
         {
-          "name": "Guante planeador",
-          "type": "Movilidad aérea",
-          "description": "El guante planeador permite un viaje mucho más fluido y es otro hito importante de progresión con su propio logro."
+          "game": "Carrera de patos",
+          "floors": [
+            "Piso 1",
+            "Piso 4"
+          ],
+          "achievementTargets": [
+            "¡¡¡YARLL!!!",
+            "Cuac imparable"
+          ],
+          "howToUse": "Fácil de leer, pero las apuestas repetidas rápidamente pueden agotar los fondos compartidos sin reglas estrictas de límite."
         },
         {
-          "name": "__PROTECTED_163b9bec__",
-          "type": "Herramienta de travesía",
-          "description": "Los planeadores abeja se destacan oficialmente como parte del conjunto de herramientas de movimiento del juego para cubrir terreno de manera más eficiente."
+          "game": "Blackjack",
+          "floors": [
+            "Piso 1",
+            "Piso 4"
+          ],
+          "achievementTargets": [
+            "Movimiento arriesgado",
+            "Racha sin pasarse",
+            "Rompe la banca"
+          ],
+          "howToUse": "Mejor con un líder que tome las decisiones de pedir o plantarse para evitar llamadas contradictorias del equipo."
         },
         {
-          "name": "Varita de Bola",
-          "type": "Equipo de utilidad",
-          "description": "Las varitas de bola son una de las herramientas especiales destacadas oficialmente y expanden la forma en que te mueves o interactúas con el mundo."
+          "game": "Máquina tragaperras",
+          "floors": [
+            "Piso 1"
+          ],
+          "achievementTargets": [
+            "Cazador de botes"
+          ],
+          "howToUse": "Usa ventanas de apuesta más pequeñas o apoyo de objetos cuando busques el objetivo de 10X."
         },
         {
-          "name": "Equipo de buceo",
-          "type": "Equipo de exploración",
-          "description": "El equipo de buceo figura oficialmente como parte del conjunto de utilidad principal para llegar a áreas que de otro modo serían más difíciles de explorar."
+          "game": "Dados callejeros",
+          "floors": [
+            "Piso 1",
+            "Piso 3"
+          ],
+          "achievementTargets": [
+            "Siete de la suerte",
+            "Tirador natural"
+          ],
+          "howToUse": "Asigna a un lanzador y a un guía para que el equipo mantenga el ritmo y evite errores por prisas."
         },
         {
-          "name": "Explosivos",
-          "type": "Daño de utilidad",
-          "description": "Los explosivos están destacados oficialmente y vinculados a un hito de logro, lo que los hace parte de la progresión de utilidad principal del juego."
+          "game": "Rueda de la fortuna",
+          "floors": [
+            "Piso 1",
+            "Piso 3"
+          ],
+          "achievementTargets": [
+            "Gira la rueda",
+            "Mantenla girando"
+          ],
+          "howToUse": "Útil para intentos de recuperación y objetivos específicos, pero arriesgada como ruta de cuota predeterminada."
+        },
+        {
+          "game": "Cruce de pingüinos",
+          "floors": [
+            "Piso 2",
+            "Piso 3",
+            "Piso 4"
+          ],
+          "achievementTargets": [
+            "Cena de pingüino para el ganador",
+            "Monstruo del tráfico",
+            "Sin dudar"
+          ],
+          "howToUse": "Apréndelo en el Piso 2 antes de comprometer un presupuesto serio en los pisos finales."
+        },
+        {
+          "game": "Keno",
+          "floors": [
+            "Piso 2",
+            "Piso 4"
+          ],
+          "achievementTargets": [
+            "En el clavo",
+            "Marcado para ganar"
+          ],
+          "howToUse": "Trátalo como un objetivo planificado, no como una decisión impulsiva en la primera mesa."
+        },
+        {
+          "game": "Crash",
+          "floors": [
+            "Piso 2",
+            "Piso 4"
+          ],
+          "achievementTargets": [
+            "Prueba de codicia",
+            "Salida segura"
+          ],
+          "howToUse": "Define los objetivos de retirada antes de cada ronda porque la presión de la codicia está integrada en este juego."
+        },
+        {
+          "game": "HiLo",
+          "floors": [
+            "Piso 2",
+            "Piso 3"
+          ],
+          "achievementTargets": [
+            "Tira las probabilidades",
+            "Sin tiradas seguras"
+          ],
+          "howToUse": "Ideal para jugadores disciplinados que pueden detenerse en el objetivo en lugar de forzar una llamada más."
+        },
+        {
+          "game": "Plinko",
+          "floors": [
+            "Piso 2",
+            "Piso 4"
+          ],
+          "achievementTargets": [
+            "Caída limpia",
+            "Directo hacia abajo"
+          ],
+          "howToUse": "Rápido y de alta varianza, así que compromete solo el dinero que el equipo esté preparado para arriesgar."
+        },
+        {
+          "game": "Rueda del dinero",
+          "floors": [
+            "Piso 2",
+            "Piso 4"
+          ],
+          "achievementTargets": [
+            "Racha de giros",
+            "Cuña de alto riesgo"
+          ],
+          "howToUse": "Necesita un punto de detención estricto y una alineación total del equipo antes de intentos repetidos."
+        },
+        {
+          "game": "Torre del dragón",
+          "floors": [
+            "Piso 3",
+            "Piso 4"
+          ],
+          "achievementTargets": [
+            "Entra en el fuego",
+            "A prueba de llamas"
+          ],
+          "howToUse": "Trátalo como un juego de especialista para los pisos finales en lugar de una opción casual para la cuota."
+        },
+        {
+          "game": "Póker 1P",
+          "floors": [
+            "Piso 3"
+          ],
+          "achievementTargets": [
+            "Cara de póker"
+          ],
+          "howToUse": "Revisa la condición de no bloqueo antes de comprometer grandes apuestas en la ruta de Cara de póker."
+        },
+        {
+          "game": "Buscaminas",
+          "floors": [
+            "Piso 3",
+            "Piso 4"
+          ],
+          "achievementTargets": [
+            "Limpieza perfecta",
+            "Sin detonaciones"
+          ],
+          "howToUse": "Úsalo para aumentos de multiplicadores dedicados una vez que el colchón de fondos y la comprensión de la mesa estén listos."
         }
-      ],
-      "unlockMilestones": [
-        "Dominar un gancho",
-        "Volar con el guante planeador",
-        "Empuñar una varita de proyectiles",
-        "Empuñar un explosivo"
       ]
     },
     "lucidBlocksFarmingAndGrowth": {
-      "title": "Cultivo y crecimiento en Lucid Blocks",
-      "displayType": "mixedCards",
-      "intro": "El crecimiento es parte de la progresión real en Lucid Blocks. El cultivo no se trata solo de plantar y cosechar, sino también de establecer rutas de materiales repetibles que mantengan el flujo de tus herramientas, armas y opciones de artesanía.",
-      "sections": [
+      "title": "Gamble With Your Friends Estrategia de Mejores Mesas",
+      "displayType": "tierGrid",
+      "intro": "Elige las mesas según la presión del tiempo, la disciplina del equipo, el equipamiento de objetos y qué tan claro entiende tu grupo la condición de victoria. La mejor mesa no siempre es la del multiplicador más alto.",
+      "items": [
         {
-          "name": "Progresión de semillas",
-          "description": "Plantar y fertilizar semillas es un hito real en el juego, y cosechar una nuez completamente crecida es parte de la misma ruta de crecimiento."
+          "tier": "S",
+          "label": "Mejores Mesas de Inicio",
+          "tables": [
+            "Ruleta",
+            "Blackjack"
+          ],
+          "floorClues": "La Ruleta aparece en las pistas de logros del Piso 1 y el Piso 4. El Blackjack aparece en las pistas de logros del Piso 1 y el Piso 4.",
+          "risk": "Medio",
+          "bestFor": "Avances rápidos de cuota y toma de decisiones controlada.",
+          "strategy": "Usa a una persona para decidir las jugadas y a otra como apostador principal. La Ruleta es mejor para oscilaciones planificadas simples, mientras que el Blackjack es mejor cuando un jugador entiende cuándo pedir, plantarse y cuándo parar.",
+          "itemSynergy": [
+            "Ficha dorada",
+            "Táser",
+            "Bebida",
+            "Micrófono",
+            "Cámara"
+          ],
+          "avoidWhen": "Evita esto cuando el equipo esté intentando recuperar pérdidas o varios jugadores estén realizando apuestas contradictorias con el banco compartido."
         },
         {
-          "name": "Recolección de materiales",
-          "description": "Un ciclo práctico de recolección inicial es crear Cápsulas de Mercurio, que generan pequeños slimes que sueltan zarcillos y viscosidad para materiales de artesanía repetibles."
+          "tier": "A",
+          "label": "Fuertes con Coordinación",
+          "tables": [
+            "Dados callejeros",
+            "Máquina tragaperras"
+          ],
+          "floorClues": "Los Dados callejeros aparecen en las pistas de logros del Piso 1 y el Piso 3. La Máquina tragaperras aparece en las pistas de logros del Piso 1.",
+          "risk": "Medio a Alto",
+          "bestFor": "Partidas apoyadas por objetos y equipos que pueden seguir un rol claro en la mesa.",
+          "strategy": "Para los Dados callejeros, asigna a un lanzador y a un guía, lee el objetivo antes de tocar los dados y para después del pago planeado. Para la Máquina tragaperras, usa apuestas pequeñas o ventanas de objetos protectores en lugar de jugar a ciegas.",
+          "itemSynergy": [
+            "Táser",
+            "Ficha dorada",
+            "Estatua sagrada",
+            "Sorteo de bonificación",
+            "Seguro"
+          ],
+          "avoidWhen": "Evita esto cuando los jugadores se amontonen sobre los dados, usen las máquinas al mismo tiempo o sigan apostando después de que termine la ventana del objeto."
         },
         {
-          "name": "Sustento de herramientas",
-          "description": "La recolección de recursos se vuelve mucho más fuerte una vez que puedes reunir consistentemente Osmio, fragmentos de vidrio, plantas y materiales de slime para artesanías posteriores."
+          "tier": "B",
+          "label": "Simples Pero Fáciles de Sobrejugar",
+          "tables": [
+            "Carrera de patos",
+            "Rueda de la fortuna",
+            "Rueda del dinero"
+          ],
+          "floorClues": "La Carrera de patos aparece en las pistas de logros del Piso 1 y el Piso 4. Los juegos de ruedas aparecen en las pistas de logros del Piso 1, Piso 2, Piso 3 y Piso 4.",
+          "risk": "Varianza Alta",
+          "bestFor": "Decisiones rápidas, objetivos de logros e intentos de multiplicador de emergencia.",
+          "strategy": "Establece un límite estricto de intentos antes de apostar. La Carrera de patos es fácil de entender, pero las apuestas rápidas repetidas pueden agotar el banco compartido. Los juegos de ruedas deben usarse para una jugada acordada, no para giros de recuperación interminables.",
+          "itemSynergy": [
+            "Estatua sagrada",
+            "Ficha dorada",
+            "Bebida",
+            "Micrófono",
+            "Máquina del tiempo"
+          ],
+          "avoidWhen": "Evita esto cuando la cuota ya esté segura, los jugadores estén frustrados o el grupo siga diciendo 'una más' después de cada fallo."
         },
         {
-          "name": "Rutina de base",
-          "description": "La mejor configuración de cultivo apoya más que solo la comida. Debería abastecer tu almacenamiento, herramientas de movimiento, mejoras de armas y futuros experimentos de fusión."
+          "tier": "C",
+          "label": "Juegos de Prueba de Pisos Superiores",
+          "tables": [
+            "Cruce de pingüinos",
+            "Keno",
+            "Crash",
+            "HiLo",
+            "Plinko"
+          ],
+          "floorClues": "Estos juegos están vinculados a objetivos de logros del Piso 2 en adelante, y varios aparecen de nuevo en el Piso 3 o el Piso 4.",
+          "risk": "Medio a Alto",
+          "bestFor": "Equipos que entienden los tiempos de retirada, los objetivos multiplicadores o las condiciones de fallo de la mesa.",
+          "strategy": "Comienza con apuestas mínimas. Aprende qué cuenta como victoria, cómo retirarse y dónde la mesa puede borrar el dinero antes de realizar apuestas serias.",
+          "itemSynergy": [
+            "Táser",
+            "Ficha dorada",
+            "Máquina del tiempo",
+            "Seguro",
+            "Mejoras de beneficios"
+          ],
+          "avoidWhen": "Evita esto cuando el jugador aún esté aprendiendo los botones o el equipo necesite un progreso de cuota estable."
+        },
+        {
+          "tier": "D",
+          "label": "Mesas de Especialista para el Final",
+          "tables": [
+            "Torre del dragón",
+            "Póker 1P",
+            "Buscaminas"
+          ],
+          "floorClues": "Torre del dragón, Póker 1P y Buscaminas son objetivos de logros de especialista para el Piso 3 y el Piso 4.",
+          "risk": "Alto",
+          "bestFor": "Rutas de logros enfocadas, avances apoyados por objetos y grupos experimentados.",
+          "strategy": "Trata estos como objetivos planificados para los últimos pisos. Asigna a un jugador para aprender las reglas, protege el intento con objetos cuando sea posible y nunca uses la apuesta más grande disponible al primer contacto.",
+          "itemSynergy": [
+            "Máquina del tiempo",
+            "Seguro",
+            "Bebida",
+            "Micrófono",
+            "Ficha dorada"
+          ],
+          "avoidWhen": "Evita esto cuando el grupo no haya dominado los conceptos básicos de los primeros pisos o esté entrando a la mesa solo porque parece nueva."
         }
-      ],
-      "growthMilestones": [
-        "Fertilizar una semilla",
-        "Cosechar una nuez completamente crecida",
-        "Crear ciclos de materiales repetibles",
-        "Convertir el cultivo en progresión a largo plazo"
       ]
     },
     "lucidBlocksBestEarlyUnlocks": {
-      "title": "Mejores desbloqueos iniciales de Lucid Blocks",
-      "displayType": "priorityCards",
-      "intro": "Los desbloqueos iniciales más fuertes son aquellos que mejoran la seguridad, el almacenamiento y el movimiento. En Lucid Blocks, unas pocas mejoras prácticas pueden hacer que el resto del juego sea mucho más fluido.",
-      "priorities": [
+      "title": "Objetos y Tickets de Gamble With Your Friends",
+      "displayType": "itemCards",
+      "intro": "Los tickets no son solo para cosméticos. Deciden qué puede hacer tu equipo antes de que comience el siguiente día de casino de 5 minutos.",
+      "items": [
         {
-          "name": "Qualia personal",
-          "priority": "Esencial",
-          "description": "Tan pronto como obtengas acceso a tu Qualia personal, tu partida se volverá mucho más estable. Actúa como un centro confiable para el almacenamiento, la construcción y el reagrupamiento."
+          "title": "Ficha Dorada",
+          "cost": "4 Tickets",
+          "category": "Objeto de Poder",
+          "useCase": "Otorga un único 'all-in' gratuito, lo que lo convierte en una de las mejores compras de poder iniciales.",
+          "bestTiming": "Úsalo tras elegir la mesa objetivo y verificar si el Taser puede aumentar la apuesta máxima primero.",
+          "avoidWhen": "No lo uses en una mesa aleatoria o antes de que el equipo acuerde el punto de parada."
         },
         {
-          "name": "Pico de Escarcha",
-          "priority": "Muy alta",
-          "description": "Una herramienta de minería inicial rápida y barata hecha de Osmio y Palo. Es una de las mejoras más útiles para acelerar la recolección inicial de recursos."
+          "title": "Taser",
+          "cost": "4 Tickets",
+          "category": "Objeto de Preparación",
+          "useCase": "Úsalo en un teclado numérico para aumentar la apuesta máxima antes de un impulso mayor.",
+          "bestTiming": "Úsalo antes de la Ficha Dorada, apuestas protegidas o una jugada en mesa con mejora de beneficios.",
+          "avoidWhen": "No lo uses antes de elegir la mesa; un teclado incorrecto potenciado desperdicia el combo."
         },
         {
-          "name": "Cubo de Almacenamiento",
-          "priority": "Muy alta",
-          "description": "La presión del inventario comienza pronto, por lo que obtener tu primer contenedor confiable tipo cofre es una mejora importante de calidad de vida."
+          "title": "Estatua Sagrada",
+          "cost": "7 Tickets",
+          "category": "Objeto de Defensa",
+          "useCase": "Evita pérdidas cercanas mientras está activa, lo que la hace ideal para apuestas grupales de repetición rápida.",
+          "bestTiming": "Agrupa a los jugadores cerca de las tragamonedas, la ruleta, juegos de rueda u otra mesa rápida antes de la activación.",
+          "avoidWhen": "No sigas apostando una vez que la ventana de protección termine."
         },
         {
-          "name": "__PROTECTED_6a765cb2__",
-          "priority": "Alta",
-          "description": "El gancho es uno de los hitos de movimiento más claros del juego y rápidamente hace que la exploración sea más rápida y segura."
+          "title": "Bebida",
+          "cost": "5 Tickets",
+          "category": "Mejora de Beneficios",
+          "useCase": "Aumenta los beneficios mientras se está ebrio, pero el jugador aún necesita suficiente control para jugar en la mesa.",
+          "bestTiming": "Dásela al jugador que ya entienda la mesa y esté realizando el impulso planeado.",
+          "avoidWhen": "No se la des al jugador más caótico ni la uses antes de elegir una mesa."
         },
         {
-          "name": "Guante planeador",
-          "priority": "Alta",
-          "description": "El guante planeador añade otro gran impulso a la movilidad y hace que el movimiento a larga distancia sea mucho más eficiente."
+          "title": "Micrófono",
+          "cost": "6 Tickets",
+          "category": "Mejora de Beneficios de Equipo",
+          "useCase": "Aumenta los beneficios cercanos mientras se canta, lo que lo hace mejor cuando los jugadores están agrupados.",
+          "bestTiming": "Úsalo durante una apuesta grupal planificada, una jugada con Ficha Dorada o un impulso en mesas rápidas agrupadas.",
+          "avoidWhen": "No lo actives mientras el equipo esté disperso en diferentes juegos."
         },
         {
-          "name": "Varita de proyectiles o bombas",
-          "priority": "Alta",
-          "description": "Una herramienta a distancia o una opción explosiva te brinda una respuesta más segura ante enemigos peligrosos y encuentros tipo desafío."
+          "title": "Seguro",
+          "cost": "7 Tickets",
+          "category": "Reducción de Pérdidas",
+          "useCase": "Reduce el impacto de una apuesta fallida y combina bien con impulsos arriesgados pero controlados.",
+          "bestTiming": "Úsalo cuando el equipo deba seguir apostando y un intento fallido dañaría gravemente el banco compartido.",
+          "avoidWhen": "No trates el Seguro como permiso para hacer una apuesta máxima a ciegas en una mesa que el jugador no entiende."
+        },
+        {
+          "title": "Pistola de Cuota",
+          "cost": "5 Tickets",
+          "category": "Cuota de Emergencia",
+          "useCase": "Paga el 33% de la cuota por cada parte del cuerpo que desprenda de un disparo, convirtiendo las partes del cuerpo en valor de cuota inmediato.",
+          "bestTiming": "Úsala cuando el tiempo se agote, el equipo esté corto de cuota y el juego normal sea demasiado lento.",
+          "avoidWhen": "No apuntes al jugador que lleva un objeto clave o a un jugador necesario para el día siguiente."
+        },
+        {
+          "title": "Sorteo de Bonificación",
+          "cost": "8 Tickets",
+          "category": "Recolección de Tickets",
+          "useCase": "Obtiene valor en tickets a partir de los beneficios, lo que lo hace más útil una vez que el grupo puede generar ganancias estables.",
+          "bestTiming": "Úsalo en partidas de largo plazo donde el equipo pueda obtener beneficios repetidamente sin arriesgar todo el banco.",
+          "avoidWhen": "No lo compres antes que los objetos básicos de supervivencia si el equipo aún no alcanza la cuota."
+        },
+        {
+          "title": "Carrete del Ángel",
+          "cost": "3 Tickets",
+          "category": "Apuesta de Recuperación",
+          "useCase": "Gira para tener la oportunidad de revertir la última pérdida.",
+          "bestTiming": "Úsalo tras una apuesta fallida significativa o una pérdida que afecte el progreso de la cuota.",
+          "avoidWhen": "No lo desperdicies tras una apuesta mínima insignificante."
+        },
+        {
+          "title": "Carrete del Diablo",
+          "cost": "3 Tickets",
+          "category": "Riesgo de Efecto Nieve",
+          "useCase": "Puede triplicar o perder la última ganancia.",
+          "bestTiming": "Úsalo solo cuando la última ganancia sea lo suficientemente grande como para importar y el equipo acepte el riesgo.",
+          "avoidWhen": "No lo uses tras un resultado afortunado que ya asegure la cuota."
+        },
+        {
+          "title": "Caja Sorpresa",
+          "cost": "4 Tickets",
+          "category": "Objeto Aleatorio",
+          "useCase": "Otorga un objeto aleatorio y puede dar acceso a herramientas de gran valor como la Máquina del Tiempo.",
+          "bestTiming": "Cómprala después de que el equipo ya haya cubierto el objeto principal de supervivencia para el próximo día de casino.",
+          "avoidWhen": "No la compres cuando el equipo necesite un objeto específico para salvar la siguiente partida."
+        },
+        {
+          "title": "Máquina del Tiempo",
+          "cost": "Ruta de la Caja Sorpresa",
+          "category": "Objeto de Recuperación",
+          "useCase": "El Retroceso de Tiempo puede rebobinar hasta 60 segundos, dándole al equipo una segunda oportunidad tras un error grave.",
+          "bestTiming": "Guárdala para un all-in fallido, un mal cobro, un mal resultado en la rueda o un error al final del piso.",
+          "avoidWhen": "No la uses tras una pérdida mínima ni repitas la misma decisión fallida después de rebobinar."
         }
       ]
     },
     "lucidBlocksAchievementTracker": {
-      "title": "Seguimiento de logros de Lucid Blocks",
-      "displayType": "achievementGrid",
-      "intro": "Lucid Blocks tiene actualmente 19 logros de Steam, y se dividen naturalmente en progresión de exploración, artesanía, movilidad, combate y crecimiento.",
-      "groups": [
+      "title": "Guía de Logros de Gamble With Your Friends",
+      "displayType": "tableCards",
+      "intro": "Usa la lista de logros como un mapa del piso. Empieza con los conceptos básicos del Piso 1, luego avanza a los pisos posteriores con apoyo de objetos y hitos monetarios.",
+      "items": [
         {
-          "name": "Exploración",
-          "achievements": [
-            {
-              "title": "__PROTECTED_c973d4a3__ α",
-              "description": "Entrar en una qualia."
-            },
-            {
-              "title": "__PROTECTED_c973d4a3__ γ",
-              "description": "Descubrir una línea ley de tiamana."
-            },
-            {
-              "title": "__PROTECTED_c973d4a3__ δ",
-              "description": "Superar un desafío de tiamana."
-            },
-            {
-              "title": "__PROTECTED_c973d4a3__ ε",
-              "description": "Logro oculto."
-            }
-          ]
+          "category": "Básicos del Piso 1",
+          "count": 10,
+          "recommendedOrder": "Primera ruta de limpieza",
+          "achievementNames": [
+            "Gran Derrochador",
+            "Carrera sin Quiebra",
+            "7 de la Suerte",
+            "Gran Apostador",
+            "Racha de Suerte",
+            "Todo al Rojo",
+            "Cazador de Botes",
+            "Movimiento Arriesgado",
+            "¡¡¡YARLL!!!",
+            "Gira la Ruleta"
+          ],
+          "whatToDo": "Aprende Ruleta, Carrera de Patos, Rueda de la Fortuna, Dados Callejeros, Blackjack y Máquina Tragamonedas con apuestas controladas antes de subir a pisos superiores.",
+          "routeTip": "Buenos objetivos iniciales incluyen 7 de la Suerte, ¡¡¡YARLL!!!, Todo al Rojo, Carrera sin Quiebra, Cazador de Botes, Gran Apostador, Gran Derrochador y Racha de Suerte."
         },
         {
-          "name": "Artesanía e invocación",
-          "achievements": [
-            {
-              "title": "Apotheosis α",
-              "description": "Fusionar un objeto."
-            },
-            {
-              "title": "Apotheosis β",
-              "description": "Fusionar una alimaña."
-            },
-            {
-              "title": "Apotheosis γ",
-              "description": "Fusionar un artefacto divino."
-            },
-            {
-              "title": "Arcángel β",
-              "description": "Invoca tu fe."
-            }
-          ]
+          "category": "Juegos del Piso 2",
+          "count": 9,
+          "recommendedOrder": "Tras la planificación básica de objetos",
+          "achievementNames": [
+            "Gran Derrochador 2",
+            "Prueba de Codicia",
+            "Ganador, Ganador, Cena de Pingüino",
+            "Lanza las Probabilidades",
+            "Gran Apostador 2",
+            "En el Clavo",
+            "Racha de Suerte 2",
+            "Racha de Giros",
+            "Caída Limpia"
+          ],
+          "whatToDo": "Trabaja en los objetivos de Cruce de Pingüinos, Keno, Crash, HiLo, Plinko y Rueda del Dinero después de que el equipo entienda los Tickets y el apoyo de objetos.",
+          "routeTip": "Lleva objetos antes de perseguir objetivos de alta varianza como Prueba de Codicia, Racha de Giros y Caída Limpia."
         },
         {
-          "name": "Movilidad y utilidad",
-          "achievements": [
-            {
-              "title": "Virtud α",
-              "description": "Volar con el guante planeador."
-            },
-            {
-              "title": "Virtud β",
-              "description": "Dominar un gancho."
-            },
-            {
-              "title": "Arcángel α",
-              "description": "Empuñar una varita de proyectiles."
-            },
-            {
-              "title": "Arcángel γ",
-              "description": "Empuñar un explosivo."
-            }
-          ]
+          "category": "Objetivos de Especialista del Piso 3",
+          "count": 10,
+          "recommendedOrder": "Ruta de fase media a tardía",
+          "achievementNames": [
+            "Cara de Póker",
+            "Gran Derrochador 3",
+            "Lanzador Natural",
+            "Monstruo del Tráfico",
+            "Sin Lanzamientos Seguros",
+            "Pisar el Fuego",
+            "Gran Apostador 3",
+            "Racha de Suerte 3",
+            "Barrido Perfecto",
+            "Sigue Girando"
+          ],
+          "whatToDo": "Trata el Piso 3 como un piso de especialistas con objetivos en Dados Callejeros, Cruce de Pingüinos, Torre del Dragón, Póker 1P, Buscaminas, HiLo y la Rueda.",
+          "routeTip": "Elige un objetivo por día. Lanzador Natural requiere jugar en la fase de puntos de Dados Callejeros, mientras que Barrido Perfecto y Cara de Póker deben reservarse para intentos enfocados al final de la partida."
         },
         {
-          "name": "Combate y criaturas",
-          "achievements": [
-            {
-              "title": "Masacre de __PROTECTED_26ee183b__",
-              "description": "Derrotar osos burbuja inocentes."
-            },
-            {
-              "title": "Arcángel δ",
-              "description": "Eliminar una criatura blasfema."
-            },
-            {
-              "title": "__PROTECTED_c973d4a3__ β",
-              "description": "Morir."
-            },
-            {
-              "title": "Dominio γ",
-              "description": "Cambiar el nombre a una alimaña adorable."
-            }
-          ]
+          "category": "Objetivos de Final de Partida del Piso 4",
+          "count": 13,
+          "recommendedOrder": "Impulso de logros al final de la partida",
+          "achievementNames": [
+            "Gran Derrochador 4",
+            "Asalta-casas",
+            "Salida Segura",
+            "Sin Vacilación",
+            "A Prueba de Llamas",
+            "Cua-cua Imparable",
+            "Gran Apostador 4",
+            "Marcado para Ganar",
+            "Racha de Suerte 4",
+            "Sin Detonaciones",
+            "Cuña de Alto Riesgo",
+            "Directo Hacia Abajo",
+            "Bola en Movimiento"
+          ],
+          "whatToDo": "Usa el Piso 4 para dominar mesas de alto riesgo, rachas, logros de grandes apuestas y logros deliberados de cadenas de pérdidas.",
+          "routeTip": "Separa las partidas serias para alcanzar la cuota de los objetivos de pérdida deliberada como Cuña de Alto Riesgo y Directo Hacia Abajo."
         },
         {
-          "name": "Crecimiento y cultivo",
-          "achievements": [
-            {
-              "title": "Dominio α",
-              "description": "Fertilizar una semilla."
-            },
-            {
-              "title": "Dominio β",
-              "description": "Cosechar una nuez completamente crecida."
-            },
-            {
-              "title": "Dominio δ",
-              "description": "Logro oculto."
-            }
-          ]
+          "category": "Hitos de Dinero",
+          "count": 5,
+          "recommendedOrder": "Tras partidas estables de alto valor",
+          "achievementNames": [
+            "MÁS DURO",
+            "MEJOR",
+            "MÁS RÁPIDO",
+            "MÁS FUERTE",
+            "¡EL TRABAJO NUNCA TERMINA!"
+          ],
+          "whatToDo": "Recauda $10M, $100M, $1B, $10B y $100B a lo largo de la escala de hitos monetarios.",
+          "routeTip": "No intentes los hitos más grandes al principio. Se vuelven más realistas una vez que el grupo entiende los pisos altos, los combos de objetos y cuándo detenerse."
+        },
+        {
+          "category": "Generales y Especiales",
+          "count": 5,
+          "recommendedOrder": "Seguimiento por separado",
+          "achievementNames": [
+            "No lo Siento",
+            "La Bendición del Apostador",
+            "Mala Suerte :(",
+            "¡Has llegado a... LA CIMA!",
+            "El Juego Real No Mola."
+          ],
+          "whatToDo": "Gestiona los logros especiales fuera de la ruta normal de piso por piso.",
+          "routeTip": "Mantén los logros de estilo de concienciación y de condiciones especiales separados de los días serios de cuota."
+        },
+        {
+          "category": "Logros de Final",
+          "count": 3,
+          "recommendedOrder": "Ruta de final de juego",
+          "achievementNames": [
+            "¡Déjalo Correr!",
+            "El Fin de la Línea",
+            "...Y Vivieron Felices por Siempre"
+          ],
+          "whatToDo": "Planifica los tres logros finales después de que el equipo entienda la cuota, los Tickets, los objetos y la progresión de pisos.",
+          "routeTip": "Realiza las partidas finales después de que puedas sobrevivir consistentemente a los días sin desperdiciar el banco compartido."
         }
       ]
     },
     "lucidBlocksSingleplayerAndPlatformFAQ": {
-      "title": "Preguntas frecuentes sobre un solo jugador y plataformas de Lucid Blocks",
-      "displayType": "accordion",
-      "intro": "Estas son las preguntas principales sobre plataformas y acceso que los jugadores suelen hacer antes de comprar Lucid Blocks.",
-      "faqs": [
+      "title": "Guía de finales de Gamble With Your Friends",
+      "displayType": "endingAccordion",
+      "intro": "Gamble With Your Friends tiene tres finales vinculados a elecciones de final de partida y logros ocultos de Steam. Considera las partidas para sacar finales como rutas propias, no como algo a perseguir durante tus primeros días de cuota.",
+      "items": [
         {
-          "question": "¿Es Lucid Blocks para un solo jugador?",
-          "answer": "Sí. Lucid Blocks es un juego para un solo jugador."
+          "title": "Resumen de las rutas de los finales",
+          "summary": "La página de Steam indica unas 2-3 horas de juego con 3 finales.",
+          "content": [
+            "Antes de intentar sacar los finales, aprende el ciclo diario de cuota de 5 minutos, el banco compartido, el flujo de recogida de objetos, la economía de partes del cuerpo y la diferencia entre el dinero seguro de la cuota y el dinero extra para apostar.",
+            "Un intento de final limpio comienza en el lobby: asigna un banquero, elige un plan de mesa principal, lleva solo objetos útiles y evita mezclar el progreso del final con la búsqueda aleatoria de logros.",
+            "Realiza partidas de finales tras un progreso estable en el Piso 2+, no durante los primeros días de aprendizaje."
+          ]
         },
         {
-          "question": "¿Está planeado el multijugador o cooperativo?",
-          "answer": "No. No se planea multijugador para el lanzamiento ni para futuras actualizaciones."
+          "title": "¡Que siga la racha!",
+          "summary": "Tema del logro de final oculto: arriésgalo todo y vuelve a ser asquerosamente rico.",
+          "content": [
+            "Descripción del logro: Como un auténtico apostador, lo arriesgaste todo y volviste a ser asquerosamente rico.",
+            "Mejor estilo de ruta: partida avanzada enfocada en la riqueza con una planificación sólida de objetos, apuestas en mesas de alto valor y una decisión clara de seguir apostando cuando el equipo ya tiene mucho dinero.",
+            "Buena preparación: Táser + Ficha Dorada para un 'all-in' planeado, herramientas de beneficio para una mesa que el equipo conozca y la Máquina del Tiempo reservada para una decisión fallida importante."
+          ]
         },
         {
-          "question": "¿Dónde puedo jugar Lucid Blocks?",
-          "answer": "Actualmente está disponible en Steam para Windows."
+          "title": "El fin del camino",
+          "summary": "Tema del logro de final oculto: llegar al límite absoluto del ciclo de apuestas.",
+          "content": [
+            "Descripción del logro: No vas a aprender, ¿verdad?",
+            "Mejor estilo de ruta: independiente de las partidas para hitos de dinero limpio. Mantenlo como un intento de final dedicado para que el equipo no intente proteger logros, rachas de cuotas y el progreso del final al mismo tiempo.",
+            "Buena preparación: entender las mesas de riesgo de los pisos superiores, mantener legible el banco compartido y evitar desperdiciar objetos antes del punto de decisión que define la ruta."
+          ]
         },
         {
-          "question": "¿Cuánto cuesta Lucid Blocks?",
-          "answer": "$9.99 en Steam."
+          "title": "...Y vivieron felices para siempre",
+          "summary": "Tema del logro de final oculto: dejar el juego y empezar una vida nueva.",
+          "content": [
+            "Descripción del logro: Dejaste el juego y empezaste una vida nueva, felicidades.",
+            "Mejor estilo de ruta: partida avanzada estable centrada en la supervivencia, la moderación y en retirarse en lugar de convertir cada día seguro en otra apuesta arriesgada.",
+            "Buena preparación: alcanzar la cuota limpiamente, proteger el banco compartido, evitar intercambios innecesarios de partes del cuerpo y dejar de apostar una vez que la partida tenga suficiente impulso."
+          ]
         },
         {
-          "question": "¿Lucid Blocks es compatible con controles?",
-          "answer": "Sí, pero no se recomienda jugar con control porque los menús no están diseñados para ello."
-        },
-        {
-          "question": "¿Lucid Blocks funciona en Steam Deck?",
-          "answer": "Sí. Proton 9.0 o 9.0.4 es la configuración recomendada habitualmente para Steam Deck."
-        },
-        {
-          "question": "¿Lucid Blocks funciona en Linux?",
-          "answer": "Sí. Se informa que Proton 9.0 funciona bien para Linux y Steam Deck."
-        },
-        {
-          "question": "¿Habrá soporte para Mac o Android?",
-          "answer": "Es posible que sean compatibles en el futuro, pero no son plataformas de lanzamiento actuales."
-        },
-        {
-          "question": "¿Lucid Blocks tiene traducciones?",
-          "answer": "No. Actualmente no hay traducciones planeadas."
-        },
-        {
-          "question": "¿Lucid Blocks seguirá recibiendo actualizaciones?",
-          "answer": "Sí. Se planean algunas actualizaciones de contenido después del lanzamiento, pero no pretenden continuar con un calendario regular indefinido."
+          "title": "Lista de control para la partida del final",
+          "summary": "Usa un plan de final independiente para que el equipo no arruine la partida accidentalmente.",
+          "content": [
+            "Elige un objetivo de final antes de entrar en el día del casino.",
+            "Elige a un apostador principal y a un estratega para las mesas de riesgo.",
+            "Usa objetos de preparación antes que los de beneficio: Táser antes que la Ficha Dorada, agrupamiento antes que la Estatua Sagrada y elección de mesa antes que los potenciadores de ganancias.",
+            "Separa los logros deliberados de cadenas de pérdidas de las partidas serias para los finales.",
+            "Revisa el gráfico de dinero y el estado de los tickets antes de decidir si el día siguiente es para arriesgar o para asegurar la cuota."
+          ]
         }
       ]
     },
     "lucidBlocksSteamDeckAndController": {
-      "title": "Lucid Blocks en Steam Deck y controles",
-      "displayType": "accordion",
-      "intro": "Lucid Blocks puede ejecutarse en Steam Deck, pero la configuración predeterminada puede necesitar ajustes. El teclado y el mouse siguen siendo la opción más fluida para los menús y el juego en general.",
-      "faqs": [
+      "title": "Requisitos del sistema de Gamble With Your Friends",
+      "displayType": "table",
+      "intro": "Gamble With Your Friends es un juego de Steam para PC con Windows con necesidades de almacenamiento modestas pero requisitos claros de CPU, GPU, DirectX y conexión de banda ancha. Compara las especificaciones mínimas y recomendadas antes de tu próxima sesión cooperativa.",
+      "items": [
         {
-          "question": "¿Lucid Blocks funciona en Steam Deck?",
-          "answer": "Sí. Proton 9.0 funciona bien, y Proton 9.0.4 es una solución compartida habitualmente para problemas en Steam Deck."
+          "spec": "Sistema operativo",
+          "minimum": "Windows 10",
+          "recommended": "Windows 11",
+          "note": "Windows es la plataforma de PC compatible indicada para el juego."
         },
         {
-          "question": "¿Qué debo hacer si los controles de Steam Deck no funcionan?",
-          "answer": "Fuerza la compatibilidad y cambia el juego a Proton 9.0.4. Es posible que la configuración predeterminada no acepte correctamente la entrada del control."
+          "spec": "Procesador",
+          "minimum": "Core i5 6600",
+          "recommended": "Intel Core i7 8700",
+          "note": "Se recomienda una CPU más potente para sesiones cooperativas más fluidas y salas de casino con mucha carga física."
         },
         {
-          "question": "¿Lucid Blocks es compatible con controles?",
-          "answer": "Sí, pero no se recomienda jugar con control porque los menús del juego no están diseñados para ello."
+          "spec": "Memoria",
+          "minimum": "8 GB RAM",
+          "recommended": "8 GB RAM",
+          "note": "El objetivo de memoria es el mismo para las configuraciones mínimas y recomendadas."
         },
         {
-          "question": "¿Es posible el soporte para Linux?",
-          "answer": "Sí. Se informa que Proton 9.0 funciona bien para Linux y Steam Deck."
+          "spec": "Gráficos",
+          "minimum": "GTX 970",
+          "recommended": "GTX 1070",
+          "note": "El objetivo de GPU recomendado es superior al mínimo para un juego en 3D más estable."
         },
         {
-          "question": "¿Cuál es la mejor configuración de entrada?",
-          "answer": "El teclado y el mouse son la opción más fluida para la navegación por los menús y el juego general momento a momento."
+          "spec": "DirectX",
+          "minimum": "Versión 11",
+          "recommended": "Versión 12",
+          "note": "Se recomienda DirectX 12, mientras que DirectX 11 figura como mínimo."
+        },
+        {
+          "spec": "Red",
+          "minimum": "Conexión a Internet de banda ancha",
+          "recommended": "Conexión a Internet de banda ancha",
+          "note": "El cooperativo en línea y las salas de amigos de Steam requieren una conexión estable."
+        },
+        {
+          "spec": "Almacenamiento",
+          "minimum": "3 GB de espacio disponible",
+          "recommended": "3 GB de espacio disponible",
+          "note": "El tamaño de instalación es ligero en comparación con la mayoría de los juegos cooperativos modernos para PC."
         }
       ]
     },
     "lucidBlocksSettingsAndAccessibility": {
-      "title": "Ajustes y accesibilidad de Lucid Blocks",
-      "displayType": "settingCards",
-      "intro": "Lucid Blocks ya cuenta con algunos ajustes prácticos y notas de compatibilidad que son importantes de inmediato cuando los jugadores inician el juego por primera vez.",
-      "settings": [
+      "title": "Plataformas y dispositivos móviles de Gamble With Your Friends",
+      "displayType": "accordion",
+      "intro": "Esta sección aclara el alcance oficial de las plataformas, el acceso cooperativo, el estado del juego en solitario y lo que los usuarios de dispositivos móviles deben esperar antes de descargar nada.",
+      "items": [
         {
-          "name": "Ajustes de pantalla",
-          "type": "Opción de comodidad",
-          "description": "Los ajustes de pantalla incluyen una opción que permite a los jugadores ocultar las manos en pantalla."
+          "title": "Plataforma oficial",
+          "summary": "La versión compatible es el lanzamiento para PC con Windows en Steam.",
+          "content": "La tienda de Steam y SteamDB listan el juego como un lanzamiento para PC con soporte para Windows. Las preguntas frecuentes oficiales también indican que el equipo es compatible con PC con Windows en esta etapa.",
+          "status": "PC con Windows a través de Steam"
         },
         {
-          "name": "Compatibilidad de gráficos",
-          "type": "Requisito del sistema",
-          "description": "Se requiere soporte de __PROTECTED_38625270__ para que los gráficos se rendericen correctamente. Los sistemas sin __PROTECTED_38625270__ pueden sufrir cierres inesperados y errores gráficos graves."
+          "title": "Cooperativo en Steam",
+          "summary": "El cooperativo en línea admite de 1 a 6 jugadores a través de Steam.",
+          "content": "El ciclo principal se basa en una cuenta bancaria compartida, la presión de la cuota de deuda y la coordinación entre amigos. La tienda de Steam indica Cooperativo en línea y señala que los jugadores pueden invitar hasta a 5 amigos.",
+          "status": "Cooperativo en línea, hasta 6 jugadores"
         },
         {
-          "name": "Preferencia de entrada",
-          "type": "Configuración de control",
-          "description": "Existe soporte para controles, pero el teclado y el mouse brindan una experiencia más fluida porque los menús no están diseñados para el uso de controles."
+          "title": "Emparejamiento",
+          "summary": "No hay una cola de emparejamiento pública regular.",
+          "content": "Las preguntas frecuentes oficiales describen el juego como solo para amigos de Steam. Los jugadores suelen organizar grupos a través del Discord de la comunidad y discusiones de 'Busco grupo'.",
+          "status": "Solo amigos de Steam"
         },
         {
-          "name": "Soporte de idiomas",
-          "type": "Localización",
-          "description": "La configuración actual es solo en inglés y no hay traducciones planeadas en este momento."
+          "title": "Un jugador",
+          "summary": "El juego en solitario está disponible, pero el enfoque del diseño es el juego en grupo.",
+          "content": "Steam indica compatibilidad con un solo jugador y las preguntas frecuentes confirman el juego en solitario. La experiencia prevista sigue centrándose en las decisiones de dinero compartido y la presión cooperativa.",
+          "status": "Jugable en solitario, diseñado para cooperativo"
+        },
+        {
+          "title": "Android e iOS",
+          "summary": "No se indica ningún lanzamiento nativo para Android o iOS.",
+          "content": "El acceso móvil debe tratarse como un acceso remoto a la versión de PC, no como una aplicación de teléfono independiente o instalación de APK.",
+          "status": "No hay una versión móvil nativa listada"
+        },
+        {
+          "title": "Opción de Remote Play en móviles",
+          "summary": "El juego en teléfonos y tabletas puede funcionar a través de herramientas de transmisión remota de PC.",
+          "content": "En las configuraciones remotas, el juego de Steam se ejecuta en un PC con Windows y el dispositivo móvil actúa como pantalla y control. Esto mantiene las sesiones en la versión oficial de PC.",
+          "status": "Vía de transmisión remota de PC"
+        },
+        {
+          "title": "Steam Deck y PC portátiles",
+          "summary": "Trata el acceso en portátiles como una comprobación de compatibilidad de PC en Steam.",
+          "content": "La lista de compatibilidad es PC con Windows. Si usas Steam Deck u otro PC portátil, consulta las notas de compatibilidad de la tienda en Steam antes de la compra o instalación.",
+          "status": "Consulta los detalles de compatibilidad de Steam"
         }
       ]
     },
     "lucidBlocksUpdatesAndPatchNotes": {
-      "title": "Actualizaciones y notas del parche de Lucid Blocks",
-      "displayType": "timeline",
-      "intro": "Lucid Blocks ya está recibiendo correcciones rápidas post-lanzamiento y pequeñas actualizaciones de usabilidad.",
-      "entries": [
+      "title": "Recuento de jugadores y reseñas de Gamble With Your Friends",
+      "displayType": "card-list",
+      "intro": "Sigue la actividad actual, el pico de concurrencia y el ritmo de las reseñas para que tu equipo pueda juzgar la salud de la comunidad antes de planificar sesiones cooperativas.",
+      "items": [
         {
-          "title": "Actualización 2.8.2",
-          "type": "Actualización de IU",
-          "description": "Se cambió el nombre de \"awaken\" (despertar) a \"exit\" (salir) en el menú principal."
+          "label": "Jugadores de Steam en vivo",
+          "value": "19,083",
+          "caption": "Instantánea del contador de jugadores de SteamDB de la actividad en vivo actual.",
+          "type": "current_players"
         },
         {
-          "title": "Pequeño parche para cierres al iniciar",
-          "type": "Hotfix",
-          "description": "Se lanzó un parche dedicado para los jugadores cuyo juego se cerraba inesperadamente al iniciar."
+          "label": "Pico histórico",
+          "value": "19,388",
+          "caption": "Máximo de jugadores simultáneos registrados, alcanzado el 2 de mayo de 2026.",
+          "type": "peak_players"
         },
         {
-          "title": "Soporte de contenido post-lanzamiento",
-          "type": "Nota de hoja de ruta",
-          "description": "Se planean algunas actualizaciones de contenido después del lanzamiento, pero no pretenden continuar con un calendario regular indefinido."
+          "label": "Resumen de reseñas de la tienda de Steam",
+          "value": "Muy positivas",
+          "caption": "92 % de reseñas positivas de 822 compradores de Steam en la instantánea de la tienda.",
+          "type": "steam_reviews"
+        },
+        {
+          "label": "Calificación de SteamDB",
+          "value": "86.52%",
+          "caption": "Instantánea de la calificación de SteamDB basada en 822 reseñas positivas y 72 negativas.",
+          "type": "steamdb_rating"
+        },
+        {
+          "label": "Discusiones de la comunidad",
+          "value": "76 temas activos",
+          "caption": "Actividad del centro de la comunidad en las secciones General, Busco grupo, Reporte de errores, Eventos e Intercambios.",
+          "type": "community_activity"
+        },
+        {
+          "label": "Interés en Twitch",
+          "value": "2,933 espectadores",
+          "caption": "La instantánea de los gráficos de SteamDB también registró 2,933 espectadores y un pico de 32,308 en 24 horas.",
+          "type": "streaming_interest"
         }
       ]
     },
     "lucidBlocksCrashFixAndTroubleshooting": {
-      "title": "Solución de cierres inesperados y solución de problemas de Lucid Blocks",
-      "displayType": "steps",
-      "intro": "La mayoría de los problemas inmediatos de inicio y cierres deben revisarse en un orden sencillo: nivel de parche, soporte de gráficos, compatibilidad de plataforma y registros.",
-      "steps": [
+      "title": "Solución de problemas y actualizaciones de Gamble With Your Friends",
+      "displayType": "accordion",
+      "intro": "Usa este centro de soporte para reportar errores correctamente, solucionar problemas de lobby y conexión, encontrar registros y seguir el historial de parches sin saltarte pasos clave.",
+      "items": [
         {
-          "title": "Instala el último hotfix para cierres inesperados",
-          "description": "Si el juego se cierra al iniciar, actualiza primero y prueba de nuevo con el parche más reciente para cierres al inicio."
+          "title": "Dónde reportar errores",
+          "summary": "Usa las discusiones de Steam, Discord o el flujo de reporte de errores dentro del juego.",
+          "content": "Los jugadores pueden reportar problemas a través de las discusiones de Steam, el servidor de Discord de la comunidad o en Menú de pausa > Reportar un error dentro del juego. Adjunta capturas de pantalla, videos y registros para un triaje más rápido.",
+          "steps": [
+            "Abre el menú de pausa dentro del juego.",
+            "Elige Reportar un error.",
+            "Adjunta capturas de pantalla, videos o registros cuando sea posible.",
+            "Usa las discusiones de Steam o Discord si el reporte dentro del juego no es adecuado."
+          ]
         },
         {
-          "title": "Verifica el soporte de __PROTECTED_38625270__",
-          "description": "Lucid Blocks requiere soporte de __PROTECTED_38625270__. Los sistemas sin __PROTECTED_38625270__ pueden sufrir cierres inesperados o problemas graves de renderizado."
+          "title": "Contacto de soporte",
+          "summary": "Envía un correo a soporte cuando un problema no se resuelva.",
+          "content": "Si la solución de problemas básica no corrige el problema, contacta a support@tenstack.se e incluye detalles del problema, archivos multimedia y el registro de jugador más reciente.",
+          "steps": [
+            "Describe exactamente qué sucedió.",
+            "Incluye el modo de juego, el contexto del lobby y la marca de tiempo.",
+            "Adjunta el archivo de registro de jugador (Player log) más reciente.",
+            "Envía el reporte a support@tenstack.se."
+          ]
         },
         {
-          "title": "Usa Proton 9.0.4 en Steam Deck",
-          "description": "Si la entrada o el comportamiento de inicio en Steam Deck fallan, fuerza la compatibilidad y cambia a Proton 9.0.4."
+          "title": "Dónde encontrar los registros de jugador",
+          "summary": "Los registros de la última sesión se guardan en la ruta AppData de Windows.",
+          "content": "Las preguntas frecuentes señalan que los registros solo cubren la última sesión, así que recógelos inmediatamente después de que aparezca el problema.",
+          "steps": [
+            "Presiona la tecla Windows + R.",
+            "Escribe appdata y confirma.",
+            "Abre LocalLow\\TENSTACK\\Gamble With Your Friends.",
+            "Busca el archivo llamado Player.",
+            "Envía el archivo con tu reporte."
+          ]
         },
         {
-          "title": "Recopila registros de cierres (logs)",
-          "description": "Abre Ejecutar de Windows, pega %APPDATA%, ve a lucid blocks/logs y reúne los archivos .txt para solucionar el problema."
+          "title": "Privacidad del lobby y problemas de unión aleatoria",
+          "summary": "Cambia a 'Solo invitación' para evitar uniones inesperadas.",
+          "content": "Usa los ajustes de Modo de Lobby para pasar de 'Solo amigos' a 'Solo invitación', luego vuelve a crear el lobby para que el cambio se aplique correctamente.",
+          "steps": [
+            "Abre el ajuste de modo de lobby.",
+            "Cambia de 'Solo amigos' a 'Solo invitación'.",
+            "Pide a todos los jugadores que sigan el mismo comportamiento de lobby.",
+            "Vuelve a crear el lobby después de cambiar el modo."
+          ]
         },
         {
-          "title": "Reporta el problema correctamente",
-          "description": "Comparte los registros y los detalles del dispositivo a través del foro oficial de reportes de errores en Discord o en la página de la comunidad de Steam."
+          "title": "Problemas de conexión o no puedes unirte a amigos",
+          "summary": "Desactiva las herramientas VPN y usa la conexión de anfitrión más fuerte.",
+          "content": "La creación de lobbies se realiza a través de la API de Steam. Las VPN y el software de ajuste de conexión pueden interferir, así que desactívalos y deja que el jugador con mejor conexión sea el anfitrión.",
+          "steps": [
+            "Apaga las VPN y las aplicaciones de ajuste de conexión.",
+            "Reinicia Steam y el juego.",
+            "Deja que la PC y la conexión más fuertes sean el anfitrión.",
+            "Vuelve a crear el lobby después del reinicio de red."
+          ]
+        },
+        {
+          "title": "Ajustes de mareo por movimiento",
+          "summary": "Las opciones de accesibilidad pueden reducir la incomodidad de la cámara.",
+          "content": "Los jugadores sensibles al movimiento pueden ajustar la configuración de Accesibilidad, incluyendo el balanceo de cabeza y el suavizado de cámara.",
+          "steps": [
+            "Abre Ajustes.",
+            "Ve a Accesibilidad.",
+            "Desactiva el balanceo de cabeza.",
+            "Ajusta el suavizado de cámara.",
+            "Evita secuencias intensas de cuerpo-máquina si provocan malestar."
+          ]
+        },
+        {
+          "title": "Temas del foro de reporte de errores",
+          "summary": "Revisa los hilos existentes del foro antes de publicar nuevos reportes.",
+          "content": "El tablero de reporte de errores incluye problemas de lanzamiento como la sensibilidad del control, fallos al iniciar, artefactos gráficos, bloqueos en ascensores y problemas de desbloqueo de logros.",
+          "steps": [
+            "Abre primero el subforo de Reporte de errores.",
+            "Busca un título de problema que coincida.",
+            "Publica detalles claros de reproducción para nuevos hilos.",
+            "Incluye registros y archivos multimedia adjuntos."
+          ]
+        },
+        {
+          "title": "Notas del parche e historial de actualizaciones",
+          "summary": "Usa SteamDB para rastrear cambios de compilación y anuncios.",
+          "content": "Las notas del parche de SteamDB rastrean el historial de compilación de la aplicación 3892270 y las publicaciones de actualización, incluyendo referencias de la compilación de lanzamiento y números de cambio.",
+          "steps": [
+            "Abre la página de notas del parche de SteamDB.",
+            "Verifica el último número de cambio y el registro de compilación.",
+            "Abre cada publicación de parche para ver los detalles del anuncio.",
+            "Compara los reportes de problemas de los jugadores después de cada actualización."
+          ]
         }
       ]
     }
@@ -757,177 +1338,199 @@
   "faq": {
     "title": "Preguntas",
     "titleHighlight": "frecuentes",
-    "subtitle": "Todo lo que necesitas saber sobre Lucid Blocks",
+    "subtitle": "Todo lo que necesitas saber sobre este rastreador de casinos cooperativo.",
     "questions": [
       {
-        "question": "¿Es Lucid Blocks un juego para un solo jugador?",
-        "answer": "Sí. Lucid Blocks es un juego exclusivamente para un solo jugador, sin planes para multijugador o cooperativo."
+        "question": "¿Es Gamble With Your Friends solo multijugador?",
+        "answer": "No. El modo en solitario está disponible, pero la experiencia principal está diseñada para la coordinación cooperativa en línea de 1 a 6 jugadores."
       },
       {
-        "question": "¿Qué es el sistema Apotheosis en Lucid Blocks?",
-        "answer": "Apotheosis es el sistema de creación por fusión de forma libre de Lucid Blocks. En lugar de seguir recetas fijas, combinas materiales y descubres tus propias rutas de creación."
+        "question": "¿Cómo funciona el sistema de fondos compartidos?",
+        "answer": "Todos los jugadores gastan de una sola cuenta, por lo que cada apuesta grande afecta a toda la partida y requiere un control de riesgo a nivel de equipo."
       },
       {
-        "question": "¿Dónde puedo jugar Lucid Blocks?",
-        "answer": "Lucid Blocks está disponible actualmente en Steam para Windows. El soporte para Linux y Steam Deck está disponible a través de Proton 9.0."
+        "question": "¿Qué es el ciclo de cuota diaria?",
+        "answer": "Cada día ofrece un temporizador corto para cumplir la cuota y mantener viva la partida, lo que marca el ritmo de cada decisión en la mesa."
       },
       {
-        "question": "¿Cuánto cuesta Lucid Blocks?",
-        "answer": "Lucid Blocks cuesta $9.99 en Steam."
+        "question": "¿Cuántos finales y logros hay disponibles?",
+        "answer": "El contenido de lanzamiento actual incluye tres finales y 55 logros de Steam."
       },
       {
-        "question": "¿Lucid Blocks es compatible con controles?",
-        "answer": "Sí, pero no se recomienda jugar con control porque los menús no están diseñados para ello. El teclado y el mouse son la opción más fluida."
+        "question": "¿Por dónde debería empezar nuestro equipo al aprender las mesas?",
+        "answer": "Empiecen con mesas de menor volatilidad, establezcan roles de comunicación y añadan opciones de alto riesgo solo cuando el ritmo de la cuota sea estable."
       },
       {
-        "question": "¿Recibirá actualizaciones Lucid Blocks?",
-        "answer": "Sí. Se planean algunas actualizaciones de contenido después del lanzamiento, pero no se pretende que continúen con un calendario regular indefinido."
+        "question": "¿Dónde podemos seguir las actualizaciones y la ayuda de la comunidad?",
+        "answer": "Usa el Centro de la Comunidad de Steam y el Discord oficial para notas del parche, solución de problemas y coordinación de grupos."
       }
     ]
   },
   "cta": {
-    "title": "¿Listo para explorar Lucid Blocks?",
-    "description": "¡Únete a la comunidad de Lucid Blocks en Discord para ver guías, actualizaciones y discusiones!",
+    "title": "¿Listo para la próxima partida en el casino?",
+    "description": "Únete a la comunidad, planifica los roles de tu escuadrón y mantente al día con las actualizaciones de estrategia.",
     "joinCommunity": "Únete a Discord",
     "joinGame": "Juega en Steam"
   },
   "footer": {
-    "title": "Wiki de Lucid Blocks",
-    "description": "Tu centro completo de recursos para la fabricación, biomas, criaturas, logros y guías de supervivencia de Lucid Blocks.",
+    "title": "Gamble With Your Friends",
+    "description": "Centro de guías de la comunidad para partidas cooperativas, juegos de azar, estrategia de cuotas, pisos, finales y logros.",
     "resources": "Recursos",
     "community": "Comunidad",
     "legal": "Legal",
     "discord": "Discord",
     "twitter": "X / Twitter",
+    "reddit": "Reddit",
+    "youtube": "YouTube",
     "steamCommunity": "Comunidad de Steam",
     "steamStore": "Tienda de Steam",
     "about": "Acerca de",
     "privacy": "Política de privacidad",
     "terms": "Términos de servicio",
     "copyrightNotice": "Derechos de autor",
-    "copyright": "© 2026 Wiki de Lucid Blocks. No afiliada con los desarrolladores de Lucid Blocks.",
-    "disclaimer": "Sitio web de recursos no oficial creado por fans."
+    "copyright": "© 2026 Gamble With Your Friends. Sitio web de guía no oficial hecho por fans.",
+    "disclaimer": "Sitio web de recursos no oficial hecho por fans."
   },
   "pages": {
-    "guides": {
-      "title": "Guías de Lucid Blocks",
-      "description": "Guías completas de juego, desde conceptos básicos para principiantes hasta estrategias avanzadas de Apotheosis. Domina la supervivencia y la fabricación.",
-      "metaTitle": "Guías de Lucid Blocks - Estrategias de principiante a avanzado",
-      "metaDescription": "Guías completas de Lucid Blocks que cubren consejos para principiantes, el sistema Apotheosis, estrategias de supervivencia y tácticas expertas para dominar este sandbox surrealista.",
-      "categoryLabel": "GUÍAS DEL JUEGO",
-      "whatIs": "¿Qué son las guías?",
-      "whatIsDescription": "Guías exhaustivas que cubren mecánicas de juego, estrategias de supervivencia y el sistema de fabricación Apotheosis. Aprende todo, desde los primeros pasos hasta técnicas avanzadas.",
-      "why": "¿Por qué leer las guías?",
+    "guide": {
+      "title": "Guía de Gamble With Your Friends",
+      "description": "Guías de estrategia paso a paso para el control cooperativo del saldo, el ritmo de cuotas, la planificación de pisos y limpiezas constantes.",
+      "metaTitle": "Guía de Gamble With Your Friends - Estrategia, Cuotas y Juego en Equipo",
+      "metaDescription": "Lea contenido práctico de la guía de Gamble With Your Friends para la configuración de principiantes, estrategia de cuotas, roles de equipo y partidas completas de pisos más fluidas.",
+      "categoryLabel": "GUÍA",
+      "whatIs": "¿Qué es la categoría Guía?",
+      "whatIsDescription": "Esta categoría recopila planificación de rutas, configuración de roles de equipo y marcos de decisión que ayudan a los grupos a evitar colapsos tempranos y terminar las partidas con mayor consistencia.",
+      "why": "¿Por qué leer estas guías?",
       "whySteps": {
-        "step1Title": "Aprende las mecánicas principales",
-        "step1Description": "Entiende el sistema Apotheosis y evita errores comunes de principiante",
-        "step2Title": "Progresión rápida",
-        "step2Description": "Sigue caminos probados para sobrevivir y prosperar en este mundo surrealista",
-        "step3Title": "Domina las estrategias",
-        "step3Description": "Desarrolla tácticas avanzadas para la exploración y la fabricación"
+        "step1Title": "Aprenda más rápido",
+        "step1Description": "Vaya directamente a aperturas repetibles en lugar de pérdidas por prueba y error.",
+        "step2Title": "Coordine mejor",
+        "step2Description": "Use avisos compartidos y asignación de roles para mantener las decisiones claras bajo la presión del temporizador.",
+        "step3Title": "Termine más partidas",
+        "step3Description": "Aplique ajustes específicos de cada piso que mantengan su saldo estable para las cuotas del final del juego."
       },
-      "featured": "Destacado y esencial",
-      "all": "Todas las guías"
+      "featured": "Destacado y Esencial",
+      "all": "Todos los artículos de la guía"
     },
-    "crafting": {
-      "title": "Fabricación en Lucid Blocks",
-      "description": "Domina el sistema de fusión Apotheosis con mecánicas de esencia, recetas y estrategias de fabricación para objetos poderosos.",
-      "metaTitle": "Fabricación en Lucid Blocks - Sistema Apotheosis y recetas",
-      "metaDescription": "Domina el sistema de fabricación Apotheosis de Lucid Blocks. Aprende mecánicas de esencia, recetas de fusión y estrategias para crear herramientas y armas poderosas.",
-      "categoryLabel": "SISTEMA DE FABRICACIÓN",
-      "whatIs": "¿Qué es la fabricación?",
-      "whatIsDescription": "El sistema Apotheosis es una mecánica de fusión única impulsada por esencias donde combinas hasta seis objetos para descubrir nuevas recetas. Sin menús de fabricación fijos: la experimentación es la clave.",
-      "why": "¿Por qué dominar la fabricación?",
+    "price": {
+      "title": "Precio de Gamble With Your Friends",
+      "description": "Rastree los precios actuales en Steam, periodos de descuento, valor de paquetes y planificación de compra para adquisiciones individuales o grupales.",
+      "metaTitle": "Precio de Gamble With Your Friends - Costo en Steam, Rebajas y Valor del Paquete",
+      "metaDescription": "Consulte las actualizaciones de precios de Gamble With Your Friends, el calendario de rebajas de Steam, comparativas de paquetes y consejos prácticos de compra antes de pagar.",
+      "categoryLabel": "PRECIO",
+      "whatIs": "¿Qué es la categoría Precio?",
+      "whatIsDescription": "Los artículos de precio se centran en el costo del juego, el momento de los descuentos, las diferencias entre bandas sonoras o paquetes, y cómo evitar pagar más de lo necesario.",
+      "why": "¿Por qué consultar las actualizaciones de precios?",
       "whySteps": {
-        "step1Title": "Desbloquea objetos poderosos",
-        "step1Description": "Descubre herramientas esenciales, armas y equipo de movilidad a través de la fusión",
-        "step2Title": "Entiende las esencias",
-        "step2Description": "Aprende cómo se combinan las esencias de los objetos para crear resultados predecibles",
-        "step3Title": "Optimiza recursos",
-        "step3Description": "Usa mecánicas de dilución para maximizar la producción con materiales baratos"
+        "step1Title": "Compre en el mejor momento",
+        "step1Description": "Identifique las ventanas de rebajas comunes y decida si comprar ahora o esperar.",
+        "step2Title": "Compare el valor de los paquetes",
+        "step2Description": "Entienda cuándo las ofertas de paquetes superan el precio del juego base para su grupo.",
+        "step3Title": "Evite gastos duplicados",
+        "step3Description": "Alinee las compras del equipo para que todos obtengan la edición correcta a la primera."
       },
-      "featured": "Destacado y esencial",
-      "all": "Todas las guías de fabricación"
+      "featured": "Destacado y Esencial",
+      "all": "Todos los artículos de precio"
     },
-    "items": {
-      "title": "Objetos de Lucid Blocks",
-      "description": "Guías detalladas de objetos que cubren herramientas, armas, equipo de movilidad y soluciones de almacenamiento con recetas de fabricación y consejos de uso.",
-      "metaTitle": "Objetos de Lucid Blocks - Guía de herramientas, armas y equipo",
-      "metaDescription": "Base de datos completa de objetos para Lucid Blocks, incluyendo herramientas, armas, equipo de movilidad y almacenamiento. Aprende a fabricar y usar cada objeto de manera efectiva.",
-      "categoryLabel": "OBJETOS Y EQUIPAMIENTO",
-      "whatIs": "¿Qué son los objetos?",
-      "whatIsDescription": "Guías exhaustivas de herramientas, armas, equipo de movilidad y objetos funcionales. Aprende recetas de fabricación, estrategias de uso y combinaciones óptimas.",
-      "why": "¿Por qué consultar las guías de objetos?",
+    "steam": {
+      "title": "Gamble With Your Friends Steam",
+      "description": "Cobertura centrada en Steam para páginas de la tienda, flujo de descarga, metadatos de la aplicación, centros de parches y comportamiento de la tienda específico de la plataforma.",
+      "metaTitle": "Gamble With Your Friends Steam - Descarga, Tienda e Información de la App",
+      "metaDescription": "Explore los recursos de Gamble With Your Friends en Steam para pasos de descarga, metadatos de la tienda, referencias de ID de la aplicación y navegación por el centro oficial.",
+      "categoryLabel": "STEAM",
+      "whatIs": "¿Qué es la categoría Steam?",
+      "whatIsDescription": "Los artículos de Steam centralizan el flujo de trabajo oficial de la tienda, las rutas del centro de la comunidad y las referencias a nivel de aplicación que más utilizan los jugadores.",
+      "why": "¿Por qué usar páginas centradas en Steam?",
       "whySteps": {
-        "step1Title": "Aprende recetas de fabricación",
-        "step1Description": "Descubre cómo fabricar herramientas y armas esenciales usando Apotheosis",
-        "step2Title": "Optimiza tu equipamiento",
-        "step2Description": "Elige los mejores objetos para tu estilo de juego y etapa de progresión",
-        "step3Title": "Mejora tu supervivencia",
-        "step3Description": "Equípate con equipo de movilidad y armas para navegar por este mundo peligroso"
+        "step1Title": "Encuentre fuentes oficiales",
+        "step1Description": "Llegue a las páginas correctas de la tienda y de la comunidad sin tener que buscar en sitios espejo.",
+        "step2Title": "Entienda los detalles de la tienda",
+        "step2Description": "Revise el estado del lanzamiento, la configuración del paquete y los metadatos de la aplicación en un solo lugar.",
+        "step3Title": "Solucione problemas más rápido",
+        "step3Description": "Utilice comprobaciones claras del lado de Steam cuando fallen las descargas o los lanzamientos."
       },
-      "featured": "Destacado y esencial",
-      "all": "Todos los objetos"
+      "featured": "Destacado y Esencial",
+      "all": "Todos los artículos de Steam"
     },
-    "biomes": {
-      "title": "Biomas de Lucid Blocks",
-      "description": "Explora las regiones del mundo, características ambientales, ubicaciones de recursos y consejos de supervivencia para cada bioma.",
-      "metaTitle": "Biomas de Lucid Blocks - Regiones del mundo y exploración",
-      "metaDescription": "Explora los biomas de Lucid Blocks, incluyendo las Líneas Ley de Tiamana, Fog Meadow y regiones surrealistas. Encuentra recursos, evita peligros y navega por un mundo infinito.",
-      "categoryLabel": "REGIONES DEL MUNDO",
-      "whatIs": "¿Qué son los biomas?",
-      "whatIsDescription": "Guías de las diferentes regiones del mundo, características ambientales, distribución de recursos y zonas de peligro. Aprende qué esperar y cómo prepararte para cada área.",
-      "why": "¿Por qué explorar los biomas?",
+    "release": {
+      "title": "Lanzamiento de Gamble With Your Friends",
+      "description": "Cobertura de la cronología de lanzamiento, incluyendo fecha de estreno, hitos de versión, cadencia de actualizaciones y puntos de control de estado.",
+      "metaTitle": "Lanzamiento de Gamble With Your Friends - Fecha, Cronología y Estado de Actualización",
+      "metaDescription": "Siga la información de lanzamiento de Gamble With Your Friends que cubre la fecha de estreno, la cronología de actualizaciones y las referencias del estado de la versión.",
+      "categoryLabel": "LANZAMIENTO",
+      "whatIs": "¿Qué es la categoría Lanzamiento?",
+      "whatIsDescription": "Las páginas de lanzamiento resumen cuándo ocurrieron los hitos clave y cómo rastrear los cambios continuos a través de los anuncios de Steam y las señales de actualización.",
+      "why": "¿Por qué seguir las notas de lanzamiento aquí?",
       "whySteps": {
-        "step1Title": "Encuentra recursos",
-        "step1Description": "Localiza materiales raros y esencias específicas de cada región",
-        "step2Title": "Evita peligros",
-        "step2Description": "Entiende los riesgos ambientales y las criaturas hostiles",
-        "step3Title": "Planifica tu exploración",
-        "step3Description": "Prepara las herramientas y el equipo adecuados para cada tipo de bioma"
+        "step1Title": "Rastree hitos",
+        "step1Description": "Vea los puntos de control del lanzamiento y post-lanzamiento en un contexto cronológico.",
+        "step2Title": "Planifique sesiones grupales",
+        "step2Description": "Programe partidas en torno a ventanas de parches conocidas y actualizaciones de contenido.",
+        "step3Title": "Reduzca la confusión de versiones",
+        "step3Description": "Mantenga a su equipo alineado con el estado actual antes de solucionar problemas."
       },
-      "featured": "Destacado y esencial",
-      "all": "Todos los biomas"
+      "featured": "Destacado y Esencial",
+      "all": "Todos los artículos de lanzamiento"
     },
-    "building": {
-      "title": "Construcción en Lucid Blocks",
-      "description": "Domina las dimensiones personales Qualia, la construcción de bases, la gestión de almacenamiento y técnicas creativas de construcción.",
-      "metaTitle": "Construcción en Lucid Blocks - Qualia y construcción de bases",
-      "metaDescription": "Domina la construcción en Lucid Blocks con las dimensiones personales Qualia, construcción de bases, soluciones de almacenamiento y técnicas creativas de construcción.",
-      "categoryLabel": "CONSTRUCCIÓN Y BASES",
-      "whatIs": "¿Qué es la construcción?",
-      "whatIsDescription": "Guías sobre el sistema de dimensiones personales Qualia, construcción de bases, gestión de almacenamiento y construcción creativa. Aprende a crear tu refugio seguro en este mundo surrealista.",
-      "why": "¿Por qué construir bases?",
+    "platforms": {
+      "title": "Plataformas de Gamble With Your Friends",
+      "description": "Guías de disponibilidad de plataformas para Windows PC, comportamiento de mandos, acceso multijugador y gestión de expectativas para móviles o consolas.",
+      "metaTitle": "Plataformas de Gamble With Your Friends - PC, Mandos y Acceso",
+      "metaDescription": "Lea la guía de plataformas de Gamble With Your Friends para soporte de PC, configuración de mandos, acceso multijugador y expectativas de disponibilidad fuera de PC.",
+      "categoryLabel": "PLATAFORMAS",
+      "whatIs": "¿Qué es la categoría Plataformas?",
+      "whatIsDescription": "Las páginas de plataformas explican dónde está disponible el juego ahora, cómo se comportan los dispositivos de entrada y qué deben esperar los jugadores en diferentes contextos de hardware.",
+      "why": "¿Por qué consultar los detalles de la plataforma primero?",
       "whySteps": {
-        "step1Title": "Crea espacios seguros",
-        "step1Description": "Establece bases seguras para el almacenamiento y las operaciones de fabricación",
-        "step2Title": "Gestiona tus recursos",
-        "step2Description": "Organiza tus materiales de manera eficiente con soluciones de almacenamiento",
-        "step3Title": "Desbloquea Qualia",
-        "step3Description": "Accede a dimensiones de bolsillo personales para la máxima comodidad"
+        "step1Title": "Confirme la disponibilidad",
+        "step1Description": "Evite instalaciones fallidas comprobando los sistemas compatibles antes de comprar.",
+        "step2Title": "Prepare la configuración de entrada",
+        "step2Description": "Conozca las expectativas de mandos y teclado antes de su primera sesión.",
+        "step3Title": "Establezca expectativas de equipo",
+        "step3Description": "Alinee a todos con los límites actuales de la plataforma para una configuración de grupo más fluida."
       },
-      "featured": "Destacado y esencial",
-      "all": "Todas las guías de construcción"
+      "featured": "Destacado y Esencial",
+      "all": "Todos los artículos de plataformas"
     },
-    "support": {
-      "title": "Soporte de Lucid Blocks",
-      "description": "Soporte técnico, compatibilidad de plataformas, optimización de rendimiento y solución de problemas comunes.",
-      "metaTitle": "Soporte de Lucid Blocks - Ayuda técnica y soluciones",
-      "metaDescription": "Obtén soporte técnico para Lucid Blocks, incluyendo la configuración de Steam Deck, soluciones a cierres inesperados, optimización de rendimiento y guías de compatibilidad de plataformas.",
-      "categoryLabel": "SOPORTE TÉCNICO",
-      "whatIs": "¿Qué es el soporte?",
-      "whatIsDescription": "Guías técnicas que cubren la compatibilidad de plataformas, optimización de rendimiento, soluciones a cierres inesperados y problemas comunes. Obtén ayuda con Steam Deck, preguntas sobre multijugador y ajustes.",
-      "why": "¿Por qué consultar el soporte?",
+    "gameplay": {
+      "title": "Jugabilidad de Gamble With Your Friends",
+      "description": "Explicaciones de jugabilidad para el flujo de cuotas, presión de deuda compartida, ritmo de pisos, selección de juegos de azar y toma de decisiones al final de la partida.",
+      "metaTitle": "Jugabilidad de Gamble With Your Friends - Flujo de Cuotas y Estrategia de Pisos",
+      "metaDescription": "Domine la jugabilidad de Gamble With Your Friends con guías prácticas para el ritmo de cuotas, decisiones de saldo compartido y ejecución piso por piso.",
+      "categoryLabel": "JUGABILIDAD",
+      "whatIs": "¿Qué es la categoría Jugabilidad?",
+      "whatIsDescription": "Las páginas de jugabilidad detallan cómo funciona realmente una partida: cuotas diarias, ritmo de riesgo, selección de juegos y elecciones de equipo que dan forma a los finales.",
+      "why": "¿Por qué estudiar los patrones de jugabilidad?",
       "whySteps": {
-        "step1Title": "Soluciona problemas técnicos",
-        "step1Description": "Resuelve cierres inesperados, problemas de rendimiento y de compatibilidad",
-        "step2Title": "Optimiza el rendimiento",
-        "step2Description": "Configura los ajustes para obtener la mejor experiencia en tu plataforma",
-        "step3Title": "Compatibilidad de plataformas",
-        "step3Description": "Aprende sobre Steam Deck, soporte para controles y requisitos del sistema"
+        "step1Title": "Controle la volatilidad",
+        "step1Description": "Utilice un ritmo de apuestas estructurado para reducir los colapsos aleatorios de la partida.",
+        "step2Title": "Mejore la consistencia de las cuotas",
+        "step2Description": "Aplique rotaciones de mesa confiables para alcanzar los objetivos con menos pánico.",
+        "step3Title": "Escale hacia los pisos finales",
+        "step3Description": "Lleve estados de saldo más sólidos a las etapas de mayor riesgo."
       },
-      "featured": "Destacado y esencial",
-      "all": "Todos los artículos de soporte"
+      "featured": "Destacado y Esencial",
+      "all": "Todos los artículos de jugabilidad"
+    },
+    "mods": {
+      "title": "Mods de Gamble With Your Friends",
+      "description": "Referencias relacionadas con el modding que cubren disponibilidad, límites de instalación, advertencias de compatibilidad y estado de las herramientas de la comunidad.",
+      "metaTitle": "Mods de Gamble With Your Friends - Configuración, Compatibilidad y Notas",
+      "metaDescription": "Explore recursos de mods de Gamble With Your Friends para disponibilidad actual, guía de instalación, notas de compatibilidad y conceptos básicos del flujo de trabajo de mods de la comunidad.",
+      "categoryLabel": "MODS",
+      "whatIs": "¿Qué es la categoría Mods?",
+      "whatIsDescription": "Las páginas de mods recopilan vías de modding conocidas, expectativas de instalación y guías de compatibilidad para que los jugadores puedan evaluar configuraciones personalizadas de manera responsable.",
+      "why": "¿Por qué revisar las notas de los mods antes de instalar?",
+      "whySteps": {
+        "step1Title": "Evite roturas",
+        "step1Description": "Compruebe la compatibilidad y el ajuste de la versión antes de cambiar archivos.",
+        "step2Title": "Configure limpiamente",
+        "step2Description": "Siga pasos estructurados de instalación y reversión para pruebas más seguras.",
+        "step3Title": "Mantenga las sesiones estables",
+        "step3Description": "Utilice configuraciones seguras para el modo cooperativo cuando juegue con amigos."
+      },
+      "featured": "Destacado y Esencial",
+      "all": "Todos los artículos de mods"
     }
   }
 }

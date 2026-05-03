@@ -289,11 +289,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
       const fullPath = `/${slug.join('/')}`
       const normalizedTitle = String(metadata.title || 'Guide')
-        .replace(/Lucid Blocks Wiki/gi, siteName)
-        .replace(/Lucid Blocks/gi, siteName)
       const normalizedDescription = String(metadata.description || `Guide content for ${siteName}`)
-        .replace(/Lucid Blocks Wiki/gi, siteName)
-        .replace(/Lucid Blocks/gi, siteName)
       const articleImage = metadata.image
         ? metadata.image.startsWith('http')
           ? metadata.image
@@ -343,11 +339,7 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
 
           const fullPath = `/${slug.join('/')}`
           const normalizedTitle = String(metadata.title || 'Guide')
-            .replace(/Lucid Blocks Wiki/gi, siteName)
-            .replace(/Lucid Blocks/gi, siteName)
           const normalizedDescription = String(metadata.description || `Guide content for ${siteName}`)
-            .replace(/Lucid Blocks Wiki/gi, siteName)
-            .replace(/Lucid Blocks/gi, siteName)
           const articleImage = metadata.image
             ? metadata.image.startsWith('http')
               ? metadata.image

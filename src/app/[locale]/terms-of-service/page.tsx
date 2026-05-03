@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import type { Metadata } from 'next'
 import { buildLanguageAlternates } from '@/lib/i18n-utils'
 import { type Locale } from '@/i18n/routing'
@@ -90,10 +90,10 @@ export default function TermsOfService() {
               and resources related to the Steam game "Gamble With Your Friends". Our services include, but are not limited to:
             </p>
             <ul>
-              <li>Game guides and survival strategies</li>
-              <li>Crafting and Apotheosis fusion guides</li>
-              <li>Biome and world region information</li>
-              <li>Creature and enemy guides</li>
+              <li>Co-op run guides and bankroll strategy</li>
+              <li>Games-of-chance breakdowns and risk tier explainers</li>
+              <li>Items, unlock priorities, and achievement routing</li>
+              <li>Platform compatibility notes and troubleshooting references</li>
               <li>Achievement walkthroughs</li>
               <li>Community discussion and content</li>
             </ul>
@@ -157,7 +157,7 @@ export default function TermsOfService() {
               <li><strong>Accuracy:</strong> We strive to provide accurate information, but we do not guarantee that all content is current, complete, or error-free. Game updates may render information outdated.</li>
               <li><strong>Availability:</strong> We do not guarantee that the Website will be available at all times or free from interruptions, errors, or technical issues.</li>
               <li><strong>Third-Party Content:</strong> We are not responsible for the accuracy or reliability of information obtained from third-party sources.</li>
-              <li><strong>Demo Availability:</strong> Steam demo availability and game updates may change without notice. We are not responsible for demo access or game changes.</li>
+              <li><strong>Feature Availability:</strong> Game systems, events, and balancing may change without notice. We are not responsible for feature changes made by the developers.</li>
             </ul>
             <p>
               You acknowledge that your use of the Website is at your sole risk and discretion.
@@ -165,7 +165,7 @@ export default function TermsOfService() {
 
             <h2>6. Limitation of Liability</h2>
             <p>
-              TO THE FULLEST EXTENT PERMITTED BY LAW, LUCID BLOCKS WIKI SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
+              TO THE FULLEST EXTENT PERMITTED BY LAW, GAMBLE WITH YOUR FRIENDS SHALL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL,
               SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS OR REVENUES, WHETHER INCURRED DIRECTLY
               OR INDIRECTLY, OR ANY LOSS OF DATA, USE, GOODWILL, OR OTHER INTANGIBLE LOSSES, RESULTING FROM:
             </p>

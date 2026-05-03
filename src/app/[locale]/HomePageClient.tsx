@@ -41,17 +41,28 @@ const LoadingPlaceholder = ({ height = 'h-64' }: { height?: string }) => (
 
 // Conditionally render text as a link or plain span
 function LinkedTitle({
-  linkData: _linkData,
+  linkData,
   children,
   className,
-  locale: _locale,
+  locale,
 }: {
   linkData: { url: string; title: string } | null | undefined
   children: React.ReactNode
   className?: string
   locale: string
 }) {
-  return <span className={className}>{children}</span>
+  if (!linkData?.url) {
+    return <span className={className}>{children}</span>
+  }
+
+  const normalizedUrl = linkData.url.startsWith('/') ? linkData.url : `/${linkData.url}`
+  const href = locale === 'en' ? normalizedUrl : `/${locale}${normalizedUrl}`
+
+  return (
+    <a href={href} className={`hover:underline decoration-dotted underline-offset-4 ${className || ''}`}>
+      {children}
+    </a>
+  )
 }
 
 interface HomePageClientProps {
@@ -69,11 +80,8 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
   const xUrl = 'https://x.com/tenstackstudios'
   const redditUrl = 'https://www.reddit.com/r/Tenstack'
   const youtubeUrl = 'https://www.youtube.com/@tenstackstudios'
-  const steamAboutUrl = 'https://store.steampowered.com/app/3892270/Gamble_With_Your_Friends/'
-  const steamPrivacyUrl = 'https://store.steampowered.com/privacy_agreement/'
-  const steamTermsUrl = 'https://store.steampowered.com/subscriber_agreement/'
-  const steamCopyrightUrl = 'https://store.steampowered.com/legal/dmca'
   const steamPatchNotesUrl = 'https://steamdb.info/app/3892270/patchnotes/'
+  const localizedPath = (path: string) => (locale === 'en' ? path : `/${locale}${path}`)
 
   // Structured data
   const structuredData = {
@@ -1460,15 +1468,13 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
               </ul>
             </div>
 
-            {/* Legal - External Reference Links */}
+            {/* Legal - Internal Links */}
             <div>
               <h4 className="font-semibold mb-4">{t.footer.legal}</h4>
               <ul className="space-y-2 text-sm">
                 <li>
                   <a
-                    href={steamAboutUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={localizedPath('/about')}
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
                   >
                     {t.footer.about}
@@ -1476,9 +1482,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
                 </li>
                 <li>
                   <a
-                    href={steamPrivacyUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={localizedPath('/privacy-policy')}
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
                   >
                     {t.footer.privacy}
@@ -1486,9 +1490,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
                 </li>
                 <li>
                   <a
-                    href={steamTermsUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={localizedPath('/terms-of-service')}
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
                   >
                     {t.footer.terms}
@@ -1496,9 +1498,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
                 </li>
                 <li>
                   <a
-                    href={steamCopyrightUrl}
-                    target="_blank"
-                    rel="noopener noreferrer"
+                    href={localizedPath('/copyright')}
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
                   >
                     {t.footer.copyrightNotice}

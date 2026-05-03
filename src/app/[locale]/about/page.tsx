@@ -1,4 +1,4 @@
-import Link from 'next/link'
+import { Link } from '@/i18n/navigation'
 import type { Metadata } from 'next'
 import { buildLanguageAlternates } from '@/lib/i18n-utils'
 import { type Locale } from '@/i18n/routing'
@@ -14,7 +14,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 
   return {
     title: 'About Gamble With Your Friends - Your Ultimate Steam Game Resource',
-    description: 'Learn about Gamble With Your Friends, a community-driven resource hub providing comprehensive guides, crafting tips, creature info, and strategies for the Gamble With Your Friends Steam game.',
+    description: 'Learn about Gamble With Your Friends, a community-driven resource hub for co-op bankroll strategy, game modes, items, endings, achievements, and Steam updates.',
     robots: {
       index: false,
       follow: true,
@@ -32,7 +32,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       url: locale === 'en' ? `${siteUrl}${path}` : `${siteUrl}/${locale}${path}`,
       siteName: 'Gamble With Your Friends',
       title: 'About Gamble With Your Friends',
-      description: 'Learn about our mission to provide the best Gamble With Your Friends game resources and guides.',
+      description: 'Learn about our mission to provide reliable Gamble With Your Friends strategy resources.',
       images: [
         {
           url: `${siteUrl}/images/hero.webp`,
@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     twitter: {
       card: 'summary_large_image',
       title: 'About Gamble With Your Friends',
-      description: 'Learn about our mission to provide the best Gamble With Your Friends game resources.',
+      description: 'Learn about our mission to provide reliable Gamble With Your Friends strategy resources.',
       images: [`${siteUrl}/images/hero.webp`],
     },
     alternates: buildLanguageAlternates(path, locale as Locale, siteUrl),
@@ -74,11 +74,11 @@ export default function About() {
             <h2>Welcome to Gamble With Your Friends</h2>
             <p>
               Gamble With Your Friends is an <strong>unofficial, fan-made resource website</strong> dedicated to helping players
-              master the Steam game "Gamble With Your Friends". We are a community-driven platform that provides comprehensive guides,
-              crafting tips, biome information, creature details, and strategic insights to enhance your gaming experience.
+              master the Steam game "Gamble With Your Friends". We are a community-driven platform that provides co-op run guides,
+              table strategy breakdowns, item priority lists, ending requirements, and practical team-callout workflows.
             </p>
             <p>
-              Whether you're a new player just starting your survival journey or a seasoned veteran looking to optimize your strategies,
+              Whether you're a new player learning the first quota cycle or a veteran optimizing risk windows,
               Gamble With Your Friends is here to support you every step of the way.
             </p>
           </div>
@@ -95,8 +95,8 @@ export default function About() {
               and powerful tools</strong> that help them succeed in the game. We strive to:
             </p>
             <ul>
-              <li><strong>Provide reliable information:</strong> Keep our content updated with the latest game changes, new items, and balance updates</li>
-              <li><strong>Build useful tools:</strong> Develop guides, crafting calculators, and planners that help players make informed decisions</li>
+              <li><strong>Provide reliable information:</strong> Keep our content updated with game patches, item changes, and platform updates</li>
+              <li><strong>Build useful tools:</strong> Publish run checklists, floor planning notes, and quick-reference tables for safer decisions</li>
               <li><strong>Foster community:</strong> Create a welcoming space where players can learn, share strategies, and grow together</li>
               <li><strong>Stay accessible:</strong> Keep all resources free and easy to use for players of all skill levels</li>
             </ul>
@@ -105,7 +105,7 @@ export default function About() {
             <p>
               We envision Gamble With Your Friends as the <strong>go-to destination</strong> for every Gamble With Your Friends player seeking
               to improve their gameplay. We want to be the resource that players trust and rely on, whether they need
-              crafting guides, want to explore new biomes, or are looking for advanced survival tactics.
+              better co-op coordination, stronger table selection discipline, or clearer achievement routing.
             </p>
           </div>
         </div>
@@ -118,31 +118,31 @@ export default function About() {
           <div className="grid md:grid-cols-2 gap-6">
             {/* Feature Card 1 */}
             <div className="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
-              <div className="text-2xl mb-3">🔨</div>
-              <h3 className="text-xl font-semibold text-white mb-2">Crafting Guides</h3>
+              <div className="text-2xl mb-3">🤝</div>
+              <h3 className="text-xl font-semibold text-white mb-2">Co-op Run Guides</h3>
               <p className="text-slate-300">
-                Comprehensive crafting recipes and Apotheosis fusion guides to help you create powerful items.
-                Master the art of item synthesis!
+                Structured plans for host setup, role assignment, quota pacing, and bankroll protection.
+                Start cleaner runs with fewer misplays.
               </p>
             </div>
 
             {/* Feature Card 2 */}
             <div className="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
-              <div className="text-2xl mb-3">🌍</div>
-              <h3 className="text-xl font-semibold text-white mb-2">Biome Information</h3>
+              <div className="text-2xl mb-3">🎲</div>
+              <h3 className="text-xl font-semibold text-white mb-2">Games of Chance Breakdown</h3>
               <p className="text-slate-300">
-                Detailed guides on all biomes, their unique features, resources, and dangers.
-                Explore every corner of the surreal world safely.
+                Mode-by-mode explainers for roulette, blackjack, slots, duck race, and wheel events.
+                Understand risk patterns before committing chips.
               </p>
             </div>
 
             {/* Feature Card 3 */}
             <div className="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
-              <div className="text-2xl mb-3">🦋</div>
-              <h3 className="text-xl font-semibold text-white mb-2">Creature Database</h3>
+              <div className="text-2xl mb-3">🧰</div>
+              <h3 className="text-xl font-semibold text-white mb-2">Items & Unlock Priority</h3>
               <p className="text-slate-300">
-                Complete information on all creatures, their behaviors, drops, and how to deal with them.
-                Know your friends from your foes.
+                Compare early and mid-run unlock value, utility timing, and team synergy tradeoffs.
+                Spend tickets where they matter most.
               </p>
             </div>
 
@@ -151,18 +151,18 @@ export default function About() {
               <div className="text-2xl mb-3">🎯</div>
               <h3 className="text-xl font-semibold text-white mb-2">Achievement Guides</h3>
               <p className="text-slate-300">
-                Step-by-step guides to unlock all 19 achievements in the game.
-                Complete your collection with our detailed walkthroughs.
+                Step-by-step routes for ending requirements, floor targets, and timing-sensitive tasks.
+                Complete your collection with less trial and error.
               </p>
             </div>
 
             {/* Feature Card 5 */}
             <div className="p-6 rounded-xl bg-slate-900/50 border border-slate-800">
-              <div className="text-2xl mb-3">📚</div>
-              <h3 className="text-xl font-semibold text-white mb-2">Survival Strategies</h3>
+              <div className="text-2xl mb-3">📈</div>
+              <h3 className="text-xl font-semibold text-white mb-2">Risk Management Strategies</h3>
               <p className="text-slate-300">
-                Essential survival tips, building strategies, and exploration guides.
-                Learn how to thrive in the surreal sandbox world.
+                Practical guidance for stop-loss discipline, comeback planning, and coordinated push windows.
+                Turn volatile sessions into consistent progress.
               </p>
             </div>
 
@@ -171,8 +171,8 @@ export default function About() {
               <div className="text-2xl mb-3">🌍</div>
               <h3 className="text-xl font-semibold text-white mb-2">Multilingual Support</h3>
               <p className="text-slate-300">
-                Content available in multiple languages including English, Russian, Portuguese,
-                German, Spanish, Japanese, Korean, and French.
+                Content available in English, Japanese, Korean, and Spanish.
+                More localization coverage is planned over time.
               </p>
             </div>
           </div>
@@ -195,8 +195,8 @@ export default function About() {
               <li><strong>Meta shifts:</strong> We track gameplay trends and update guides based on real player experiences</li>
             </ul>
             <p>
-              <strong>Want to contribute?</strong> Whether you've discovered a new crafting recipe, found a hidden biome,
-              or have suggestions for new guides, we'd love to hear from you! Reach out through our contact channels below.
+              <strong>Want to contribute?</strong> Whether you've discovered a stronger quota route, identified high-value table patterns,
+              or have suggestions for clearer guides, we'd love to hear from you. Reach out through our contact channels below.
             </p>
           </div>
         </div>
@@ -222,7 +222,7 @@ export default function About() {
               <li><strong>Community management:</strong> Listening to player feedback and fostering a positive environment</li>
             </ul>
             <p className="text-slate-400 italic text-sm">
-              Project Codename: "Dreamscape" – Navigating the surreal together.
+              Project Codename: "Night Shift" - Managing risk together.
             </p>
           </div>
         </div>
