@@ -11,6 +11,9 @@ interface CTASectionProps {
 }
 
 export default function CTASection({ title, description, joinCommunity, joinGame }: CTASectionProps) {
+  const discordUrl = 'https://discord.gg/8GZwxBqhxN'
+  const steamStoreUrl = 'https://store.steampowered.com/app/3892270/Gamble_With_Your_Friends/'
+
   return (
     <section className="px-4 py-20">
       <div className="scroll-reveal container mx-auto max-w-5xl">
@@ -22,7 +25,7 @@ export default function CTASection({ title, description, joinCommunity, joinGame
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild className="bg-[hsl(var(--nav-theme))] hover:bg-[hsl(var(--nav-theme)/0.9)] text-white px-8 py-6 text-lg">
               <a
-                href="https://discord.com/invite/lucidblocks"
+                href={discordUrl}
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -31,7 +34,7 @@ export default function CTASection({ title, description, joinCommunity, joinGame
               </a>
             </Button>
             <a
-              href="https://store.steampowered.com/app/3495730/Lucid_Blocks/"
+              href={steamStoreUrl}
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 whitespace-nowrap rounded-md text-sm font-medium border border-border hover:bg-white/10 px-8 py-6 text-lg transition-colors"

@@ -34,27 +34,27 @@
     "articlesComingSoon": "Articles coming soon"
   },
   "hero": {
-    "badge": "Surreal Voxel Survival Sandbox",
-    "title": "Lucid Blocks Wiki",
-    "description": "Explore dreamlike biomes, fuse items with Apotheosis, build freely, and survive strange creatures in this surreal open-world sandbox on Steam.",
-    "getFreeCodesCTA": "Explore Crafting Guide",
+    "badge": "1-6 Player Co-op Casino Crawler",
+    "title": "Gamble With Your Friends",
+    "description": "Team up in a chaotic casino crawler where one shared bank account, one giant debt, and one bad all-in can decide the whole run.",
+    "getFreeCodesCTA": "Join Discord",
     "playOnSteamCTA": "Play on Steam",
     "stats": {
       "stat1": {
-        "value": "1,325",
-        "label": "Players Online"
+        "value": "20K+",
+        "label": "All-Time Peak"
       },
       "stat2": {
-        "value": "1,986",
-        "label": "Peak CCU"
+        "value": "890+",
+        "label": "Steam Reviews"
       },
       "stat3": {
-        "value": "97%",
-        "label": "Positive Reviews"
+        "value": "55",
+        "label": "Achievements"
       },
       "stat4": {
-        "value": "Mar 12, 2026",
-        "label": "Release Date"
+        "value": "17",
+        "label": "Chance Games"
       }
     }
   },
@@ -785,26 +785,28 @@
     ]
   },
   "cta": {
-    "title": "Ready to Explore Lucid Blocks?",
-    "description": "Join the Lucid Blocks community on Discord for guides, updates, and discussions!",
+    "title": "Ready for Your Next Run?",
+    "description": "Join the official community to share strategies, find teammates, and track new updates.",
     "joinCommunity": "Join Discord",
     "joinGame": "Play on Steam"
   },
   "footer": {
-    "title": "Lucid Blocks Wiki",
-    "description": "Your complete resource hub for Lucid Blocks crafting, biomes, creatures, achievements, and survival guides.",
+    "title": "Gamble With Your Friends",
+    "description": "Community guide hub for co-op runs, chance games, items, floors, endings, and achievements.",
     "resources": "Resources",
     "community": "Community",
     "legal": "Legal",
     "discord": "Discord",
     "twitter": "X / Twitter",
+    "reddit": "Reddit",
+    "youtube": "YouTube",
     "steamCommunity": "Steam Community",
     "steamStore": "Steam Store",
     "about": "About",
     "privacy": "Privacy Policy",
     "terms": "Terms of Service",
     "copyrightNotice": "Copyright",
-    "copyright": "© 2026 Lucid Blocks Wiki. Not affiliated with the developers of Lucid Blocks.",
+    "copyright": "© 2026 Gamble With Your Friends. Unofficial fan-made guide website.",
     "disclaimer": "Unofficial fan-made resource website."
   },
   "pages": {

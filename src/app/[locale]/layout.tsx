@@ -1,6 +1,6 @@
 import type { Metadata } from 'next'
 import { NextIntlClientProvider } from 'next-intl'
-import { getMessages, getTranslations } from 'next-intl/server'
+import { getMessages } from 'next-intl/server'
 import { notFound } from 'next/navigation'
 import { routing, type Locale } from '@/i18n/routing'
 import { buildLanguageAlternates } from '@/lib/i18n-utils'
@@ -28,6 +28,11 @@ type Props = {
 	params: Promise<{ locale: string }>
 }
 
+const SITE_NAME = 'Gamble With Your Friends'
+const HOME_TITLE = 'Gamble With Your Friends - Guide, Items & Achievements'
+const HOME_DESCRIPTION =
+	'Gamble With Your Friends guides for co-op runs, chance games, items, floors, endings, achievements, and Steam updates.'
+
 // 生成静态参数
 export function generateStaticParams() {
 	return routing.locales.map((locale) => ({ locale }))
@@ -36,14 +41,13 @@ export function generateStaticParams() {
 // 生成元数据
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
 	const { locale } = await params
-	const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || 'https://www.lucidblocks.wiki'
-
-	// 获取 SEO 翻译
-	const t = await getTranslations('seo.home')
+	const siteUrl = (process.env.NEXT_PUBLIC_SITE_URL || 'https://www.gamblewithyourfriends.wiki').replace(/\/+$/, '')
+	const homeUrl = locale === 'en' ? siteUrl : `${siteUrl}/${locale}`
+	const heroImageUrl = `${siteUrl}/images/hero.webp`
 
 	return {
-		title: t('title'),
-		description: t('description'),
+		title: HOME_TITLE,
+		description: HOME_DESCRIPTION,
 		robots: {
 			index: true,
 			follow: true,
@@ -58,25 +62,24 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
 		openGraph: {
 			type: 'website',
 			locale: locale,
-			url: locale === 'en' ? siteUrl : `${siteUrl}/${locale}`,
-			siteName: 'Lucid Blocks Wiki',
-			title: t('ogTitle'),
-			description: t('ogDescription'),
+			url: homeUrl,
+			siteName: SITE_NAME,
+			title: HOME_TITLE,
+			description: HOME_DESCRIPTION,
 			images: [
 				{
-					url: `${siteUrl}/images/hero.webp`,
+					url: heroImageUrl,
 					width: 1920,
 					height: 1080,
-					alt: 'Lucid Blocks - Surreal Voxel Sandbox',
+					alt: 'Gamble With Your Friends - Co-op Casino Crawler',
 				},
 			],
 		},
 		twitter: {
 			card: 'summary_large_image',
-			title: t('twitterTitle'),
-			description: t('twitterDescription'),
-			images: [`${siteUrl}/images/hero.webp`],
-			creator: '@lucidblocks',
+			title: HOME_TITLE,
+			description: HOME_DESCRIPTION,
+			images: [heroImageUrl],
 		},
 		icons: {
 			icon: [
