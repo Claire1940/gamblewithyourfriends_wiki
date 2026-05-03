@@ -1090,104 +1090,239 @@
     },
     "lucidBlocksSteamDeckAndController": {
       "title": "Gamble With Your Friends System Requirements",
-      "displayType": "accordion",
-      "intro": "Use these PC requirement checkpoints before launch so your group avoids avoidable setup delays.",
-      "faqs": [
+      "displayType": "table",
+      "intro": "Gamble With Your Friends is a Windows PC Steam game with modest storage needs but clear CPU, GPU, DirectX, and broadband connection requirements. Compare minimum and recommended specs before your next co-op session.",
+      "items": [
         {
-          "question": "What operating system is required?",
-          "answer": "Windows 10 or newer is listed for current Steam play sessions."
+          "spec": "Operating System",
+          "minimum": "Windows 10",
+          "recommended": "Windows 11",
+          "note": "Windows is the supported PC platform listed for the game."
         },
         {
-          "question": "What processor is listed for minimum setup?",
-          "answer": "Core i5-6600 class CPUs are listed for baseline performance."
+          "spec": "Processor",
+          "minimum": "Core i5 6600",
+          "recommended": "Intel Core i7 8700",
+          "note": "A stronger CPU is recommended for smoother co-op sessions and physics-heavy casino rooms."
         },
         {
-          "question": "How much memory is recommended?",
-          "answer": "8 GB RAM is the standard minimum target for stable gameplay sessions."
+          "spec": "Memory",
+          "minimum": "8 GB RAM",
+          "recommended": "8 GB RAM",
+          "note": "The memory target is the same for minimum and recommended setups."
         },
         {
-          "question": "What graphics baseline should players expect?",
-          "answer": "A GTX 1050-level GPU is commonly referenced for the minimum graphics tier."
+          "spec": "Graphics",
+          "minimum": "GTX 970",
+          "recommended": "GTX 1070",
+          "note": "The recommended GPU target is higher than minimum for steadier 3D gameplay."
         },
         {
-          "question": "How much storage should we reserve?",
-          "answer": "Keep at least 5 GB free for game files, updates, and local cache growth."
+          "spec": "DirectX",
+          "minimum": "Version 11",
+          "recommended": "Version 12",
+          "note": "DirectX 12 is recommended, while DirectX 11 is listed as minimum."
+        },
+        {
+          "spec": "Network",
+          "minimum": "Broadband Internet connection",
+          "recommended": "Broadband Internet connection",
+          "note": "Online co-op and Steam friend lobbies require a stable connection."
+        },
+        {
+          "spec": "Storage",
+          "minimum": "3 GB available space",
+          "recommended": "3 GB available space",
+          "note": "Install size is lightweight compared with most modern co-op PC games."
         }
       ]
     },
     "lucidBlocksSettingsAndAccessibility": {
-      "title": "Gamble With Your Friends Platforms and Mobile",
-      "displayType": "settingCards",
-      "intro": "Platform scope is centered on Steam Windows PC. Use this module to set clear expectations for mobile and alternative setups.",
-      "settings": [
+      "title": "Gamble With Your Friends Platforms And Mobile",
+      "displayType": "accordion",
+      "intro": "This section clarifies official platform scope, co-op access, solo play status, and what mobile users should expect before downloading anything.",
+      "items": [
         {
-          "name": "Primary Platform",
-          "type": "Official",
-          "description": "The primary public release is on Steam for Windows PC with online co-op support."
+          "title": "Official Platform",
+          "summary": "The supported version is the Steam Windows PC release.",
+          "content": "The Steam store and SteamDB list the game as a PC release with Windows support. The official FAQ also states that the team is supporting Windows PCs at this stage.",
+          "status": "Windows PC via Steam"
         },
         {
-          "name": "Steam Features",
-          "type": "Official",
-          "description": "Steam achievements, cloud saves, and family sharing features are available through the official listing."
+          "title": "Steam Co-op",
+          "summary": "Online co-op supports 1 to 6 players through Steam.",
+          "content": "The core loop is built around a shared bank account, debt quota pressure, and friend coordination. The Steam store lists Online Co-op and notes that players can invite up to 5 friends.",
+          "status": "Online co-op, up to 6 players"
         },
         {
-          "name": "Mobile Status",
-          "type": "Boundary",
-          "description": "There is no official standalone Android or iOS release path at this time."
+          "title": "Matchmaking",
+          "summary": "There is no regular public matchmaking queue.",
+          "content": "The official FAQ describes the game as Steam-friends only. Players usually organize groups through community Discord and Looking For Group discussions.",
+          "status": "Steam friends only"
         },
         {
-          "name": "Portable Access",
-          "type": "Alternative",
-          "description": "Portable play depends on desktop ecosystem tooling rather than a dedicated mobile build."
+          "title": "Single-player",
+          "summary": "Solo play is available, but the design focus is group play.",
+          "content": "Steam lists Single-player support and the FAQ confirms solo play. The intended experience still centers on shared money decisions and co-op pressure.",
+          "status": "Playable solo, designed for co-op"
+        },
+        {
+          "title": "Android And iOS",
+          "summary": "No native Android or iOS release is listed.",
+          "content": "Mobile access should be treated as remote access to the PC version, not as a separate phone app or APK installation.",
+          "status": "No native mobile version listed"
+        },
+        {
+          "title": "Mobile Remote Play Option",
+          "summary": "Phone and tablet play can work through remote PC streaming tools.",
+          "content": "In remote setups, the Steam game runs on a Windows PC and the mobile device acts as display and controls. This keeps sessions on the official PC build.",
+          "status": "Remote PC streaming path"
+        },
+        {
+          "title": "Steam Deck And Handheld PCs",
+          "summary": "Treat handheld access as a Steam PC compatibility check.",
+          "content": "The supported listing is Windows PC. If you use Steam Deck or another handheld PC, check store compatibility notes in Steam before purchase or installation.",
+          "status": "Check Steam compatibility details"
         }
       ]
     },
     "lucidBlocksUpdatesAndPatchNotes": {
-      "title": "Gamble With Your Friends Player Count and Reviews",
-      "displayType": "timeline",
-      "intro": "Track momentum through concurrent players, review sentiment, and community activity shifts after launch windows.",
-      "entries": [
+      "title": "Gamble With Your Friends Player Count And Reviews",
+      "displayType": "card-list",
+      "intro": "Track current activity, peak concurrency, and review momentum so your team can judge community health before planning co-op sessions.",
+      "items": [
         {
-          "title": "Launch Weekend Peak",
-          "type": "Player Count",
-          "description": "All-time concurrent peak reached 18,809 players during the first launch weekend window."
+          "label": "Live Steam Players",
+          "value": "19,083",
+          "caption": "SteamDB player counter snapshot of current live activity.",
+          "type": "current_players"
         },
         {
-          "title": "Current Activity Snapshot",
-          "type": "Live Count",
-          "description": "Daily live-player snapshots remain in the five-figure range during active peak hours."
+          "label": "All-Time Peak",
+          "value": "19,388",
+          "caption": "Highest recorded concurrent players, reached on May 2, 2026.",
+          "type": "peak_players"
         },
         {
-          "title": "Steam Review Direction",
-          "type": "User Sentiment",
-          "description": "Review ratio trends positive, with player feedback focused on co-op chaos and short run replayability."
+          "label": "Steam Store Review Summary",
+          "value": "Very Positive",
+          "caption": "92% positive from 822 Steam purchaser reviews in the store snapshot.",
+          "type": "steam_reviews"
+        },
+        {
+          "label": "SteamDB Rating",
+          "value": "86.52%",
+          "caption": "SteamDB rating snapshot based on 822 positive and 72 negative reviews.",
+          "type": "steamdb_rating"
+        },
+        {
+          "label": "Community Discussions",
+          "value": "76 active topics",
+          "caption": "Community hub activity across General, LFG, Bug Reporting, Events, and Trading sections.",
+          "type": "community_activity"
+        },
+        {
+          "label": "Twitch Interest",
+          "value": "2,933 viewers",
+          "caption": "SteamDB charts snapshot also listed 2,933 viewers and a 32,308 24-hour peak.",
+          "type": "streaming_interest"
         }
       ]
     },
     "lucidBlocksCrashFixAndTroubleshooting": {
-      "title": "Gamble With Your Friends Troubleshooting and Updates",
-      "displayType": "steps",
-      "intro": "When sessions fail, fix order matters. Run this short checklist before escalating issues to community support channels.",
-      "steps": [
+      "title": "Gamble With Your Friends Troubleshooting And Updates",
+      "displayType": "accordion",
+      "intro": "Use this support hub to report bugs correctly, fix lobby and connection issues, find logs, and track patch history without missing key steps.",
+      "items": [
         {
-          "title": "Verify Game Update State",
-          "description": "Apply the latest Steam patch first and restart the client before deeper troubleshooting."
+          "title": "Where To Report Bugs",
+          "summary": "Use Steam discussions, Discord, or the in-game bug report flow.",
+          "content": "Players can report issues through Steam discussions, the community Discord server, or Pause Menu > Report A Bug in-game. Attach screenshots, videos, and logs for faster triage.",
+          "steps": [
+            "Open the in-game Pause Menu.",
+            "Choose Report A Bug.",
+            "Attach screenshots, videos, or logs when possible.",
+            "Use Steam discussions or Discord if in-game reporting is not suitable."
+          ]
         },
         {
-          "title": "Confirm Host and Lobby Settings",
-          "description": "Re-check lobby privacy and host stability, then re-host if players fail to join consistently."
+          "title": "Support Contact",
+          "summary": "Email support when a problem remains unresolved.",
+          "content": "If basic troubleshooting does not fix the problem, contact support@tenstack.se and include issue details, media, and the latest player log.",
+          "steps": [
+            "Describe exactly what happened.",
+            "Include game mode, lobby context, and timestamp.",
+            "Attach the latest Player log file.",
+            "Send the report to support@tenstack.se."
+          ]
         },
         {
-          "title": "Validate Network Consistency",
-          "description": "Avoid unstable connection routing and keep all party members on predictable network conditions."
+          "title": "Where To Find Player Logs",
+          "summary": "Latest session logs are stored in the Windows AppData path.",
+          "content": "The FAQ notes that logs only cover the latest session, so collect them immediately after the issue appears.",
+          "steps": [
+            "Press Windows key + R.",
+            "Type appdata and confirm.",
+            "Open LocalLow\\TENSTACK\\Gamble With Your Friends.",
+            "Find the file named Player.",
+            "Send the file with your report."
+          ]
         },
         {
-          "title": "Collect Error Context",
-          "description": "Capture clear repro steps, timestamp, and device details so support replies can target the real failure path."
+          "title": "Lobby Privacy And Random Join Issues",
+          "summary": "Switch to Invite Only to prevent unexpected joins.",
+          "content": "Use Lobby Mode settings to move from Friends Only to Invite Only, then re-host the lobby so the change applies cleanly.",
+          "steps": [
+            "Open the lobby mode setting.",
+            "Switch from Friends Only to Invite Only.",
+            "Ask all players to follow the same lobby behavior.",
+            "Re-host after changing the mode."
+          ]
         },
         {
-          "title": "Escalate Through Official Channels",
-          "description": "Submit the issue in official community spaces with logs and reproducible steps for faster triage."
+          "title": "Connection Problems Or Can't Join Friends",
+          "summary": "Disable VPN tools and use the strongest host connection.",
+          "content": "Lobby creation runs through the Steam API. VPNs and connection-tweaking software can interfere, so disable them and let the best-connected player host.",
+          "steps": [
+            "Turn off VPNs and connection-tweaking apps.",
+            "Restart Steam and the game.",
+            "Let the strongest PC and connection host.",
+            "Recreate the lobby after the network reset."
+          ]
+        },
+        {
+          "title": "Motion Sickness Settings",
+          "summary": "Accessibility options can reduce camera discomfort.",
+          "content": "Players sensitive to motion can adjust Accessibility settings, including head bobbing and camera smoothing.",
+          "steps": [
+            "Open Settings.",
+            "Go to Accessibility.",
+            "Disable head bobbing.",
+            "Adjust camera smoothing.",
+            "Avoid intense body-machine sequences if they trigger discomfort."
+          ]
+        },
+        {
+          "title": "Bug Reporting Forum Topics",
+          "summary": "Review existing forum threads before posting new reports.",
+          "content": "The bug reporting board includes launch issues such as controller sensitivity, launch failures, graphical artifacts, elevator lockups, and achievement unlock problems.",
+          "steps": [
+            "Open the Bug Reporting subforum first.",
+            "Search for a matching issue title.",
+            "Post clear reproduction details for new threads.",
+            "Include logs and media attachments."
+          ]
+        },
+        {
+          "title": "Patch Notes And Update History",
+          "summary": "Use SteamDB to track build changes and announcements.",
+          "content": "SteamDB patch notes track app 3892270 build history and update posts, including launch build references and changenumbers.",
+          "steps": [
+            "Open the SteamDB patch notes page.",
+            "Check the latest changenumber and build record.",
+            "Open each patch post for announcement details.",
+            "Cross-check player issue reports after each update."
+          ]
         }
       ]
     }

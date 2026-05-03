@@ -19,7 +19,6 @@ import {
   Star,
   TrendingUp,
 } from 'lucide-react'
-import Link from 'next/link'
 import { useMessages } from 'next-intl'
 import { VideoFeature } from '@/components/home/VideoFeature'
 import { LatestGuidesAccordion } from '@/components/home/LatestGuidesAccordion'
@@ -70,6 +69,11 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
   const xUrl = 'https://x.com/tenstackstudios'
   const redditUrl = 'https://www.reddit.com/r/Tenstack'
   const youtubeUrl = 'https://www.youtube.com/@tenstackstudios'
+  const steamAboutUrl = 'https://store.steampowered.com/app/3892270/Gamble_With_Your_Friends/'
+  const steamPrivacyUrl = 'https://store.steampowered.com/privacy_agreement/'
+  const steamTermsUrl = 'https://store.steampowered.com/subscriber_agreement/'
+  const steamCopyrightUrl = 'https://store.steampowered.com/legal/dmca'
+  const steamPatchNotesUrl = 'https://steamdb.info/app/3892270/patchnotes/'
 
   // Structured data
   const structuredData = {
@@ -151,7 +155,8 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
 
   // FAQ accordion states
   const [faqExpanded, setFaqExpanded] = useState<number | null>(null)
-  const [deckExpanded, setDeckExpanded] = useState<number | null>(null)
+  const [platformExpanded, setPlatformExpanded] = useState<number | null>(null)
+  const [troubleshootingExpanded, setTroubleshootingExpanded] = useState<number | null>(null)
 
   const releaseInfoItems = Array.isArray(t.modules?.lucidBlocksQualiaAndBaseBuilding?.items)
     ? t.modules.lucidBlocksQualiaAndBaseBuilding.items
@@ -265,9 +270,69 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
         content: faq?.answer ? [faq.answer] : [],
       }))
 
+  const systemRequirementRows = Array.isArray(t.modules?.lucidBlocksSteamDeckAndController?.items)
+    ? t.modules.lucidBlocksSteamDeckAndController.items.map((item: any) => ({
+        spec: item?.spec || 'Requirement',
+        minimum: item?.minimum || '-',
+        recommended: item?.recommended || '-',
+        note: item?.note || '',
+      }))
+    : (t.modules?.lucidBlocksSteamDeckAndController?.faqs || []).map((faq: any) => ({
+        spec: faq?.question || 'Requirement',
+        minimum: '-',
+        recommended: '-',
+        note: faq?.answer || '',
+      }))
+
+  const platformAndMobileItems = Array.isArray(t.modules?.lucidBlocksSettingsAndAccessibility?.items)
+    ? t.modules.lucidBlocksSettingsAndAccessibility.items.map((item: any) => ({
+        title: item?.title || 'Platform Item',
+        summary: item?.summary || '',
+        content: item?.content || '',
+        status: item?.status || 'Status',
+      }))
+    : (t.modules?.lucidBlocksSettingsAndAccessibility?.settings || []).map((item: any) => ({
+        title: item?.name || 'Platform Item',
+        summary: item?.type || '',
+        content: item?.description || '',
+        status: item?.type || 'Status',
+      }))
+
+  const playerCountCards = Array.isArray(t.modules?.lucidBlocksUpdatesAndPatchNotes?.items)
+    ? t.modules.lucidBlocksUpdatesAndPatchNotes.items.map((item: any) => ({
+        label: item?.label || 'Stat',
+        value: item?.value || '-',
+        caption: item?.caption || '',
+        type: item?.type || 'metric',
+      }))
+    : (t.modules?.lucidBlocksUpdatesAndPatchNotes?.entries || []).map((entry: any) => ({
+        label: entry?.title || 'Stat',
+        value: entry?.type || '-',
+        caption: entry?.description || '',
+        type: entry?.type || 'metric',
+      }))
+
+  const troubleshootingItems = Array.isArray(t.modules?.lucidBlocksCrashFixAndTroubleshooting?.items)
+    ? t.modules.lucidBlocksCrashFixAndTroubleshooting.items.map((item: any) => ({
+        title: item?.title || 'Troubleshooting Item',
+        summary: item?.summary || '',
+        content: item?.content || '',
+        steps: Array.isArray(item?.steps) ? item.steps : [],
+      }))
+    : (t.modules?.lucidBlocksCrashFixAndTroubleshooting?.steps || []).map((step: any) => ({
+        title: step?.title || 'Troubleshooting Step',
+        summary: step?.description || '',
+        content: step?.description || '',
+        steps: [step?.description || 'Follow the official support process.'],
+      }))
+
   const bestTableIcons = [TrendingUp, Star, Sparkles, Gamepad2, AlertTriangle]
   const itemsAndTicketsIcons = [Star, Hammer, Settings, TrendingUp, MessageCircle, AlertTriangle, ClipboardCheck, ExternalLink, Clock, ArrowRight, Package, Sparkles]
   const achievementGuideIcons = [ClipboardCheck, BookOpen, Gamepad2, TrendingUp, Star, Settings, ExternalLink]
+  const systemRequirementIcons = [Settings, Gamepad2, ClipboardCheck, Sparkles, ExternalLink, TrendingUp, Package, AlertTriangle]
+  const platformAndMobileIcons = [Gamepad2, MessageCircle, Settings, BookOpen, Package, ExternalLink, TrendingUp, Star]
+  const playerCountIcons = [TrendingUp, Clock, Star, ClipboardCheck, MessageCircle, Sparkles, ExternalLink]
+  const troubleshootingIcons = [AlertTriangle, MessageCircle, BookOpen, Settings, TrendingUp, Sparkles, ClipboardCheck, ExternalLink, Hammer]
 
   // Scroll reveal animation
   useEffect(() => {
@@ -1056,27 +1121,72 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       <section id="system-requirements" className="scroll-mt-24 px-4 py-20">
         <div className="container mx-auto max-w-5xl">
           <div className="text-center mb-12 scroll-reveal">
-            <div className="flex items-center justify-center gap-3 mb-4">
-              <Gamepad2 className="w-8 h-8 text-[hsl(var(--nav-theme-light))]" />
-              <h2 className="text-4xl md:text-5xl font-bold"><LinkedTitle linkData={moduleLinkMap['lucidBlocksSteamDeckAndController']} locale={locale}>{t.modules.lucidBlocksSteamDeckAndController.title}</LinkedTitle></h2>
-            </div>
-            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksSteamDeckAndController.intro}</p>
+            <h2 className="text-4xl md:text-5xl font-bold mb-4">
+              <LinkedTitle linkData={moduleLinkMap['lucidBlocksSteamDeckAndController']} locale={locale}>
+                {t.modules.lucidBlocksSteamDeckAndController.title}
+              </LinkedTitle>
+            </h2>
+            <p className="text-muted-foreground text-lg max-w-3xl mx-auto">
+              {t.modules.lucidBlocksSteamDeckAndController.intro}
+            </p>
           </div>
-          <div className="scroll-reveal space-y-2">
-            {t.modules.lucidBlocksSteamDeckAndController.faqs.map((faq: any, index: number) => (
-              <div key={index} className="border border-border rounded-xl overflow-hidden">
-                <button
-                  onClick={() => setDeckExpanded(deckExpanded === index ? null : index)}
-                  className="w-full flex items-center justify-between p-5 text-left hover:bg-white/5 transition-colors"
-                >
-                  <span className="font-semibold">{faq.question}</span>
-                  <ChevronDown className={`w-5 h-5 flex-shrink-0 transition-transform ${deckExpanded === index ? "rotate-180" : ""}`} />
-                </button>
-                {deckExpanded === index && (
-                  <div className="px-5 pb-5 text-muted-foreground text-sm">{faq.answer}</div>
-                )}
+
+          <div className="scroll-reveal hidden md:block rounded-xl border border-border overflow-hidden">
+            <div className="grid grid-cols-[1.2fr_1fr_1fr_1.8fr] bg-[hsl(var(--nav-theme)/0.14)] border-b border-border">
+              <div className="p-4 text-sm font-semibold">Spec</div>
+              <div className="p-4 text-sm font-semibold">Minimum</div>
+              <div className="p-4 text-sm font-semibold">Recommended</div>
+              <div className="p-4 text-sm font-semibold">Notes</div>
+            </div>
+            {systemRequirementRows.map((row: any, index: number) => (
+              <div
+                key={index}
+                className="grid grid-cols-[1.2fr_1fr_1fr_1.8fr] border-b border-border/70 last:border-b-0 bg-white/[0.02] hover:bg-[hsl(var(--nav-theme)/0.06)] transition-colors"
+              >
+                <div className="p-4 font-semibold text-[hsl(var(--nav-theme-light))]">
+                  <LinkedTitle linkData={moduleLinkMap[`lucidBlocksSteamDeckAndController::items::${index}`]} locale={locale}>
+                    {row.spec}
+                  </LinkedTitle>
+                </div>
+                <div className="p-4 text-sm">{row.minimum}</div>
+                <div className="p-4 text-sm">{row.recommended}</div>
+                <div className="p-4 text-sm text-muted-foreground">{row.note}</div>
               </div>
             ))}
+          </div>
+
+          <div className="scroll-reveal md:hidden space-y-4">
+            {systemRequirementRows.map((row: any, index: number) => {
+              const RequirementIcon = systemRequirementIcons[index % systemRequirementIcons.length]
+              return (
+                <div key={index} className="p-5 bg-white/5 border border-border rounded-xl">
+                  <div className="flex items-center gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-[hsl(var(--nav-theme)/0.14)] border border-[hsl(var(--nav-theme)/0.35)] flex items-center justify-center">
+                      <RequirementIcon className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                    </div>
+                    <h3 className="font-bold">
+                      <LinkedTitle linkData={moduleLinkMap[`lucidBlocksSteamDeckAndController::items::${index}`]} locale={locale}>
+                        {row.spec}
+                      </LinkedTitle>
+                    </h3>
+                  </div>
+                  <div className="space-y-3">
+                    <div>
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Minimum</p>
+                      <p className="text-sm font-medium">{row.minimum}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Recommended</p>
+                      <p className="text-sm font-medium">{row.recommended}</p>
+                    </div>
+                    <div>
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Notes</p>
+                      <p className="text-sm text-muted-foreground">{row.note}</p>
+                    </div>
+                  </div>
+                </div>
+              )
+            })}
           </div>
         </div>
       </section>
@@ -1088,21 +1198,47 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksSettingsAndAccessibility']} locale={locale}>{t.modules.lucidBlocksSettingsAndAccessibility.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksSettingsAndAccessibility.intro}</p>
           </div>
-          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4">
-            {t.modules.lucidBlocksSettingsAndAccessibility.settings.map((s: any, index: number) => (
-              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <div className="flex items-center gap-3 mb-3">
-                  <Settings className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <h3 className="font-bold">
-                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksSettingsAndAccessibility::settings::${index}`]} locale={locale}>
-                      {s.name}
-                    </LinkedTitle>
-                  </h3>
-                  <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{s.type}</span>
+          <div className="scroll-reveal space-y-3">
+            {platformAndMobileItems.map((item: any, index: number) => {
+              const PlatformIcon = platformAndMobileIcons[index % platformAndMobileIcons.length]
+              const isOpen = platformExpanded === index
+
+              return (
+                <div key={index} className="border border-border rounded-xl overflow-hidden bg-white/[0.02]">
+                  <button
+                    onClick={() => setPlatformExpanded(isOpen ? null : index)}
+                    className="w-full p-5 text-left hover:bg-white/5 transition-colors"
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="flex items-start gap-3">
+                        <div className="w-10 h-10 rounded-lg bg-[hsl(var(--nav-theme)/0.14)] border border-[hsl(var(--nav-theme)/0.35)] flex items-center justify-center flex-shrink-0">
+                          <PlatformIcon className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                        </div>
+                        <div>
+                          <h3 className="font-bold mb-1">
+                            <LinkedTitle linkData={moduleLinkMap[`lucidBlocksSettingsAndAccessibility::items::${index}`]} locale={locale}>
+                              {item.title}
+                            </LinkedTitle>
+                          </h3>
+                          {item.summary && <p className="text-sm text-muted-foreground">{item.summary}</p>}
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">
+                          {item.status}
+                        </span>
+                        <ChevronDown className={`w-5 h-5 flex-shrink-0 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+                      </div>
+                    </div>
+                  </button>
+                  {isOpen && (
+                    <div className="px-5 pb-5 text-sm text-muted-foreground">
+                      {item.content}
+                    </div>
+                  )}
                 </div>
-                <p className="text-muted-foreground text-sm">{s.description}</p>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
@@ -1114,24 +1250,30 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksUpdatesAndPatchNotes']} locale={locale}>{t.modules.lucidBlocksUpdatesAndPatchNotes.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksUpdatesAndPatchNotes.intro}</p>
           </div>
-          <div className="scroll-reveal relative pl-6 border-l-2 border-[hsl(var(--nav-theme)/0.3)] space-y-8">
-            {t.modules.lucidBlocksUpdatesAndPatchNotes.entries.map((entry: any, index: number) => (
-              <div key={index} className="relative">
-                <div className="absolute -left-[1.4rem] w-4 h-4 rounded-full bg-[hsl(var(--nav-theme))] border-2 border-background" />
-                <div className="p-5 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                  <div className="flex items-center gap-2 mb-2">
-                    <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)]">{entry.type}</span>
-                    <Clock className="w-4 h-4 text-muted-foreground" />
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {playerCountCards.map((item: any, index: number) => {
+              const PlayerIcon = playerCountIcons[index % playerCountIcons.length]
+
+              return (
+                <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                  <div className="flex items-center justify-between gap-3 mb-4">
+                    <div className="w-10 h-10 rounded-lg bg-[hsl(var(--nav-theme)/0.14)] border border-[hsl(var(--nav-theme)/0.35)] flex items-center justify-center">
+                      <PlayerIcon className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                    </div>
+                    <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] uppercase">
+                      {item.type.replaceAll('_', ' ')}
+                    </span>
                   </div>
-                  <h3 className="font-bold mb-1">
-                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksUpdatesAndPatchNotes::entries::${index}`]} locale={locale}>
-                      {entry.title}
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground mb-2">
+                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksUpdatesAndPatchNotes::items::${index}`]} locale={locale}>
+                      {item.label}
                     </LinkedTitle>
-                  </h3>
-                  <p className="text-muted-foreground text-sm">{entry.description}</p>
+                  </p>
+                  <p className="text-3xl font-bold text-[hsl(var(--nav-theme-light))] mb-3">{item.value}</p>
+                  <p className="text-sm text-muted-foreground">{item.caption}</p>
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
@@ -1143,29 +1285,59 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksCrashFixAndTroubleshooting']} locale={locale}>{t.modules.lucidBlocksCrashFixAndTroubleshooting.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksCrashFixAndTroubleshooting.intro}</p>
           </div>
-          <div className="scroll-reveal space-y-4 mb-8">
-            {t.modules.lucidBlocksCrashFixAndTroubleshooting.steps.map((step: any, index: number) => (
-              <div key={index} className="flex gap-4 p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <div className="flex-shrink-0 w-12 h-12 rounded-full bg-[hsl(var(--nav-theme)/0.2)] border-2 border-[hsl(var(--nav-theme)/0.5)] flex items-center justify-center">
-                  <span className="text-xl font-bold text-[hsl(var(--nav-theme-light))]">{index + 1}</span>
+          <div className="scroll-reveal space-y-3 mb-8">
+            {troubleshootingItems.map((item: any, index: number) => {
+              const TroubleshootingIcon = troubleshootingIcons[index % troubleshootingIcons.length]
+              const isOpen = troubleshootingExpanded === index
+
+              return (
+                <div key={index} className="border border-border rounded-xl overflow-hidden bg-white/[0.02]">
+                  <button
+                    onClick={() => setTroubleshootingExpanded(isOpen ? null : index)}
+                    className="w-full p-5 text-left hover:bg-white/5 transition-colors"
+                  >
+                    <div className="flex items-start justify-between gap-4">
+                      <div className="flex items-start gap-3">
+                        <div className="w-10 h-10 rounded-lg bg-[hsl(var(--nav-theme)/0.14)] border border-[hsl(var(--nav-theme)/0.35)] flex items-center justify-center flex-shrink-0">
+                          <TroubleshootingIcon className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                        </div>
+                        <div>
+                          <h3 className="font-bold mb-1">
+                            <LinkedTitle linkData={moduleLinkMap[`lucidBlocksCrashFixAndTroubleshooting::items::${index}`]} locale={locale}>
+                              {item.title}
+                            </LinkedTitle>
+                          </h3>
+                          {item.summary && <p className="text-sm text-muted-foreground">{item.summary}</p>}
+                        </div>
+                      </div>
+                      <ChevronDown className={`w-5 h-5 flex-shrink-0 transition-transform ${isOpen ? 'rotate-180' : ''}`} />
+                    </div>
+                  </button>
+                  {isOpen && (
+                    <div className="px-5 pb-5">
+                      {item.content && <p className="text-sm text-muted-foreground mb-4">{item.content}</p>}
+                      {Array.isArray(item.steps) && item.steps.length > 0 && (
+                        <ul className="space-y-2">
+                          {item.steps.map((step: string, stepIndex: number) => (
+                            <li key={stepIndex} className="flex items-start gap-2 text-sm text-muted-foreground">
+                              <Check className="w-4 h-4 mt-0.5 text-[hsl(var(--nav-theme-light))] flex-shrink-0" />
+                              <span>{step}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      )}
+                    </div>
+                  )}
                 </div>
-                <div>
-                  <h3 className="text-xl font-bold mb-2">
-                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksCrashFixAndTroubleshooting::steps::${index}`]} locale={locale}>
-                      {step.title}
-                    </LinkedTitle>
-                  </h3>
-                  <p className="text-muted-foreground">{step.description}</p>
-                </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
           <div className="scroll-reveal p-6 bg-[hsl(var(--nav-theme)/0.08)] border border-[hsl(var(--nav-theme)/0.35)] rounded-xl">
             <div className="flex items-start gap-3">
               <AlertTriangle className="w-6 h-6 text-[hsl(var(--nav-theme-light))] flex-shrink-0 mt-1" />
               <div>
-                <h3 className="font-bold text-[hsl(var(--nav-theme-light))] mb-2">Still having issues?</h3>
-                <p className="text-sm text-muted-foreground mb-3">Report bugs with your logs through the official channels:</p>
+                <h3 className="font-bold text-[hsl(var(--nav-theme-light))] mb-2">Need direct support channels?</h3>
+                <p className="text-sm text-muted-foreground mb-3">Use these official destinations for live help and update tracking.</p>
                 <div className="flex flex-wrap gap-3">
                   <a href={discordUrl} target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
@@ -1174,6 +1346,10 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
                   <a href={steamCommunityUrl} target="_blank" rel="noopener noreferrer"
                     className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
                     Steam Community <ExternalLink className="w-3 h-3" />
+                  </a>
+                  <a href={steamPatchNotesUrl} target="_blank" rel="noopener noreferrer"
+                    className="inline-flex items-center gap-2 px-4 py-2 rounded-lg bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm hover:bg-[hsl(var(--nav-theme)/0.2)] transition-colors">
+                    SteamDB Patch Notes <ExternalLink className="w-3 h-3" />
                   </a>
                 </div>
               </div>
@@ -1284,41 +1460,49 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
               </ul>
             </div>
 
-            {/* Legal - Internal Routes Only */}
+            {/* Legal - External Reference Links */}
             <div>
               <h4 className="font-semibold mb-4">{t.footer.legal}</h4>
               <ul className="space-y-2 text-sm">
                 <li>
-                  <Link
-                    href="/about"
+                  <a
+                    href={steamAboutUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
                   >
                     {t.footer.about}
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/privacy-policy"
+                  <a
+                    href={steamPrivacyUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
                   >
                     {t.footer.privacy}
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/terms-of-service"
+                  <a
+                    href={steamTermsUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
                   >
                     {t.footer.terms}
-                  </Link>
+                  </a>
                 </li>
                 <li>
-                  <Link
-                    href="/copyright"
+                  <a
+                    href={steamCopyrightUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
                     className="text-muted-foreground hover:text-[hsl(var(--nav-theme-light))] transition"
                   >
                     {t.footer.copyrightNotice}
-                  </Link>
+                  </a>
                 </li>
               </ul>
             </div>
