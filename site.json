@@ -1,0 +1,474 @@
+{
+  "lastUpdated": "2026-05-02",
+  "sites": [
+    {
+      "launchDate": "2026-03-22",
+      "domain": "animeoverloadwiki.wiki",
+      "keywords": "anime overload",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-31",
+      "domain": "animeoverlord.wiki",
+      "keywords": "animeoverlord",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-06",
+      "domain": "arcanelineage.wiki",
+      "keywords": "arcanelineage",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-05",
+      "domain": "arenazeromovie.wiki",
+      "keywords": "arenazeromovie",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-22",
+      "domain": "bealuckyblockwiki.wiki",
+      "keywords": "be a lucky block",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-28",
+      "domain": "bitebynight.wiki",
+      "keywords": "bite by night",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-29",
+      "domain": "bridgerwestern.wiki",
+      "keywords": "bridger western",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-01",
+      "domain": "carmechanicsimulator2026.wiki",
+      "keywords": "carmechanicsimulator2026",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-30",
+      "domain": "cookierunovensmash.wiki",
+      "keywords": "cookie run oven smash",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-30",
+      "domain": "crimescenecleaner.wiki",
+      "keywords": "crimescenecleaner",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-21",
+      "domain": "crimsondesertwiki.wiki",
+      "keywords": "crimson desert",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-22",
+      "domain": "cursedgear.wiki",
+      "keywords": "cursed gear",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-25",
+      "domain": "cursedgearwiki.wiki",
+      "keywords": "cursed gear",
+      "status": "已上线",
+      "template": "template2"
+    },
+    {
+      "launchDate": "2026-03-24",
+      "domain": "dissidiaduellumfinalfantasy.wiki",
+      "keywords": "dissidia duellum final fantasy",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-04-07",
+      "domain": "doombyfate.wiki",
+      "keywords": "doombyfate",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-24",
+      "domain": "dragdrivesimulator.wiki",
+      "keywords": "drag drive simulator",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-04-09",
+      "domain": "exoria.wiki",
+      "keywords": "exoria",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-04",
+      "domain": "gemma4.wiki",
+      "keywords": "gemma4",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-31",
+      "domain": "grayzonewarfarewiki.wiki",
+      "keywords": "grayzonewarfarewiki",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-01",
+      "domain": "hozywiki.wiki",
+      "keywords": "hozywiki",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-08",
+      "domain": "idols-of-ash.wiki",
+      "keywords": "idols of ash",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-30",
+      "domain": "lastepoch.wiki",
+      "keywords": "last epoch",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-28",
+      "domain": "lifeisstrangereunion.wiki",
+      "keywords": "life is strange reunion",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-04-10",
+      "domain": "morbid-metal.wiki",
+      "keywords": "morbid metal",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-04-07",
+      "domain": "poppyplaytimechapter6.wiki",
+      "keywords": "poppyplaytimechapter6",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-02",
+      "domain": "pragmata.wiki",
+      "keywords": "pragmata",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-27",
+      "domain": "ragnarokoriginclassic.wiki",
+      "keywords": "ragnarok origin classic",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-03-28",
+      "domain": "reawakened.wiki",
+      "keywords": "reawakened",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-22",
+      "domain": "retrorewindvideostoresimulator.wiki",
+      "keywords": "retro rewind video store simulator",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-04-08",
+      "domain": "road-to-vostok.wiki",
+      "keywords": "road to vostok",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-21",
+      "domain": "starsavior.wiki",
+      "keywords": "star savior",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-04-02",
+      "domain": "supermeatboy3d.wiki",
+      "keywords": "supermeatboy3d",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-03",
+      "domain": "superstar-baseball.wiki",
+      "keywords": "superstar baseball",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-03",
+      "domain": "superstarbaseballwiki.wiki",
+      "keywords": "superstarbaseballwiki",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-05",
+      "domain": "tensuraincremental.wiki",
+      "keywords": "tensuraincremental",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-03",
+      "domain": "thedivisionresurgence.wiki",
+      "keywords": "thedivisionresurgence",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-10",
+      "domain": "theoccultist.wiki",
+      "keywords": "theoccultist",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-31",
+      "domain": "tomodachilife.wiki",
+      "keywords": "tomodachilife",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-03-26",
+      "domain": "tomodachilifelivingthedream.wiki",
+      "keywords": "tomodachi life living the dream",
+      "status": "已上线",
+      "template": "template1"
+    },
+    {
+      "launchDate": "2026-04-08",
+      "domain": "unwellwintergames.wiki",
+      "keywords": "unwellwintergames",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-10",
+      "domain": "pokemonchampions.wiki",
+      "keywords": "pokemonchampions",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-11",
+      "domain": "borderlandsmobile.wiki",
+      "keywords": "borderlands mobile",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-12",
+      "domain": "summonheroeswiki.wiki",
+      "keywords": "summonheroeswiki",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-13",
+      "domain": "animereversal.wiki",
+      "keywords": "animereversal",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-13",
+      "domain": "cloverorigins.wiki",
+      "keywords": "cloverorigins",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-13",
+      "domain": "pilgrammedwiki.wiki",
+      "keywords": "pilgrammedwiki",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-14",
+      "domain": "sol-cesto.wiki",
+      "keywords": "sol cesto",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-14",
+      "domain": "metro2039.wiki",
+      "keywords": "metro2039",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-17",
+      "domain": "mongilstardive.wiki",
+      "keywords": "mongilstardive",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-18",
+      "domain": "treeshateyou.wiki",
+      "keywords": "treeshateyou",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-18",
+      "domain": "67speed.wiki",
+      "keywords": "67speed",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-19",
+      "domain": "brainrotevolution.wiki",
+      "keywords": "brainrotevolution",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-19",
+      "domain": "windrosewiki.wiki",
+      "keywords": "windrosewiki",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-20",
+      "domain": "locked2.wiki",
+      "keywords": "locked2",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-20",
+      "domain": "saros.wiki",
+      "keywords": "saros",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-21",
+      "domain": "vampire-crawlers.wiki",
+      "keywords": "vampire crawlers",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-21",
+      "domain": "slimeseaswiki.wiki",
+      "keywords": "slimeseaswiki",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-22",
+      "domain": "dragonquestsmashgrow.wiki",
+      "keywords": "dragonquestsmashgrow",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-22",
+      "domain": "splatoonraiders.wiki",
+      "keywords": "splatoonraiders",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-25",
+      "domain": "marvelrivalsbloodhunt.wiki",
+      "keywords": "marvelrivalsbloodhunt",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-25",
+      "domain": "robloxcreatorshowdown2026.wiki",
+      "keywords": "robloxcreatorshowdown2026",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-25",
+      "domain": "worldfighters.wiki",
+      "keywords": "worldfighters",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-26",
+      "domain": "block-tales.wiki",
+      "keywords": "block tales",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-26",
+      "domain": "slime-rng.wiki",
+      "keywords": "slime rng",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-26",
+      "domain": "animeapocalypse.wiki",
+      "keywords": "animeapocalypse",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-27",
+      "domain": "shinobiway.wiki",
+      "keywords": "shinobiway",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-27",
+      "domain": "attack-on-titan-revolution.wiki",
+      "keywords": "attack on titan revolution",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-29",
+      "domain": "directive8020.wiki",
+      "keywords": "directive8020",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-29",
+      "domain": "thebloodofdawnwalker.wiki",
+      "keywords": "thebloodofdawnwalker",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-29",
+      "domain": "forzahorizon6.wiki",
+      "keywords": "forzahorizon6",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-29",
+      "domain": "neverness-to-everness.wiki",
+      "keywords": "neverness to everness",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-04-30",
+      "domain": "industria2.wiki",
+      "keywords": "industria2",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-05-01",
+      "domain": "nbatherun.wiki",
+      "keywords": "nbatherun",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-05-01",
+      "domain": "far-far-west.wiki",
+      "keywords": "far far west",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-05-02",
+      "domain": "allstartowerdefensex.wiki",
+      "keywords": "allstartowerdefensex",
+      "status": "已上线"
+    },
+    {
+      "launchDate": "2026-05-02",
+      "domain": "arcaneodyssey.wiki",
+      "keywords": "arcane odyssey",
+      "status": "已上线"
+    }
+  ]
+}
