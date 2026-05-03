@@ -10,7 +10,15 @@
       "twitterDescription": "Gamble With Your Friends guide covering co-op runs, chance games, items, floors, endings, and Steam updates."
     }
   },
-  "nav": {},
+  "nav": {
+    "guide": "Guide",
+    "price": "Price",
+    "steam": "Steam",
+    "release": "Release",
+    "platforms": "Platforms",
+    "gameplay": "Gameplay",
+    "mods": "Mods"
+  },
   "common": {
     "home": "Home",
     "more": "More",
@@ -1384,125 +1392,145 @@
     "disclaimer": "Unofficial fan-made resource website."
   },
   "pages": {
-    "guides": {
-      "title": "Gamble With Your Friends Guides",
-      "description": "Complete gameplay guides from first-run setup to advanced quota strategy and ending routes.",
-      "metaTitle": "Gamble With Your Friends Guides - Beginner to Advanced Strategies",
-      "metaDescription": "Complete Gamble With Your Friends guides covering beginner tips, quota strategy, team coordination, and advanced run planning.",
-      "categoryLabel": "GAME GUIDES",
-      "whatIs": "What are Guides?",
-      "whatIsDescription": "Comprehensive guides covering co-op mechanics, bankroll control, and progression through all casino floors.",
-      "why": "Why read guides?",
+    "guide": {
+      "title": "Gamble With Your Friends Guide",
+      "description": "Step-by-step strategy guides for co-op bankroll control, quota pacing, floor planning, and consistent clears.",
+      "metaTitle": "Gamble With Your Friends Guide - Strategy, Quota, and Team Play",
+      "metaDescription": "Read practical Gamble With Your Friends guide content for beginner setup, quota strategy, team roles, and smoother full-floor runs.",
+      "categoryLabel": "GUIDE",
+      "whatIs": "What is the Guide category?",
+      "whatIsDescription": "This category collects route planning, team role setup, and decision frameworks that help parties avoid early collapses and finish runs more consistently.",
+      "why": "Why read these guides?",
       "whySteps": {
-        "step1Title": "Learn Core Systems",
-        "step1Description": "Understand quota pressure and avoid common early-run mistakes",
-        "step2Title": "Improve Team Consistency",
-        "step2Description": "Use repeatable table rotations and clear role assignments",
-        "step3Title": "Plan Better Endings",
-        "step3Description": "Build stable routes for achievements and ending-focused sessions"
+        "step1Title": "Learn Faster",
+        "step1Description": "Get straight to repeatable openings instead of trial-and-error losses.",
+        "step2Title": "Coordinate Better",
+        "step2Description": "Use shared callouts and role assignments to keep decisions clean under timer pressure.",
+        "step3Title": "Finish More Runs",
+        "step3Description": "Apply floor-specific adjustments that keep your bankroll stable into late-game quotas."
       },
       "featured": "Featured & Essential",
-      "all": "All Guides"
+      "all": "All Guide Articles"
     },
-    "crafting": {
-      "title": "Gamble With Your Friends Quota Strategy",
-      "description": "Master bankroll pacing, table volatility control, and quota recovery patterns for stronger co-op runs.",
-      "metaTitle": "Gamble With Your Friends Quota Strategy - Team Bankroll Guide",
-      "metaDescription": "Master Gamble With Your Friends quota strategy with bankroll pacing, risk rotation, and coordinated recovery plans.",
-      "categoryLabel": "QUOTA STRATEGY",
-      "whatIs": "What is Quota Strategy?",
-      "whatIsDescription": "Quota strategy is the team process for pacing bets, protecting shared funds, and timing risk spikes under the day timer.",
-      "why": "Why master quota strategy?",
+    "price": {
+      "title": "Gamble With Your Friends Price",
+      "description": "Track current Steam pricing, discount windows, bundle value, and purchase planning for solo or group buy-ins.",
+      "metaTitle": "Gamble With Your Friends Price - Steam Cost, Sales, and Bundle Value",
+      "metaDescription": "Check Gamble With Your Friends price updates, Steam sale timing, bundle comparisons, and practical purchase tips before checkout.",
+      "categoryLabel": "PRICE",
+      "whatIs": "What is the Price category?",
+      "whatIsDescription": "Price articles focus on game cost, discount timing, soundtrack or bundle differences, and how to avoid paying more than necessary.",
+      "why": "Why check price updates?",
       "whySteps": {
-        "step1Title": "Stabilize Early Runs",
-        "step1Description": "Use safer openers to avoid early collapses",
-        "step2Title": "Control Volatility",
-        "step2Description": "Rotate tables based on bankroll state and timer pressure",
-        "step3Title": "Recover Under Pressure",
-        "step3Description": "Execute coordinated comeback plays only when needed"
+        "step1Title": "Buy at Better Timing",
+        "step1Description": "Spot common sale windows and decide whether to purchase now or wait.",
+        "step2Title": "Compare Bundle Math",
+        "step2Description": "Understand when bundle offers beat base-game pricing for your group.",
+        "step3Title": "Avoid Duplicate Spend",
+        "step3Description": "Align team purchases so everyone gets the right edition once."
       },
       "featured": "Featured & Essential",
-      "all": "All Strategy Guides"
+      "all": "All Price Articles"
     },
-    "items": {
-      "title": "Gamble With Your Friends Items",
-      "description": "Detailed item and ticket guides covering purchase priorities, combo timing, and recovery value.",
-      "metaTitle": "Gamble With Your Friends Items - Tickets & Utility Guide",
-      "metaDescription": "Complete item guide for Gamble With Your Friends including ticket priorities, utility planning, and run-saving usage patterns.",
-      "categoryLabel": "ITEMS & TICKETS",
-      "whatIs": "What are Items?",
-      "whatIsDescription": "Item and ticket guides explain what to buy first, when to hold resources, and how to support quota consistency.",
-      "why": "Why check item guides?",
+    "steam": {
+      "title": "Gamble With Your Friends Steam",
+      "description": "Steam-focused coverage for store pages, download flow, app metadata, patch hubs, and platform-specific store behavior.",
+      "metaTitle": "Gamble With Your Friends Steam - Download, Store, and App Info",
+      "metaDescription": "Explore Gamble With Your Friends Steam resources for download steps, store metadata, app ID references, and official hub navigation.",
+      "categoryLabel": "STEAM",
+      "whatIs": "What is the Steam category?",
+      "whatIsDescription": "Steam articles centralize the official store workflow, community hub paths, and app-level references that players use most.",
+      "why": "Why use Steam-focused pages?",
       "whySteps": {
-        "step1Title": "Spend Tickets Smarter",
-        "step1Description": "Prioritize items that support your active run plan",
-        "step2Title": "Time Utility Better",
-        "step2Description": "Save high-impact tools for real quota pressure moments",
-        "step3Title": "Avoid Waste",
-        "step3Description": "Skip impulse purchases that do not improve team stability"
+        "step1Title": "Find Official Sources",
+        "step1Description": "Reach the right store and community pages without digging through mirrors.",
+        "step2Title": "Understand Store Details",
+        "step2Description": "Review release state, package setup, and app metadata in one place.",
+        "step3Title": "Troubleshoot Faster",
+        "step3Description": "Use clear Steam-side checks when downloads or launches fail."
       },
       "featured": "Featured & Essential",
-      "all": "All Items"
+      "all": "All Steam Articles"
     },
-    "biomes": {
-      "title": "Gamble With Your Friends Floors",
-      "description": "Explore floor structure, risk changes, and progression priorities from Floor 1 through Floor 4.",
-      "metaTitle": "Gamble With Your Friends Floors - Progression & Risk Guide",
-      "metaDescription": "Explore Gamble With Your Friends floor progression, risk profile changes, and practical routing across all casino levels.",
-      "categoryLabel": "CASINO FLOORS",
-      "whatIs": "What are Floors?",
-      "whatIsDescription": "Floor guides break down pacing, table access, and strategy priorities for each stage of a full casino run.",
-      "why": "Why learn floor flow?",
+    "release": {
+      "title": "Gamble With Your Friends Release",
+      "description": "Release timeline coverage including launch date, version milestones, update cadence, and status checkpoints.",
+      "metaTitle": "Gamble With Your Friends Release - Date, Timeline, and Update Status",
+      "metaDescription": "Follow Gamble With Your Friends release information covering launch date, update timeline, and version status references.",
+      "categoryLabel": "RELEASE",
+      "whatIs": "What is the Release category?",
+      "whatIsDescription": "Release pages summarize when key milestones happened and how to track ongoing changes across Steam announcements and update signals.",
+      "why": "Why follow release notes here?",
       "whySteps": {
-        "step1Title": "Match Risk to Floor",
-        "step1Description": "Use safer lines early and scale risk as needed",
-        "step2Title": "Route Better",
-        "step2Description": "Adapt table choices to layout variance",
-        "step3Title": "Improve Clears",
-        "step3Description": "Carry stronger bankrolls into late-floor pressure"
+        "step1Title": "Track Milestones",
+        "step1Description": "See launch and post-launch checkpoints in chronological context.",
+        "step2Title": "Plan Group Sessions",
+        "step2Description": "Schedule runs around known patch windows and content updates.",
+        "step3Title": "Reduce Version Confusion",
+        "step3Description": "Keep your team aligned on current status before troubleshooting."
       },
       "featured": "Featured & Essential",
-      "all": "All Floor Guides"
+      "all": "All Release Articles"
     },
-    "building": {
-      "title": "Gamble With Your Friends Co-op Play",
-      "description": "Master lobby setup, host choices, invite flow, and role-based communication for smoother multiplayer sessions.",
-      "metaTitle": "Gamble With Your Friends Co-op - Lobby & Team Coordination",
-      "metaDescription": "Master Gamble With Your Friends co-op with lobby setup, host selection, callout roles, and team communication workflows.",
-      "categoryLabel": "CO-OP PLAY",
-      "whatIs": "What is Co-op Setup?",
-      "whatIsDescription": "Co-op setup guides cover privacy modes, host stability, team roles, and communication standards before runs begin.",
-      "why": "Why optimize co-op setup?",
+    "platforms": {
+      "title": "Gamble With Your Friends Platforms",
+      "description": "Platform availability guides for Windows PC, controller behavior, multiplayer access, and mobile or console expectation management.",
+      "metaTitle": "Gamble With Your Friends Platforms - PC, Controller, and Access",
+      "metaDescription": "Read Gamble With Your Friends platform guidance for PC support, controller setup, multiplayer access, and non-PC availability expectations.",
+      "categoryLabel": "PLATFORMS",
+      "whatIs": "What is the Platforms category?",
+      "whatIsDescription": "Platforms pages explain where the game is available now, how input devices behave, and what players should expect across different hardware contexts.",
+      "why": "Why check platform details first?",
       "whySteps": {
-        "step1Title": "Reduce Join Issues",
-        "step1Description": "Use stable host and clear privacy configuration",
-        "step2Title": "Coordinate Faster",
-        "step2Description": "Assign bankroll, timer, and item callout roles",
-        "step3Title": "Improve Win Rate",
-        "step3Description": "Convert cleaner communication into consistent quota clears"
+        "step1Title": "Confirm Availability",
+        "step1Description": "Avoid dead-end installs by checking supported systems before buying.",
+        "step2Title": "Prepare Input Setup",
+        "step2Description": "Know controller and keyboard expectations before your first session.",
+        "step3Title": "Set Team Expectations",
+        "step3Description": "Align everyone on current platform boundaries for smoother party setup."
       },
       "featured": "Featured & Essential",
-      "all": "All Co-op Guides"
+      "all": "All Platform Articles"
     },
-    "support": {
-      "title": "Gamble With Your Friends Support",
-      "description": "Technical help for launch issues, lobby troubleshooting, platform setup, and update tracking.",
-      "metaTitle": "Gamble With Your Friends Support - Troubleshooting & Fixes",
-      "metaDescription": "Get technical support for Gamble With Your Friends including lobby fixes, launch troubleshooting, and update verification steps.",
-      "categoryLabel": "TECHNICAL SUPPORT",
-      "whatIs": "What is Support?",
-      "whatIsDescription": "Support guides cover common failures, patch checks, connection issues, and escalation paths to official community channels.",
-      "why": "Why check support?",
+    "gameplay": {
+      "title": "Gamble With Your Friends Gameplay",
+      "description": "Gameplay explainers for quota flow, shared debt pressure, floor pacing, chance-game selection, and late-run decision making.",
+      "metaTitle": "Gamble With Your Friends Gameplay - Quota Flow and Floor Strategy",
+      "metaDescription": "Master Gamble With Your Friends gameplay with practical guides for quota pacing, shared bankroll decisions, and floor-by-floor execution.",
+      "categoryLabel": "GAMEPLAY",
+      "whatIs": "What is the Gameplay category?",
+      "whatIsDescription": "Gameplay pages break down how a run actually works: daily quotas, risk pacing, game selection, and team choices that shape endings.",
+      "why": "Why study gameplay patterns?",
       "whySteps": {
-        "step1Title": "Fix Problems Faster",
-        "step1Description": "Use a proven order for diagnosing launch and lobby issues",
-        "step2Title": "Stabilize Sessions",
-        "step2Description": "Apply host, network, and settings fixes that matter most",
-        "step3Title": "Escalate Cleanly",
-        "step3Description": "Share reproducible reports for faster community troubleshooting"
+        "step1Title": "Control Volatility",
+        "step1Description": "Use structured bet pacing to reduce random run collapses.",
+        "step2Title": "Improve Quota Consistency",
+        "step2Description": "Apply reliable table rotations to hit targets with less panic.",
+        "step3Title": "Scale Into Late Floors",
+        "step3Description": "Carry stronger bankroll states into higher-risk stages."
       },
       "featured": "Featured & Essential",
-      "all": "All Support Articles"
+      "all": "All Gameplay Articles"
+    },
+    "mods": {
+      "title": "Gamble With Your Friends Mods",
+      "description": "Modding-related references covering availability, installation boundaries, compatibility cautions, and community tooling status.",
+      "metaTitle": "Gamble With Your Friends Mods - Setup, Compatibility, and Notes",
+      "metaDescription": "Browse Gamble With Your Friends mods resources for current availability, installation guidance, compatibility notes, and community mod workflow basics.",
+      "categoryLabel": "MODS",
+      "whatIs": "What is the Mods category?",
+      "whatIsDescription": "Mods pages collect known modding pathways, install expectations, and compatibility guidance so players can evaluate custom setups responsibly.",
+      "why": "Why review mod notes before installing?",
+      "whySteps": {
+        "step1Title": "Avoid Breakage",
+        "step1Description": "Check compatibility and version fit before changing files.",
+        "step2Title": "Set Up Cleanly",
+        "step2Description": "Follow structured install and rollback steps for safer testing.",
+        "step3Title": "Keep Sessions Stable",
+        "step3Description": "Use cooperative-safe configurations when playing with friends."
+      },
+      "featured": "Featured & Essential",
+      "all": "All Mod Articles"
     }
   }
 }

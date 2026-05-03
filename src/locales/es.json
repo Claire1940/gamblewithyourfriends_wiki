@@ -11,12 +11,13 @@
     }
   },
   "nav": {
-    "guides": "Guías",
-    "crafting": "Fabricación",
-    "items": "Objetos",
-    "biomes": "Biomas",
-    "building": "Construcción",
-    "support": "Soporte"
+    "guide": "Guide",
+    "price": "Price",
+    "steam": "Steam",
+    "release": "Release",
+    "platforms": "Platforms",
+    "gameplay": "Gameplay",
+    "mods": "Mods"
   },
   "common": {
     "home": "Inicio",

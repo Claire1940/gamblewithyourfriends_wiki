@@ -29,8 +29,8 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 	const [mobileExpandedItem, setMobileExpandedItem] = useState<string | null>(null)
 	const [wikiMenuOpen, setWikiMenuOpen] = useState(false)
 	const [mobileWikiExpanded, setMobileWikiExpanded] = useState(false)
-	const [randomArticles, setRandomArticles] = useState<NavPreviewArticle[]>([])
-	const [mobileRandomArticles, setMobileRandomArticles] = useState<NavPreviewArticle[]>([])
+	const [previewArticles, setPreviewArticles] = useState<NavPreviewArticle[]>([])
+	const [mobilePreviewArticles, setMobilePreviewArticles] = useState<NavPreviewArticle[]>([])
 	const langDropdownRef = useRef<HTMLDivElement>(null)
 	const navDropdownRef = useRef<HTMLDivElement>(null)
 	const wikiDropdownRef = useRef<HTMLDivElement>(null)
@@ -71,7 +71,7 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 			setOpenDropdown(null)
 		} else {
 			const articles = navPreviewData[contentType] || []
-			setRandomArticles(articles.slice(0, 5))
+			setPreviewArticles(articles.slice(0, 5))
 			setOpenDropdown(contentType)
 		}
 	}, [openDropdown, navPreviewData])
@@ -82,7 +82,7 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 			setMobileExpandedItem(null)
 		} else {
 			const articles = navPreviewData[contentType] || []
-			setMobileRandomArticles(articles.slice(0, 5))
+			setMobilePreviewArticles(articles.slice(0, 5))
 			setMobileExpandedItem(contentType)
 		}
 	}, [mobileExpandedItem, navPreviewData])
@@ -132,7 +132,7 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 									{isOpen && (
 										<div className="absolute left-1/2 -translate-x-1/2 mt-4 w-72 bg-card rounded-lg shadow-lg border border-border z-50 overflow-hidden">
 											<div className="py-2">
-												{randomArticles.map((article) => (
+												{previewArticles.map((article) => (
 													<Link
 														key={article.slug}
 														href={`/${link.key}/${article.slug}`}
@@ -143,7 +143,7 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 														<span>{extractPrimaryKeyword(article.title)}</span>
 													</Link>
 												))}
-												{randomArticles.length === 0 && (
+												{previewArticles.length === 0 && (
 													<div className="px-4 py-3 text-sm text-muted-foreground text-center">
 														{t('common.articlesComingSoon')}
 													</div>
@@ -280,7 +280,7 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 										</button>
 										{isExpanded && (
 											<div className="ml-8 mr-4 mb-2 border-l-2 border-border pl-3">
-												{mobileRandomArticles.map((article) => (
+												{mobilePreviewArticles.map((article) => (
 													<Link
 														key={article.slug}
 														href={`/${link.key}/${article.slug}`}
@@ -291,7 +291,7 @@ export default function Navigation({ navPreviewData, wikiLinks }: NavigationProp
 														<span>{extractPrimaryKeyword(article.title)}</span>
 													</Link>
 												))}
-												{mobileRandomArticles.length === 0 && (
+												{mobilePreviewArticles.length === 0 && (
 													<div className="py-2 text-sm text-muted-foreground">
 														{t('common.articlesComingSoon')}
 													</div>
