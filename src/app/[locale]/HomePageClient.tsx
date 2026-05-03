@@ -189,6 +189,86 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
       }))
     : []
 
+  const bestTableStrategyItems = Array.isArray(t.modules?.lucidBlocksFarmingAndGrowth?.items)
+    ? t.modules.lucidBlocksFarmingAndGrowth.items.map((item: any) => ({
+        tier: item?.tier || '',
+        label: item?.label || item?.name || 'Table Tier',
+        tables: Array.isArray(item?.tables) ? item.tables : [],
+        floorClues: item?.floorClues || '',
+        risk: item?.risk || '',
+        bestFor: item?.bestFor || '',
+        strategy: item?.strategy || item?.description || '',
+        itemSynergy: Array.isArray(item?.itemSynergy) ? item.itemSynergy : [],
+        avoidWhen: item?.avoidWhen || '',
+      }))
+    : (t.modules?.lucidBlocksFarmingAndGrowth?.sections || []).map((section: any, index: number) => ({
+        tier: ['S', 'A', 'B', 'C', 'D'][index] || `${index + 1}`,
+        label: section?.name || 'Table Tier',
+        tables: [],
+        floorClues: '',
+        risk: 'Varies',
+        bestFor: 'Planned runs with clear team roles.',
+        strategy: section?.description || '',
+        itemSynergy: [],
+        avoidWhen: 'Avoid unplanned table swaps while chasing losses.',
+      }))
+
+  const itemsAndTicketsCards = Array.isArray(t.modules?.lucidBlocksBestEarlyUnlocks?.items)
+    ? t.modules.lucidBlocksBestEarlyUnlocks.items.map((item: any) => ({
+        title: item?.title || item?.name || 'Item',
+        cost: item?.cost || item?.priority || 'Variable',
+        category: item?.category || 'Utility',
+        useCase: item?.useCase || item?.description || '',
+        bestTiming: item?.bestTiming || 'Use it for a planned table sequence.',
+        avoidWhen: item?.avoidWhen || 'Avoid using this item without a team call.',
+      }))
+    : (t.modules?.lucidBlocksBestEarlyUnlocks?.priorities || []).map((item: any) => ({
+        title: item?.name || 'Item Priority',
+        cost: item?.priority || 'High Priority',
+        category: 'Ticket Priority',
+        useCase: item?.description || '',
+        bestTiming: 'Use this priority during lobby planning before each casino day.',
+        avoidWhen: 'Avoid reactive spending after losses without checking team plan.',
+      }))
+
+  const achievementGuideItems = Array.isArray(t.modules?.lucidBlocksAchievementTracker?.items)
+    ? t.modules.lucidBlocksAchievementTracker.items.map((item: any) => ({
+        category: item?.category || 'Achievement Category',
+        count: item?.count || 0,
+        recommendedOrder: item?.recommendedOrder || '',
+        achievementNames: Array.isArray(item?.achievementNames) ? item.achievementNames : [],
+        whatToDo: item?.whatToDo || '',
+        routeTip: item?.routeTip || '',
+      }))
+    : (t.modules?.lucidBlocksAchievementTracker?.groups || []).map((group: any) => ({
+        category: group?.name || 'Achievement Category',
+        count: Array.isArray(group?.achievements) ? group.achievements.length : 0,
+        recommendedOrder: 'Planned route',
+        achievementNames: Array.isArray(group?.achievements)
+          ? group.achievements.map((achievement: any) => achievement?.title).filter(Boolean)
+          : [],
+        whatToDo: Array.isArray(group?.achievements) && group.achievements[0]?.description
+          ? group.achievements[0].description
+          : '',
+        routeTip: 'Pick one category per run to avoid scattered progress.',
+      }))
+
+  const endingGuideItems = Array.isArray(t.modules?.lucidBlocksSingleplayerAndPlatformFAQ?.items)
+    ? t.modules.lucidBlocksSingleplayerAndPlatformFAQ.items.map((item: any) => ({
+        title: item?.title || 'Ending Route',
+        summary: item?.summary || '',
+        content: Array.isArray(item?.content) ? item.content : [],
+      }))
+    : (t.modules?.lucidBlocksSingleplayerAndPlatformFAQ?.faqs || []).map((faq: any) => ({
+        title: faq?.question || 'Ending Route',
+        summary: faq?.answer || '',
+        content: faq?.answer ? [faq.answer] : [],
+      }))
+
+  const bestTableIcons = [TrendingUp, Star, Sparkles, Gamepad2, AlertTriangle]
+  const itemsAndTicketsIcons = [Star, Hammer, Settings, TrendingUp, MessageCircle, AlertTriangle, ClipboardCheck, ExternalLink, Clock, ArrowRight, Package, Sparkles]
+  const achievementGuideIcons = [ClipboardCheck, BookOpen, Gamepad2, TrendingUp, Star, Settings, ExternalLink]
+
   // Scroll reveal animation
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -738,27 +818,85 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksFarmingAndGrowth']} locale={locale}>{t.modules.lucidBlocksFarmingAndGrowth.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksFarmingAndGrowth.intro}</p>
           </div>
-          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
-            {t.modules.lucidBlocksFarmingAndGrowth.sections.map((s: any, index: number) => (
-              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <div className="flex items-center gap-2 mb-3">
-                  <TrendingUp className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <h3 className="font-bold">
-                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksFarmingAndGrowth::sections::${index}`]} locale={locale}>
-                      {s.name}
-                    </LinkedTitle>
-                  </h3>
+          <div className="scroll-reveal grid grid-cols-1 lg:grid-cols-2 gap-5">
+            {bestTableStrategyItems.map((item: any, index: number) => {
+              const TierIcon = bestTableIcons[index % bestTableIcons.length]
+
+              return (
+                <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                  <div className="flex items-center justify-between gap-3 mb-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-[hsl(var(--nav-theme)/0.14)] border border-[hsl(var(--nav-theme)/0.35)] flex items-center justify-center">
+                        <TierIcon className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                      </div>
+                      <div>
+                        <div className="text-xs uppercase tracking-wide text-muted-foreground">Tier {item.tier || index + 1}</div>
+                        <h3 className="font-bold text-lg">
+                          <LinkedTitle linkData={moduleLinkMap[`lucidBlocksFarmingAndGrowth::items::${index}`]} locale={locale}>
+                            {item.label}
+                          </LinkedTitle>
+                        </h3>
+                      </div>
+                    </div>
+                    <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.12)] border border-[hsl(var(--nav-theme)/0.3)]">
+                      {item.risk || 'Risk Varies'}
+                    </span>
+                  </div>
+
+                  {Array.isArray(item.tables) && item.tables.length > 0 && (
+                    <div className="mb-4">
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-2">Tables</p>
+                      <div className="flex flex-wrap gap-2">
+                        {item.tables.map((table: string, tableIndex: number) => (
+                          <span key={tableIndex} className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.08)] border border-[hsl(var(--nav-theme)/0.25)]">
+                            {table}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {item.floorClues && (
+                    <div className="mb-4 p-3 rounded-lg bg-[hsl(var(--nav-theme)/0.07)] border border-[hsl(var(--nav-theme)/0.25)]">
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Floor Clues</p>
+                      <p className="text-sm text-muted-foreground">{item.floorClues}</p>
+                    </div>
+                  )}
+
+                  {item.bestFor && (
+                    <div className="mb-3">
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Best For</p>
+                      <p className="text-sm text-muted-foreground">{item.bestFor}</p>
+                    </div>
+                  )}
+
+                  <div className="mb-3">
+                    <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Strategy</p>
+                    <p className="text-sm text-muted-foreground">{item.strategy}</p>
+                  </div>
+
+                  {Array.isArray(item.itemSynergy) && item.itemSynergy.length > 0 && (
+                    <div className="mb-3">
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-2">Item Synergy</p>
+                      <div className="flex flex-wrap gap-2">
+                        {item.itemSynergy.map((synergy: string, synergyIndex: number) => (
+                          <span key={synergyIndex} className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.08)] border border-[hsl(var(--nav-theme)/0.25)]">
+                            {synergy}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {item.avoidWhen && (
+                    <div className="p-3 rounded-lg bg-[hsl(var(--nav-theme)/0.07)] border border-[hsl(var(--nav-theme)/0.25)]">
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Avoid When</p>
+                      <p className="text-sm text-muted-foreground">{item.avoidWhen}</p>
+                    </div>
+                  )}
                 </div>
-                <p className="text-muted-foreground text-sm">{s.description}</p>
-              </div>
-            ))}
-          </div>
-          <div className="scroll-reveal flex flex-wrap gap-3 justify-center">
-            {t.modules.lucidBlocksFarmingAndGrowth.growthMilestones.map((m: string, i: number) => (
-              <span key={i} className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-[hsl(var(--nav-theme)/0.1)] border border-[hsl(var(--nav-theme)/0.3)] text-sm">
-                <Check className="w-4 h-4 text-[hsl(var(--nav-theme-light))]" />{m}
-              </span>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
@@ -771,20 +909,38 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksBestEarlyUnlocks.intro}</p>
           </div>
           <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-            {t.modules.lucidBlocksBestEarlyUnlocks.priorities.map((p: any, index: number) => (
-              <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
-                <div className="flex items-center gap-2 mb-3">
-                  <Star className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <span className={`text-xs px-2 py-1 rounded-full border ${p.priority === "Essential" || p.priority === "Very High" ? "bg-[hsl(var(--nav-theme)/0.18)] border-[hsl(var(--nav-theme)/0.45)] text-[hsl(var(--nav-theme-light))]" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}>{p.priority}</span>
+            {itemsAndTicketsCards.map((item: any, index: number) => {
+              const ItemIcon = itemsAndTicketsIcons[index % itemsAndTicketsIcons.length]
+
+              return (
+                <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                  <div className="flex items-center justify-between gap-3 mb-3">
+                    <div className="w-10 h-10 rounded-lg bg-[hsl(var(--nav-theme)/0.14)] border border-[hsl(var(--nav-theme)/0.35)] flex items-center justify-center">
+                      <ItemIcon className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                    </div>
+                    <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.12)] border border-[hsl(var(--nav-theme)/0.3)]">
+                      {item.category}
+                    </span>
+                  </div>
+                  <h3 className="font-bold mb-2">
+                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksBestEarlyUnlocks::items::${index}`]} locale={locale}>
+                      {item.title}
+                    </LinkedTitle>
+                  </h3>
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Cost</p>
+                  <p className="text-sm font-semibold text-[hsl(var(--nav-theme-light))] mb-3">{item.cost}</p>
+
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Use Case</p>
+                  <p className="text-sm text-muted-foreground mb-3">{item.useCase}</p>
+
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Best Timing</p>
+                  <p className="text-sm text-muted-foreground mb-3">{item.bestTiming}</p>
+
+                  <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Avoid When</p>
+                  <p className="text-sm text-muted-foreground">{item.avoidWhen}</p>
                 </div>
-                <h3 className="font-bold mb-2">
-                  <LinkedTitle linkData={moduleLinkMap[`lucidBlocksBestEarlyUnlocks::priorities::${index}`]} locale={locale}>
-                    {p.name}
-                  </LinkedTitle>
-                </h3>
-                <p className="text-muted-foreground text-sm">{p.description}</p>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
@@ -796,27 +952,64 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <h2 className="text-4xl md:text-5xl font-bold mb-4"><LinkedTitle linkData={moduleLinkMap['lucidBlocksAchievementTracker']} locale={locale}>{t.modules.lucidBlocksAchievementTracker.title}</LinkedTitle></h2>
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksAchievementTracker.intro}</p>
           </div>
-          <div className="scroll-reveal space-y-6">
-            {t.modules.lucidBlocksAchievementTracker.groups.map((group: any, gi: number) => (
-              <div key={gi} className="p-6 bg-white/5 border border-border rounded-xl">
-                <div className="flex items-center gap-2 mb-4">
-                  <ClipboardCheck className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <h3 className="font-bold text-lg">
-                    <LinkedTitle linkData={moduleLinkMap[`lucidBlocksAchievementTracker::groups::${gi}`]} locale={locale}>
-                      {group.name}
-                    </LinkedTitle>
-                  </h3>
-                </div>
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
-                  {group.achievements.map((a: any, ai: number) => (
-                    <div key={ai} className="p-3 bg-white/5 border border-border rounded-lg">
-                      <p className="font-semibold text-sm text-[hsl(var(--nav-theme-light))]">{a.title}</p>
-                      <p className="text-xs text-muted-foreground mt-1">{a.description}</p>
+          <div className="scroll-reveal grid grid-cols-1 md:grid-cols-2 gap-5">
+            {achievementGuideItems.map((item: any, index: number) => {
+              const AchievementIcon = achievementGuideIcons[index % achievementGuideIcons.length]
+
+              return (
+                <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
+                  <div className="flex items-center justify-between gap-3 mb-4">
+                    <div className="flex items-center gap-3">
+                      <div className="w-10 h-10 rounded-lg bg-[hsl(var(--nav-theme)/0.14)] border border-[hsl(var(--nav-theme)/0.35)] flex items-center justify-center">
+                        <AchievementIcon className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
+                      </div>
+                      <h3 className="font-bold text-lg">
+                        <LinkedTitle linkData={moduleLinkMap[`lucidBlocksAchievementTracker::items::${index}`]} locale={locale}>
+                          {item.category}
+                        </LinkedTitle>
+                      </h3>
                     </div>
-                  ))}
+                    <span className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.12)] border border-[hsl(var(--nav-theme)/0.3)]">
+                      {item.count} Goals
+                    </span>
+                  </div>
+
+                  {item.recommendedOrder && (
+                    <div className="mb-4 p-3 rounded-lg bg-[hsl(var(--nav-theme)/0.07)] border border-[hsl(var(--nav-theme)/0.25)]">
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Recommended Order</p>
+                      <p className="text-sm text-muted-foreground">{item.recommendedOrder}</p>
+                    </div>
+                  )}
+
+                  {Array.isArray(item.achievementNames) && item.achievementNames.length > 0 && (
+                    <div className="mb-4">
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-2">Achievement Names</p>
+                      <div className="flex flex-wrap gap-2">
+                        {item.achievementNames.map((name: string, nameIndex: number) => (
+                          <span key={nameIndex} className="text-xs px-2 py-1 rounded-full bg-[hsl(var(--nav-theme)/0.08)] border border-[hsl(var(--nav-theme)/0.25)]">
+                            {name}
+                          </span>
+                        ))}
+                      </div>
+                    </div>
+                  )}
+
+                  {item.whatToDo && (
+                    <div className="mb-3">
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">What To Do</p>
+                      <p className="text-sm text-muted-foreground">{item.whatToDo}</p>
+                    </div>
+                  )}
+
+                  {item.routeTip && (
+                    <div className="p-3 rounded-lg bg-[hsl(var(--nav-theme)/0.07)] border border-[hsl(var(--nav-theme)/0.25)]">
+                      <p className="text-xs uppercase tracking-wide text-muted-foreground mb-1">Route Tip</p>
+                      <p className="text-sm text-muted-foreground">{item.routeTip}</p>
+                    </div>
+                  )}
                 </div>
-              </div>
-            ))}
+              )
+            })}
           </div>
         </div>
       </section>
@@ -829,17 +1022,29 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             <p className="text-muted-foreground text-lg max-w-3xl mx-auto">{t.modules.lucidBlocksSingleplayerAndPlatformFAQ.intro}</p>
           </div>
           <div className="scroll-reveal space-y-2">
-            {t.modules.lucidBlocksSingleplayerAndPlatformFAQ.faqs.map((faq: any, index: number) => (
+            {endingGuideItems.map((item: any, index: number) => (
               <div key={index} className="border border-border rounded-xl overflow-hidden">
                 <button
                   onClick={() => setFaqExpanded(faqExpanded === index ? null : index)}
                   className="w-full flex items-center justify-between p-5 text-left hover:bg-white/5 transition-colors"
                 >
-                  <span className="font-semibold">{faq.question}</span>
+                  <div>
+                    <p className="font-semibold">{item.title}</p>
+                    {item.summary && <p className="text-sm text-muted-foreground mt-1">{item.summary}</p>}
+                  </div>
                   <ChevronDown className={`w-5 h-5 flex-shrink-0 transition-transform ${faqExpanded === index ? "rotate-180" : ""}`} />
                 </button>
                 {faqExpanded === index && (
-                  <div className="px-5 pb-5 text-muted-foreground text-sm">{faq.answer}</div>
+                  <div className="px-5 pb-5">
+                    <ul className="space-y-2">
+                      {item.content.map((line: string, lineIndex: number) => (
+                        <li key={lineIndex} className="text-sm text-muted-foreground flex items-start gap-2">
+                          <Check className="w-4 h-4 mt-0.5 text-[hsl(var(--nav-theme-light))] flex-shrink-0" />
+                          <span>{line}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </div>
                 )}
               </div>
             ))}

@@ -103,22 +103,22 @@
       {
         "icon": "Star",
         "title": "Gamble With Your Friends Best Tables Strategy",
-        "description": "When to use safer tables versus high-volatility comeback options."
+        "description": "Tiered table picks by risk, floor clues, item synergy, and stop-loss rules."
       },
       {
         "icon": "Package",
         "title": "Gamble With Your Friends Items And Tickets",
-        "description": "Ticket spending priorities, item timing, and lobby planning rules."
+        "description": "Ticket costs, use cases, best timing, and avoid mistakes for each item."
       },
       {
         "icon": "ClipboardCheck",
         "title": "Gamble With Your Friends Achievements Guide",
-        "description": "Achievement groups, floor objectives, and efficient unlock routes."
+        "description": "Achievement routing by floor, milestones, endings, and category counts."
       },
       {
         "icon": "Shield",
         "title": "Gamble With Your Friends Endings Guide",
-        "description": "Ending route categories, pacing decisions, and spoiler-safe prep."
+        "description": "All three endings, route themes, and checklist-based ending preparation."
       },
       {
         "icon": "Settings",
@@ -696,226 +696,395 @@
     },
     "lucidBlocksFarmingAndGrowth": {
       "title": "Gamble With Your Friends Best Tables Strategy",
-      "displayType": "mixedCards",
-      "intro": "Table selection should change with bankroll state. Winning teams rotate between safe, medium, and high-volatility options with clear triggers.",
-      "sections": [
+      "displayType": "tierGrid",
+      "intro": "Choose tables by timer pressure, team discipline, item loadout, and how clearly your group understands the win condition. The best table is not always the highest-multiplier table.",
+      "items": [
         {
-          "name": "Safe Baseline Rotation",
-          "description": "Use Roulette or Blackjack to establish early quota progress and reduce panic decisions."
+          "tier": "S",
+          "label": "Best Starter Tables",
+          "tables": [
+            "Roulette",
+            "Blackjack"
+          ],
+          "floorClues": "Roulette appears in Floor 1 and Floor 4 achievement clues. Blackjack appears in Floor 1 and Floor 4 achievement clues.",
+          "risk": "Medium",
+          "bestFor": "Fast quota pushes and controlled decision-making.",
+          "strategy": "Use one shot-caller and one main bettor. Roulette is best for simple planned swings, while Blackjack is best when one player understands hit, stand, and when to stop.",
+          "itemSynergy": [
+            "Golden Chip",
+            "Taser",
+            "Drink",
+            "Microphone",
+            "Camera"
+          ],
+          "avoidWhen": "Avoid this when the team is chasing losses or multiple players are placing conflicting shared-bank bets."
         },
         {
-          "name": "Controlled Upside Rotation",
-          "description": "Mix in one medium-risk table when bankroll is healthy and the timer is under control."
+          "tier": "A",
+          "label": "Strong With Coordination",
+          "tables": [
+            "Street Craps",
+            "Slot Machine"
+          ],
+          "floorClues": "Street Craps appears in Floor 1 and Floor 3 achievement clues. Slot Machine appears in Floor 1 achievement clues.",
+          "risk": "Medium to High",
+          "bestFor": "Item-supported runs and teams that can follow a clear table role.",
+          "strategy": "For Street Craps, assign one roller and one caller, read the target before touching dice, and stop after the planned payout. For Slot Machine, use small bets or protective item windows instead of blind spam.",
+          "itemSynergy": [
+            "Taser",
+            "Golden Chip",
+            "Holy Statue",
+            "Bonus Draw",
+            "Insurance"
+          ],
+          "avoidWhen": "Avoid this when players crowd the dice, spam machines at once, or keep betting after the item window ends."
         },
         {
-          "name": "Recovery Rotation",
-          "description": "Only pivot to high-volatility tables when quota deficit is real and the entire team agrees."
+          "tier": "B",
+          "label": "Simple But Easy To Overplay",
+          "tables": [
+            "Duck Race",
+            "Wheel of Fortune",
+            "Money Wheel"
+          ],
+          "floorClues": "Duck Race appears in Floor 1 and Floor 4 achievement clues. Wheel games appear across Floor 1, Floor 2, Floor 3, and Floor 4 achievement clues.",
+          "risk": "High Variance",
+          "bestFor": "Quick decisions, achievement targets, and emergency multiplier attempts.",
+          "strategy": "Set a hard attempt limit before betting. Duck Race is easy to understand, but repeated quick bets can drain the shared bank. Wheel games should be used for one agreed swing, not endless recovery spins.",
+          "itemSynergy": [
+            "Holy Statue",
+            "Golden Chip",
+            "Drink",
+            "Microphone",
+            "Time Machine"
+          ],
+          "avoidWhen": "Avoid this when quota is already safe, players are tilted, or the group keeps saying one more after every miss."
         },
         {
-          "name": "Stop-Loss Rotation",
-          "description": "If two large bets fail in sequence, return to safer tables immediately before trying another spike."
+          "tier": "C",
+          "label": "Later-Floor Testing Games",
+          "tables": [
+            "Penguin Cross",
+            "Keno",
+            "Crash",
+            "HiLo",
+            "Plinko"
+          ],
+          "floorClues": "These games are tied to Floor 2+ achievement goals, with several appearing again on Floor 3 or Floor 4.",
+          "risk": "Medium to High",
+          "bestFor": "Teams that understand cash-out timing, multiplier targets, or table fail conditions.",
+          "strategy": "Start with minimum bets. Learn what counts as a win, how to cash out, and where the table can erase money before using serious bets.",
+          "itemSynergy": [
+            "Taser",
+            "Golden Chip",
+            "Time Machine",
+            "Insurance",
+            "Profit Buffs"
+          ],
+          "avoidWhen": "Avoid this when the player is still learning the buttons or the team needs stable quota progress."
+        },
+        {
+          "tier": "D",
+          "label": "Late-Run Specialist Tables",
+          "tables": [
+            "Dragon Tower",
+            "1P Poker",
+            "Mine Sweeper"
+          ],
+          "floorClues": "Dragon Tower, 1P Poker, and Mine Sweeper are Floor 3 and Floor 4 specialist achievement targets.",
+          "risk": "High",
+          "bestFor": "Focused achievement routing, item-supported pushes, and experienced groups.",
+          "strategy": "Treat these as planned late-floor targets. Assign one player to learn the rules, protect the attempt with items when possible, and never use the biggest available bet on first contact.",
+          "itemSynergy": [
+            "Time Machine",
+            "Insurance",
+            "Drink",
+            "Microphone",
+            "Golden Chip"
+          ],
+          "avoidWhen": "Avoid this when the group has not cleared the early-floor basics or is entering the table only because it looks new."
         }
-      ],
-      "growthMilestones": [
-        "Build opening profit cushion",
-        "Reach mid-day quota checkpoint",
-        "Enter lock mode before final minute",
-        "Use emergency swing only when necessary"
       ]
     },
     "lucidBlocksBestEarlyUnlocks": {
-      "title": "Gamble With Your Friends Items and Tickets",
-      "displayType": "priorityCards",
-      "intro": "Tickets are limited leverage. Spend them on item plans that support your current floor goals instead of impulse purchases.",
-      "priorities": [
+      "title": "Gamble With Your Friends Items And Tickets",
+      "displayType": "itemCards",
+      "intro": "Tickets are not only for cosmetics. They decide what your team can do before the next 5-minute casino day starts.",
+      "items": [
         {
-          "name": "Run-Saving Utility Item",
-          "priority": "Essential",
-          "description": "Prioritize one item that can stabilize a bad day when quota pressure spikes unexpectedly."
+          "title": "Golden Chip",
+          "cost": "4 Tickets",
+          "category": "Power Item",
+          "useCase": "Gives one single free all-in, making it one of the cleanest early power buys.",
+          "bestTiming": "Use after choosing the target table and checking whether Taser can raise the max bet first.",
+          "avoidWhen": "Do not fire it on a random table or before the team agrees on the stop point."
         },
         {
-          "name": "Bankroll Control Item",
-          "priority": "Very High",
-          "description": "Choose tools that reduce downside on large bets so one mistake does not erase the team bankroll."
+          "title": "Taser",
+          "cost": "4 Tickets",
+          "category": "Setup Item",
+          "useCase": "Use it on a keypad to increase the maximum bet before a larger push.",
+          "bestTiming": "Use before Golden Chip, protected bets, or a profit-buffed table play.",
+          "avoidWhen": "Do not use it before choosing the table; a boosted wrong keypad wastes the combo."
         },
         {
-          "name": "Table-Specific Combo Item",
-          "priority": "Very High",
-          "description": "Buy item combos only when your team is committed to the table pattern they support."
+          "title": "Holy Statue",
+          "cost": "7 Tickets",
+          "category": "Defense Item",
+          "useCase": "Prevents nearby losses while active, which makes it strong for grouped fast-repeat betting.",
+          "bestTiming": "Group players near slots, roulette, wheel games, or another fast table before activation.",
+          "avoidWhen": "Do not keep betting after the protection window ends."
         },
         {
-          "name": "Late-Floor Recovery Item",
-          "priority": "High",
-          "description": "Keep one option in reserve for late-floor quota deficits instead of spending all tickets early."
+          "title": "Drink",
+          "cost": "5 Tickets",
+          "category": "Profit Buff",
+          "useCase": "Increases profit while drunk, but the player still needs enough control to play the table.",
+          "bestTiming": "Give it to the player who already understands the table and is making the planned push.",
+          "avoidWhen": "Do not give it to the most chaotic player or use it before a table is chosen."
         },
         {
-          "name": "Cosmetic Spending",
-          "priority": "High",
-          "description": "Treat cosmetics as surplus spending after your run-critical item path is fully funded."
+          "title": "Microphone",
+          "cost": "6 Tickets",
+          "category": "Team Profit Buff",
+          "useCase": "Increases nearby profit while singing, making it better when players are grouped together.",
+          "bestTiming": "Use around a planned group bet, Golden Chip play, or clustered fast-table push.",
+          "avoidWhen": "Do not activate while the team is scattered across different games."
         },
         {
-          "name": "Body-Part Trade Experiments",
-          "priority": "High",
-          "description": "Test high-variance shop choices in dedicated practice runs, not in progression-focused sessions."
+          "title": "Insurance",
+          "cost": "7 Tickets",
+          "category": "Loss Reduction",
+          "useCase": "Reduces the pain of a failed bet and pairs well with risky but controlled pushes.",
+          "bestTiming": "Use when the team must keep gambling and a failed attempt would damage the shared bank badly.",
+          "avoidWhen": "Do not treat Insurance as permission to blind max bet a table the player does not understand."
+        },
+        {
+          "title": "Quota Gun",
+          "cost": "5 Tickets",
+          "category": "Emergency Quota",
+          "useCase": "Pays 33% of quota for each body part it shoots off, turning body parts into immediate quota value.",
+          "bestTiming": "Use when the timer is low, the team is short on quota, and normal gambling is too slow.",
+          "avoidWhen": "Do not target the player carrying a key item or a player needed for the next day."
+        },
+        {
+          "title": "Bonus Draw",
+          "cost": "8 Tickets",
+          "category": "Ticket Farming",
+          "useCase": "Gets ticket value from profit, making it more useful after the group can produce stable wins.",
+          "bestTiming": "Use on longer-term runs where the team can repeatedly profit without risking the whole bank.",
+          "avoidWhen": "Do not buy before basic survival items if the team is still failing quota."
+        },
+        {
+          "title": "Angel's Reel",
+          "cost": "3 Tickets",
+          "category": "Recovery Gamble",
+          "useCase": "Spins for a chance to revert the last loss.",
+          "bestTiming": "Use after a meaningful failed bet or a loss that affects quota progress.",
+          "avoidWhen": "Do not waste it after a tiny minimum bet."
+        },
+        {
+          "title": "Devil's Reel",
+          "cost": "3 Tickets",
+          "category": "Snowball Risk",
+          "useCase": "Can triple or lose the last win.",
+          "bestTiming": "Use only when the last win is large enough to matter and the team accepts the risk.",
+          "avoidWhen": "Do not use after a lucky result that already makes quota safe."
+        },
+        {
+          "title": "Mystery Box",
+          "cost": "4 Tickets",
+          "category": "Random Item",
+          "useCase": "Gives a random item and can lead into high-value tools such as Time Machine.",
+          "bestTiming": "Buy after the team already covered the main survival item for the next casino day.",
+          "avoidWhen": "Do not buy when the team needs a specific item to save the next run."
+        },
+        {
+          "title": "Time Machine",
+          "cost": "Mystery Box Route",
+          "category": "Recovery Item",
+          "useCase": "Time Rewind can rewind up to 60 seconds, giving the team a second chance after a major mistake.",
+          "bestTiming": "Save it for a failed all-in, bad cash-out, bad wheel result, or late-floor mistake.",
+          "avoidWhen": "Do not use it after a tiny loss or repeat the same failed decision after rewinding."
         }
       ]
     },
     "lucidBlocksAchievementTracker": {
       "title": "Gamble With Your Friends Achievements Guide",
-      "displayType": "achievementGrid",
-      "intro": "The 55 Steam achievements are easiest to clear in grouped routes: floor goals, game milestones, ending paths, and economy streaks.",
-      "groups": [
+      "displayType": "tableCards",
+      "intro": "Use the achievement list as a floor map. Start with Floor 1 basics, then move into item-supported later floors and money milestones.",
+      "items": [
         {
-          "name": "Floor Progression Achievements",
-          "achievements": [
-            {
-              "title": "Floor 1 Milestones",
-              "description": "Clear early objectives while keeping bankroll stability as top priority."
-            },
-            {
-              "title": "Floor 2 Milestones",
-              "description": "Add medium-risk tables once team communication is consistent."
-            },
-            {
-              "title": "Floor 3 Milestones",
-              "description": "Track timer and stake discipline to avoid late-day collapses."
-            },
-            {
-              "title": "Floor 4 Milestones",
-              "description": "Finish high-pressure objectives with a dedicated shot-caller."
-            }
-          ]
+          "category": "Floor 1 Basics",
+          "count": 10,
+          "recommendedOrder": "First cleanup route",
+          "achievementNames": [
+            "Big Spender",
+            "No Bust Run",
+            "Lucky 7",
+            "High Roller",
+            "Lucky Streak",
+            "All on Red",
+            "Jackpot Hunter",
+            "Risky Move",
+            "YARLL!!!",
+            "Spin The Wheel"
+          ],
+          "whatToDo": "Learn Roulette, Duck Race, Wheel of Fortune, Street Craps, Blackjack, and Slot Machine with controlled bets before pushing higher floors.",
+          "routeTip": "Good first targets include Lucky 7, YARLL!!!, All on Red, No Bust Run, Jackpot Hunter, High Roller, Big Spender, and Lucky Streak."
         },
         {
-          "name": "Table-Specific Achievements",
-          "achievements": [
-            {
-              "title": "Roulette and Blackjack Goals",
-              "description": "Use these during controlled runs to build reliable progress."
-            },
-            {
-              "title": "Slots and Wheel Goals",
-              "description": "Schedule volatility achievements when quota buffer is available."
-            },
-            {
-              "title": "Crash and Plinko Goals",
-              "description": "Attempt risky table objectives in coordinated practice sessions."
-            },
-            {
-              "title": "Keno and Duck Race Goals",
-              "description": "Pair these with clear stop-loss rules to protect momentum."
-            }
-          ]
+          "category": "Floor 2 Games",
+          "count": 9,
+          "recommendedOrder": "After basic item planning",
+          "achievementNames": [
+            "Big Spender 2",
+            "Greed Test",
+            "Winner Winner Penguin Dinner",
+            "Roll the Odds",
+            "High Roller 2",
+            "Spot On",
+            "Lucky Streak 2",
+            "Spin Streak",
+            "Clean Fall"
+          ],
+          "whatToDo": "Work on Penguin Cross, Keno, Crash, HiLo, Plinko, and Money Wheel targets after the team understands Tickets and item support.",
+          "routeTip": "Bring items before chasing high-variance goals such as Greed Test, Spin Streak, and Clean Fall."
         },
         {
-          "name": "Economy and Team Achievements",
-          "achievements": [
-            {
-              "title": "Shared Bankroll Milestones",
-              "description": "Track cumulative team discipline rather than individual wins."
-            },
-            {
-              "title": "Quota Efficiency Milestones",
-              "description": "Hit quota earlier in the day to create room for side objectives."
-            },
-            {
-              "title": "Item Timing Milestones",
-              "description": "Use item activations intentionally instead of on cooldown."
-            },
-            {
-              "title": "Recovery Route Milestones",
-              "description": "Practice one consistent comeback pattern for emergency days."
-            }
-          ]
+          "category": "Floor 3 Specialist Goals",
+          "count": 10,
+          "recommendedOrder": "Mid-to-late routing",
+          "achievementNames": [
+            "Poker Face",
+            "Big Spender 3",
+            "Natural Roller",
+            "Traffic Monster",
+            "No Safe Rolls",
+            "Step Into Fire",
+            "High Roller 3",
+            "Lucky Streak 3",
+            "Perfect Sweep",
+            "Keep It Spinning"
+          ],
+          "whatToDo": "Treat Floor 3 as a specialist floor with Street Craps, Penguin Cross, Dragon Tower, 1P Poker, Mine Sweeper, HiLo, and Wheel goals.",
+          "routeTip": "Pick one target per day. Natural Roller needs Street Craps point-phase play, while Perfect Sweep and Poker Face should be saved for focused late-run attempts."
         },
         {
-          "name": "Ending Route Achievements",
-          "achievements": [
-            {
-              "title": "Safe Route Setup",
-              "description": "Preserve bankroll and avoid unnecessary volatility across all floors."
-            },
-            {
-              "title": "Aggressive Route Setup",
-              "description": "Commit to controlled high-risk lines only with full-team agreement."
-            },
-            {
-              "title": "Secret Path Preparation",
-              "description": "Reserve these attempts for runs where baseline quota control is mastered."
-            },
-            {
-              "title": "Cleanup Runs",
-              "description": "Use focused runs to finish leftover achievements after core clears."
-            }
-          ]
+          "category": "Floor 4 Late-Run Goals",
+          "count": 13,
+          "recommendedOrder": "Late-run achievement push",
+          "achievementNames": [
+            "Big Spender 4",
+            "House Breaker",
+            "Safe Exit",
+            "No Hesitation",
+            "Flameproof",
+            "Unstoppable Quack",
+            "High Roller 4",
+            "Marked to Win",
+            "Lucky Streak 4",
+            "No Detonations",
+            "High Risk Wedge",
+            "Straight Down",
+            "Ball in Motion"
+          ],
+          "whatToDo": "Use Floor 4 for high-risk table mastery, streaks, big-bet achievements, and deliberate loss-chain achievements.",
+          "routeTip": "Separate serious quota runs from deliberate loss goals such as High Risk Wedge and Straight Down."
         },
         {
-          "name": "Completion Planning",
-          "achievements": [
-            {
-              "title": "Session Checklist",
-              "description": "Pick one achievement cluster per session to avoid scattered progress."
-            },
-            {
-              "title": "Role Assignment",
-              "description": "Assign shot-caller, timer watcher, and bankroll tracker each run."
-            },
-            {
-              "title": "Risk Budget",
-              "description": "Set daily maximum high-volatility attempts before entering a floor."
-            },
-            {
-              "title": "Review Loop",
-              "description": "After each run, log what failed and update next-session table priorities."
-            }
-          ]
+          "category": "Money Milestones",
+          "count": 5,
+          "recommendedOrder": "After stable high-value runs",
+          "achievementNames": [
+            "HARDER",
+            "BETTER",
+            "FASTER",
+            "STRONGER",
+            "WORK IS NEVER OVER!"
+          ],
+          "whatToDo": "Collect $10M, $100M, $1B, $10B, and $100B across the money milestone ladder.",
+          "routeTip": "Do not grind the biggest milestones early. They become more realistic once the group understands high floors, item combos, and when to stop."
+        },
+        {
+          "category": "General and Special",
+          "count": 5,
+          "recommendedOrder": "Track separately",
+          "achievementNames": [
+            "Not Feeling It",
+            "The Gambler's Blessing",
+            "Unlucky :(",
+            "You reached...PEAK!",
+            "Real Gambling Is Not Cool."
+          ],
+          "whatToDo": "Handle special achievements outside the normal floor-by-floor route.",
+          "routeTip": "Keep awareness-style and special-condition achievements separate from serious quota days."
+        },
+        {
+          "category": "Ending Achievements",
+          "count": 3,
+          "recommendedOrder": "Late-game routing",
+          "achievementNames": [
+            "Let It Ride!",
+            "End of the Line",
+            "...And They Lived Happily After"
+          ],
+          "whatToDo": "Route the three ending achievements after the team understands quota, Tickets, items, and floor progression.",
+          "routeTip": "Do ending runs after you can consistently survive days without wasting the shared bank."
         }
       ]
     },
     "lucidBlocksSingleplayerAndPlatformFAQ": {
       "title": "Gamble With Your Friends Endings Guide",
-      "displayType": "accordion",
-      "intro": "Ending consistency depends on bankroll discipline and team pacing. Use these route notes to avoid accidental derailments.",
-      "faqs": [
+      "displayType": "endingAccordion",
+      "intro": "Gamble With Your Friends has three endings tied to late-run choices and hidden Steam achievements. Treat ending runs as their own route, not as something to chase during your first quota days.",
+      "items": [
         {
-          "question": "How many endings are in Gamble With Your Friends?",
-          "answer": "Current run structure supports three endings, each tied to different pacing and decision patterns."
+          "title": "Ending Route Overview",
+          "summary": "The Steam page lists around 2-3 hours of playtime with 3 endings.",
+          "content": [
+            "Before pushing endings, learn the daily 5-minute quota loop, the shared bank, item pickup flow, body-part economy, and the difference between safe quota money and extra gambling money.",
+            "A clean ending attempt starts in the lobby: assign a banker, choose one main table plan, carry only useful items, and avoid mixing ending progress with random achievement hunting.",
+            "Use ending runs after stable Floor 2+ progress, not during the first few learning days."
+          ]
         },
         {
-          "question": "When should we push aggressive ending routes?",
-          "answer": "Only push high-risk routes after your team can clear quota consistently on controlled runs."
+          "title": "Let It Ride!",
+          "summary": "Hidden ending achievement theme: risk it all and become filthy rich again.",
+          "content": [
+            "Achievement description: Like a true gambler, you risked it all and became filthy rich again.",
+            "Best route style: wealth-focused late run with strong item planning, high-value table pushes, and a clear decision to keep riding after the team already has major money.",
+            "Good prep: Taser + Golden Chip for a planned all-in, profit tools for a table the team understands, and Time Machine reserved for a major failed decision."
+          ]
         },
         {
-          "question": "Can we hunt endings and achievements together?",
-          "answer": "Yes, but plan one primary objective per run so quota pressure does not split team decisions."
+          "title": "End of the Line",
+          "summary": "Hidden ending achievement theme: reaching the hard stop of the gambling loop.",
+          "content": [
+            "Achievement description: You will not learn, will you?",
+            "Best route style: separate from clean money milestone runs. Keep it as a dedicated ending attempt so the team is not trying to protect achievements, quota streaks, and ending progress at the same time.",
+            "Good prep: understand late-floor risk tables, keep the shared bank readable, and avoid wasting items before the route-defining decision point."
+          ]
         },
         {
-          "question": "What ruins ending attempts most often?",
-          "answer": "Unannounced large bets and off-plan table swaps are the most common causes of failed route setups."
+          "title": "...And They Lived Happily After",
+          "summary": "Hidden ending achievement theme: quitting gambling and starting a new life.",
+          "content": [
+            "Achievement description: Quit gambling and start a new life, congrats.",
+            "Best route style: stable late run focused on survival, restraint, and walking away instead of turning every safe day into another risky push.",
+            "Good prep: hit quota cleanly, protect the shared bank, avoid unnecessary body-part trades, and stop gambling once the run has enough momentum."
+          ]
         },
         {
-          "question": "Should we save items for ending runs?",
-          "answer": "Reserve at least one recovery-oriented item for late-floor pivots during ending-focused sessions."
-        },
-        {
-          "question": "How do we practice for consistent ending clears?",
-          "answer": "Run repeated floor scripts with fixed callouts, then increase volatility only after baseline clears are stable."
-        },
-        {
-          "question": "Is solo play useful for ending prep?",
-          "answer": "Solo can help learn table behavior, but ending consistency is best tested in full co-op coordination."
-        },
-        {
-          "question": "Do floor routes matter for endings?",
-          "answer": "Yes, floor pacing determines bankroll health and directly affects which ending lines remain practical."
-        },
-        {
-          "question": "Should we force secret-route attempts every session?",
-          "answer": "No, schedule dedicated sessions for secret-route attempts after standard clears become repeatable."
-        },
-        {
-          "question": "What is the cleanest ending workflow?",
-          "answer": "Set a route target in lobby, assign roles, lock a table rotation, and debrief immediately after each attempt."
+          "title": "Ending Run Checklist",
+          "summary": "Use a separate ending plan so the team does not accidentally burn the run.",
+          "content": [
+            "Pick one ending target before entering the casino day.",
+            "Choose one main bettor and one shot-caller for risky tables.",
+            "Use setup items before payoff items: Taser before Golden Chip, grouping before Holy Statue, and table choice before profit buffs.",
+            "Separate deliberate loss-chain achievements from serious ending runs.",
+            "Review the money graph and ticket state before deciding whether the next day is a push day or a safe quota day."
+          ]
         }
       ]
     },
