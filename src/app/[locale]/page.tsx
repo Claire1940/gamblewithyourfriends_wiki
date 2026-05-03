@@ -12,7 +12,7 @@ interface PageProps {
 
 const HOME_TITLE = 'Gamble With Your Friends - Guide, Items & Achievements'
 const HOME_DESCRIPTION =
-  'Gamble With Your Friends guides for co-op runs, chance games, items, floors, endings, achievements, and Steam updates.'
+  'Gamble With Your Friends guide covering co-op casino runs, odds, items, floors, endings, achievements, system requirements, and latest Steam updates.'
 
 export async function generateMetadata({ params }: PageProps): Promise<Metadata> {
   const { locale } = await params
