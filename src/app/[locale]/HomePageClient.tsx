@@ -551,7 +551,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
             {t.modules.lucidBlocksCreaturesAndEnemies.creatures.map((c: any, index: number) => (
               <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
                 <div className="mb-3">
-                  <span className={`text-xs px-2 py-1 rounded-full border ${["Hostile Enemy","Major Threat","Elite Threat"].includes(c.role) ? "bg-red-500/10 border-red-500/30 text-red-400" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}>{c.role}</span>
+                  <span className={`text-xs px-2 py-1 rounded-full border ${["Hostile Enemy","Major Threat","Elite Threat"].includes(c.role) ? "bg-[hsl(var(--nav-theme)/0.18)] border-[hsl(var(--nav-theme)/0.45)] text-[hsl(var(--nav-theme-light))]" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}>{c.role}</span>
                 </div>
                 <h3 className="font-bold mb-2">
                   <LinkedTitle linkData={moduleLinkMap[`lucidBlocksCreaturesAndEnemies::creatures::${index}`]} locale={locale}>
@@ -645,7 +645,7 @@ export default function HomePageClient({ latestArticles, moduleLinkMap, locale }
               <div key={index} className="p-6 bg-white/5 border border-border rounded-xl hover:border-[hsl(var(--nav-theme)/0.5)] transition-colors">
                 <div className="flex items-center gap-2 mb-3">
                   <Star className="w-5 h-5 text-[hsl(var(--nav-theme-light))]" />
-                  <span className={`text-xs px-2 py-1 rounded-full border ${p.priority === "Essential" ? "bg-red-500/10 border-red-500/30 text-red-400" : p.priority === "Very High" ? "bg-orange-500/10 border-orange-500/30 text-orange-400" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}>{p.priority}</span>
+                  <span className={`text-xs px-2 py-1 rounded-full border ${p.priority === "Essential" ? "bg-[hsl(var(--nav-theme)/0.18)] border-[hsl(var(--nav-theme)/0.45)] text-[hsl(var(--nav-theme-light))]" : p.priority === "Very High" ? "bg-orange-500/10 border-orange-500/30 text-orange-400" : "bg-[hsl(var(--nav-theme)/0.1)] border-[hsl(var(--nav-theme)/0.3)]"}`}>{p.priority}</span>
                 </div>
                 <h3 className="font-bold mb-2">
                   <LinkedTitle linkData={moduleLinkMap[`lucidBlocksBestEarlyUnlocks::priorities::${index}`]} locale={locale}>

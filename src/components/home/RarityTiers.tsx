@@ -26,7 +26,7 @@ export default function RarityTiers({ title, titleHighlight, subtitle, tiers }: 
     { ...tiers.rare, color: 'bg-blue-500' },
     { ...tiers.epic, color: 'bg-purple-500' },
     { ...tiers.legendary, color: 'bg-orange-500' },
-    { ...tiers.mythic, color: 'bg-red-500' },
+    { ...tiers.mythic, color: 'bg-[hsl(var(--nav-theme))]' },
     { ...tiers.secret, color: 'bg-green-500' }
   ]
 

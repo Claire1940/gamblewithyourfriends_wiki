@@ -1,12 +1,27 @@
 {
-  "name": "Lucid Blocks Wiki - Crafting, Biomes & Achievements",
-  "short_name": "Lucid Blocks",
-  "description": "Lucid Blocks Wiki covers crafting, biomes, creatures, items, achievements, endings, and survival tips for the surreal voxel sandbox adventure on Steam.",
+  "id": "/",
+  "name": "Gamble With Your Friends - Guide, Items & Achievements",
+  "short_name": "GWYF Guide",
+  "description": "Gamble With Your Friends guide covering co-op casino runs, odds, items, floors, endings, achievements, system requirements, and latest Steam updates.",
+  "lang": "en-US",
+  "dir": "ltr",
   "start_url": "/",
+  "scope": "/",
   "display": "standalone",
+  "display_override": [
+    "standalone",
+    "minimal-ui",
+    "browser"
+  ],
   "orientation": "any",
-  "theme_color": "#1a7a7a",
-  "background_color": "#0a0a0a",
+  "theme_color": "#ec3f92",
+  "background_color": "#140a1f",
+  "categories": [
+    "games",
+    "entertainment",
+    "reference"
+  ],
+  "prefer_related_applications": false,
   "icons": [
     {
       "src": "/android-chrome-192x192.png",
@@ -21,8 +36,8 @@
       "purpose": "any maskable"
     },
     {
-      "src": "/favicon-16x16.png",
-      "sizes": "16x16",
+      "src": "/apple-touch-icon.png",
+      "sizes": "180x180",
       "type": "image/png"
     },
     {
@@ -31,9 +46,23 @@
       "type": "image/png"
     },
     {
-      "src": "/apple-touch-icon.png",
-      "sizes": "180x180",
+      "src": "/favicon-16x16.png",
+      "sizes": "16x16",
       "type": "image/png"
+    },
+    {
+      "src": "/favicon.ico",
+      "sizes": "16x16 32x32 48x48",
+      "type": "image/x-icon"
+    }
+  ],
+  "screenshots": [
+    {
+      "src": "/images/hero.webp",
+      "sizes": "1920x1080",
+      "type": "image/webp",
+      "form_factor": "wide",
+      "label": "Gamble With Your Friends gameplay hero"
     }
   ]
 }
