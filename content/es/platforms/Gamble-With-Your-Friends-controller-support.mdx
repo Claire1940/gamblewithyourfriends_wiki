@@ -1,0 +1,162 @@
+export const metadata = {
+  title: "Compatibilidad de mandos en Gamble With Your Friends: Configuración, Soluciones y Consejos 2026",
+  description: "Aprende a configurar la compatibilidad de mandos, mapear entradas y solucionar problemas comunes para sesiones locales y online más fluidas en 2026.",
+  category: "Guía",
+  image: "https://placehold.co/800x400/334155/fff?text=Controller+Support+Guide",
+  date: "2026-05-04",
+  author: "Equipo de Wiki de Gamble"
+}
+
+Si estás intentando que la **compatibilidad de mandos en Gamble With Your Friends** funcione sin problemas, no estás solo. La configuración del mando es uno de los factores de calidad de vida más importantes en los party games, especialmente cuando la gente entra y sale de las partidas. La buena noticia es que la **compatibilidad de mandos en Gamble With Your Friends** normalmente puede ajustarse rápido si sigues un proceso de configuración estructurado en lugar de adivinar entre menús. En esta guía aprenderás a configurar Steam Input, elegir layouts prácticos, corregir errores comunes de detección y optimizar para cooperativo local en sofá o juego online. Tanto si usas Xbox, PlayStation, Switch Pro o un mando genérico, estos pasos están pensados para ayudarte a conseguir un comportamiento de entrada consistente, con menos desconexiones y menos confusión en los menús.
+
+## Compatibilidad de mandos en Gamble With Your Friends: Qué esperar en 2026
+
+Antes de cambiar nada, ajusta bien tus expectativas. En 2026, el comportamiento del mando en party games de PC normalmente depende de tres capas:
+
+1. Compatibilidad nativa de gamepad dentro del juego  
+2. Capa de traducción de Steam Input  
+3. Reconocimiento del sistema operativo/controlador de dispositivo  
+
+Cuando los jugadores dicen “la compatibilidad de mandos está rota”, normalmente una de estas capas está mal configurada.
+
+| Capa de compatibilidad | Qué hace | Fallo típico | Comprobación rápida |
+|---|---|---|---|
+| **Capa del juego** | Lee directamente entradas de botones/ejes | Indicadores incorrectos o acciones faltantes | Abre el menú de controles dentro del juego |
+| **Steam Input** | Convierte el dispositivo al perfil esperado | Doble entrada, conflictos de remapeo | Revisa la configuración de Steam por juego |
+| **SO/Controlador** | Detecta la conexión del hardware | El mando no aparece en absoluto | Verifícalo en el panel de controladores de juego de Windows |
+
+> **Consejo:** Empieza con un mando conectado, confirma que todo funcione, y luego añade mandos extra uno por uno.
+
+Si tu objetivo es una **compatibilidad de mandos en Gamble With Your Friends** estable, trata la configuración como una lista de verificación, no como prueba y error.
+
+## Flujo recomendado de configuración de mandos (Steam)
+
+Para la mayoría de usuarios de PC, Steam es la forma más limpia de estandarizar el comportamiento de entrada entre dispositivos. Sigue estos pasos en orden.
+
+| Paso | Acción | Por qué importa |
+|---|---|---|
+| **1** | Cierra el juego por completo | Evita perfiles de entrada obsoletos |
+| **2** | Conecta primero el mando por USB | Con cable evitas desincronizaciones tempranas por Bluetooth |
+| **3** | Abre Steam > Ajustes > Mando | Confirma la detección del hardware |
+| **4** | Activa el perfil de compatibilidad correspondiente (Xbox/PS/Switch/Genérico) | Corrige el mapeo del dispositivo |
+| **5** | Abre propiedades del juego > Mando | Pon la anulación en “Usar predeterminado” o prueba “Activar Steam Input” |
+| **6** | Inicia el juego y prueba en menú + gameplay | Los menús pueden funcionar mientras el gameplay falla |
+
+Una regla práctica: si la compatibilidad nativa se siente mal, fuerza Steam Input. Si Steam Input provoca movimiento duplicado, prueba el modo nativo.
+
+### Mapeo base que funciona para la mayoría de jugadores
+
+| Entrada | Función sugerida | Notas |
+|---|---|---|
+| **Stick izquierdo** | Apuntar/mover cursor | Mantén la zona muerta entre baja y media |
+| **A / Cross** | Confirmar / acción principal | Botón de confirmar más universal |
+| **B / Circle** | Atrás / cancelar | Mantenlo consistente para invitados |
+| **RB / R1** | Acción secundaria | Fácil de alcanzar para reacciones rápidas |
+| **Start / Options** | Pausa/menú | Esencial para lobbies locales |
+
+Esta estructura reduce la confusión cuando los jugadores cambian de mando a mitad de sesión.
+
+## Mejores perfiles de dispositivo para sesiones party
+
+Los distintos mandos se comportan de forma diferente con Steam Input. Si estás montando una configuración de 4 jugadores, la consistencia importa más que una preferencia personal “perfecta”.
+
+| Tipo de mando | Fortalezas | Problema común | Mejor modo |
+|---|---|---|---|
+| **Xbox (One/Series)** | Conectar y jugar en Windows | Comportamiento raro de suspensión por Bluetooth | Nativo o Steam Input |
+| **DualShock 4** | Gran ergonomía | Indicadores que no coinciden en algunos juegos | Steam Input recomendado |
+| **DualSense** | Excelente construcción, funciones modernas | Las funciones adaptativas suelen no usarse | Steam Input recomendado |
+| **Switch Pro** | Buena batería | Confusión en etiquetas de botones (A/B, X/Y) | Steam Input con remapeo |
+| **XInput genérico** | Barato y disponible | Gatillos/zonas muertas inconsistentes | Steam Input + ajuste manual |
+
+En hogares con mezcla de dispositivos, estandarizar un solo perfil puede mejorar la **compatibilidad de mandos en Gamble With Your Friends** más que estar ajustando cada mando constantemente.
+
+> **Advertencia:** Mezclar mandos Bluetooth y con cable en la misma sesión puede introducir diferencias de latencia que se sienten como fallos de control “aleatorios”.
+
+## Solución de problemas comunes de mandos
+
+Si la configuración sigue sintiéndose mal, diagnostica por síntoma en lugar de cambiar todo de una vez.
+
+| Síntoma | Causa probable | Solución |
+|---|---|---|
+| **El mando funciona en Steam, pero no en el juego** | Anulación por juego incorrecta | En propiedades de Steam, cambia entre nativo y Steam Input |
+| **El personaje/menú se mueve dos veces** | Doble entrada por capa nativa + Steam | Desactiva una capa; normalmente deja Steam Input y desactiva el perfil duplicado dentro del juego |
+| **Indicadores de botones incorrectos** | Conjunto de indicadores bloqueado al estilo Xbox | Revisa los ajustes de indicadores de UI dentro del juego si están disponibles |
+| **El mando se desconecta a mitad de partida** | Gestión de energía de Bluetooth | Desactiva el ahorro de energía de USB/Bluetooth en ajustes del SO |
+| **Solo funciona el mando del Jugador 1** | Problema de orden de índice de jugador | Reconecta los mandos en el orden deseado antes de iniciar |
+| **Drift del stick en menús** | Zona muerta demasiado baja | Aumenta ligeramente la zona muerta del stick izquierdo |
+
+### Rutina rápida de reinicio (2 minutos)
+
+1. Cierra el juego y Steam.  
+2. Desconecta todos los mandos.  
+3. Vuelve a abrir Steam.  
+4. Conecta un mando y pruébalo en la pantalla de prueba de mandos de Steam.  
+5. Inicia el juego y verifica todas las acciones de gameplay.  
+6. Añade mandos adicionales después de confirmar el Jugador 1.
+
+Este reinicio rápido suele resolver problemas persistentes de **compatibilidad de mandos en Gamble With Your Friends** sin cambios profundos del sistema.
+
+## Ajuste avanzado: zonas muertas, sensibilidad y calidad del layout
+
+Una vez que la entrada básica sea estable, ajusta para comodidad y equilibrio. En party games, sticks demasiado sensibles pueden provocar acciones accidentales y frustrar a jugadores casuales.
+
+| Ajuste | Punto de partida recomendado | Quién debería ajustarlo |
+|---|---|---|
+| **Zona muerta del stick izquierdo** | 8–14% | Jugadores que ven drift en menús |
+| **Zona muerta del stick derecho/cámara** | 10–16% | Si la cámara se mueve de golpe inesperadamente |
+| **Umbral de gatillos** | Medio | Mandos genéricos con gatillos ruidosos |
+| **Vibración** | Baja o desactivada en sesiones competitivas | Jugadores sensibles a la retroalimentación |
+| **Duración de pulsación mantenida** | Predeterminada o un poco más corta | Navegación de menú más rápida |
+
+Para eventos locales, crea dos perfiles:
+- **Perfil casual** (zona muerta más alta, menor sensibilidad)
+- **Perfil competitivo** (zona muerta más ajustada, respuesta más rápida)
+
+Así, la **compatibilidad de mandos en Gamble With Your Friends** se siente accesible para quienes juegan por primera vez, pero sigue siendo reactiva para jugadores con experiencia.
+
+Para documentación oficial de mandos a nivel de plataforma, usa la [documentación de compatibilidad de mandos de Steam](https://store.steampowered.com/news/app/593110/view/). Explica el comportamiento de traducción de entrada y puede ayudar cuando tu configuración entra en conflicto con los valores predeterminados del juego.
+
+## Consejos de estabilidad para multijugador local y online
+
+La compatibilidad de mandos no es solo mapeo. La estabilidad de la sesión depende de cómo esté preparado tu lobby.
+
+### Lista de verificación para configuración local en sofá
+
+| Elemento | Buena práctica |
+|---|---|
+| **Número de mandos** | Conecta todos los mandos antes de abrir el lobby |
+| **Nivel de batería** | Mantén todos por encima del 40% para sesiones largas |
+| **Tipo de conexión** | Prefiere cable para torneos |
+| **Estilo de indicadores** | Estandariza una sola familia de indicadores (normalmente los iconos de Xbox son los más fáciles) |
+| **Rotación de asientos** | Mantén apuntado el mapeo de índice de jugador para reinicios rápidos |
+
+### Lista de verificación para juego online
+
+| Elemento | Buena práctica |
+|---|---|
+| **Retraso de entrada** | Evita descargas/streams en segundo plano |
+| **Comportamiento de Alt-Tab** | Desactiva overlays que roban el foco del mando |
+| **Voz + entrada** | Usa pulsar para hablar en teclado si el mapeo del mando está muy ajustado |
+| **Proceso de reconexión** | Ten una rutina de reconexión del host para todos los jugadores |
+
+Cuando la gente busca **compatibilidad de mandos en Gamble With Your Friends**, a menudo espera una solución con un solo interruptor. En realidad, las sesiones estables vienen de hábitos de lobby repetibles más perfiles de entrada limpios.
+
+> **Consejo:** Guarda un layout de Steam “que sabes que funciona” y compártelo con tu grupo. Reutilizar un perfil probado es más rápido que remapear antes de cada sesión.
+
+## FAQ
+
+**P: ¿La compatibilidad de mandos en Gamble With Your Friends funciona mejor con Steam Input activado o desactivado?**
+
+R: Depende del modelo de tu mando. Los mandos Xbox suelen funcionar bien en modo nativo, mientras que los de PlayStation y Switch normalmente se benefician de la traducción de Steam Input. Si ves doble entrada, desactiva una capa y vuelve a probar.
+
+**P: ¿Por qué solo se reconoce un mando en juego local?**
+
+R: Esto suele ser un problema de orden de índice de jugador. Desconecta todos los mandos, vuelve a conectarlos en el orden de jugador previsto y luego inicia el juego. Además, verifica que Steam detecte cada dispositivo antes de abrir tu lobby.
+
+**P: ¿Cómo corrijo los indicadores de botones incorrectos en la compatibilidad de mandos en Gamble With Your Friends?**
+
+R: Primero revisa si el juego tiene una opción de estilo de indicadores (iconos de Xbox/PlayStation). Si no, usa Steam Input con un layout estandarizado. Los desajustes de indicadores son en su mayoría problemas de etiquetado de UI, no fallos de entrada en el gameplay.
+
+**P: ¿Bluetooth está bien para sesiones competitivas?**
+
+R: Bluetooth puede estar bien para juego casual, pero las conexiones por cable son más consistentes para sesiones largas o partidas competitivas. Si debes usar Bluetooth, desactiva las funciones de ahorro de energía y mantén niveles de batería altos.
