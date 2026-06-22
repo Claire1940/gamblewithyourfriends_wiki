@@ -10,7 +10,7 @@ const nextConfig = {
   allowedDevOrigins: ["*.preview.same-app.com"],
 
   // Docker 部署配置
-  output: 'standalone',
+  output: 'export',
 
   // URL 不加尾部斜杠
   trailingSlash: false,
